@@ -1,0 +1,582 @@
+<html>
+  <head>
+    <title>MailKit.MessageSummary</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="MimeKit : A C# MIME creation and parser library with support for S/MIME, PGP and Unix mbox spools." />
+    <link rel="stylesheet" type="text/css" media="screen" href="/MimeKit/stylesheets/stylesheet.css" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+        color: black
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+        color: black
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="header_wrap" class="outer">
+      <header class="inner">
+        <a id="forkme_banner" href="https://github.com/jstedfast/MimeKit">View on GitHub</a>
+        <h1 id="project_title">MimeKit</h1>
+        <h2 id="project_tagline">A C# MIME creation and parser library with support for S/MIME, PGP and Unix mbox spools</h2>
+        <section id="downloads">
+          <a class="zip_download_link" href="https://github.com/jstedfast/MimeKit/zipball/master">Download this project as a .zip file</a>
+          <a class="tar_download_link" href="https://github.com/jstedfast/MimeKit/tarball/master">Download this project as a tar.gz file</a>
+        </section>
+      </header>
+    </div>
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <div class="CollectionTitle">
+          <a href="../index.html">MailKit</a> : <a href="index.html">MailKit Namespace</a></div>
+        <h1 class="PageTitle" id="T:MailKit.MessageSummary">MessageSummary  Class</h1>
+        <p class="Summary" id="T:MailKit.MessageSummary:Summary">
+            A summary of a message.
+            </p>
+        <div>
+          <h2>Syntax</h2>
+          <div class="Signature" id="T:MailKit.MessageSummary:Signature">public class  <b>MessageSummary</b></div>
+        </div>
+        <div class="Remarks" id="T:MailKit.MessageSummary:Docs">
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="T:MailKit.MessageSummary:Docs:Remarks">
+            A <a href="../MailKit/MessageSummary.html">MailKit.MessageSummary</a> is returned by
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.
+            The properties of the <a href="../MailKit/MessageSummary.html">MailKit.MessageSummary</a> that will be available
+            depend on the <a href="../MailKit/MessageSummaryItems.html">MailKit.MessageSummaryItems</a> passed to the aformentioned method.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="T:MailKit.MessageSummary:Docs:Version Information">
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+          <h2 class="Section" id="Members">Members</h2>
+          <div class="SectionBox" id="_Members">
+            <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+            <h2 class="Section">Public Properties</h2>
+            <div class="SectionBox" id="Public Properties">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.Body">Body</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="../MailKit/BodyPart.html">BodyPart</a>
+                      </i>. 
+            Gets the body structure of the message, if available.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.Envelope">Envelope</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="../MailKit/Envelope.html">Envelope</a>
+                      </i>. 
+            Gets the envelope of the message, if available.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.Flags">Flags</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;MessageFlags&gt;</a>
+                      </i>. 
+            Gets the message flags, if available.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.GMailMessageId">GMailMessageId</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a>
+                      </i>. 
+            Gets the GMail message identifier.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.GMailThreadId">GMailThreadId</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a>
+                      </i>. 
+            Gets the GMail thread identifier.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.Index">Index</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                      </i>. 
+            Gets the index of the message.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.InternalDate">InternalDate</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;DateTimeOffset&gt;</a>
+                      </i>. 
+            Gets the internal date of the message (i.e. the "received" date), if available.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.MessageSize">MessageSize</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a>
+                      </i>. 
+            Gets the size of the message, in bytes, if available.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.ModSeq">ModSeq</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;ulong&gt;</a>
+                      </i>. 
+            Gets the mod-sequence value for the message, if available.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.MessageSummary.Uid">Uid</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="../MailKit/UniqueId.html">UniqueId</a>
+                      </i>. 
+            Gets the unique ID of the message, if available.
+            </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Members" id="T:MailKit.MessageSummary:Members">
+          <h2 class="Section" id="MemberDetails">Member Details</h2>
+          <div class="SectionBox" id="_MemberDetails">
+            <h3 id="P:MailKit.MessageSummary.Body">Body Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.Body:member">
+              <p class="Summary">
+            Gets the body structure of the message, if available.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="../MailKit/BodyPart.html">BodyPart</a> <b>Body</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Body:Value">The body structure of the message.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Body:Remarks">
+            The body will be one of <a href="../MailKit/BodyPartText.html">MailKit.BodyPartText</a>,
+            <a href="../MailKit/BodyPartMessage.html">MailKit.BodyPartMessage</a>, <a href="../MailKit/BodyPartBasic.html">MailKit.BodyPartBasic</a>,
+            or <a href="../MailKit/BodyPartMultipart.html">MailKit.BodyPartMultipart</a>.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Body:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.Envelope">Envelope Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.Envelope:member">
+              <p class="Summary">
+            Gets the envelope of the message, if available.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="../MailKit/Envelope.html">Envelope</a> <b>Envelope</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Envelope:Value">The envelope of the message.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Envelope:Remarks">
+            The envelope of a message contains information such as the
+            date the message was sent, the subject of the message,
+            the sender of the message, who the message was sent to,
+            which message(s) the message may be in reply to,
+            and the message id.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Envelope:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.Flags">Flags Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.Flags:member">
+              <p class="Summary">
+            Gets the message flags, if available.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;MessageFlags&gt;</a> <b>Flags</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Flags:Value">The message flags.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Flags:Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Flags:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.GMailMessageId">GMailMessageId Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.GMailMessageId:member">
+              <p class="Summary">
+            Gets the GMail message identifier.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a> <b>GMailMessageId</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.GMailMessageId:Value">The GMail message identifier.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.GMailMessageId:Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.GMailMessageId:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.GMailThreadId">GMailThreadId Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.GMailThreadId:member">
+              <p class="Summary">
+            Gets the GMail thread identifier.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a> <b>GMailThreadId</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.GMailThreadId:Value">The GMail thread identifier.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.GMailThreadId:Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.GMailThreadId:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.Index">Index Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.Index:member">
+              <p class="Summary">
+            Gets the index of the message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Index</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Index:Value">The index of the message.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Index:Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Index:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.InternalDate">InternalDate Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.InternalDate:member">
+              <p class="Summary">
+            Gets the internal date of the message (i.e. the "received" date), if available.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;DateTimeOffset&gt;</a> <b>InternalDate</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.InternalDate:Value">The internal date of the message.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.InternalDate:Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.InternalDate:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.MessageSize">MessageSize Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.MessageSize:member">
+              <p class="Summary">
+            Gets the size of the message, in bytes, if available.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a> <b>MessageSize</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MessageSize:Value">The size of the message.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.MessageSize:Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.MessageSize:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.ModSeq">ModSeq Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.ModSeq:member">
+              <p class="Summary">
+            Gets the mod-sequence value for the message, if available.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;ulong&gt;</a> <b>ModSeq</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.ModSeq:Value">The mod-sequence value.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.ModSeq:Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.ModSeq:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.MessageSummary.Uid">Uid Property</h3>
+            <blockquote id="P:MailKit.MessageSummary.Uid:member">
+              <p class="Summary">
+            Gets the unique ID of the message, if available.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="../MailKit/UniqueId.html">UniqueId</a> <b>Uid</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Uid:Value">The uid of the message.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Uid:Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.MessageSummary.Uid:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+              <hr size="1" />
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">MimeKit maintained by <a href="https://github.com/jstedfast">jstedfast</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
