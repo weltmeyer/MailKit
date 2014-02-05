@@ -220,7 +220,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.ProtocolLogger:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -287,6 +287,19 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.ProtocolLogger.Finalize()">Finalize</a>
+                      </b>()<blockquote>
+            Releases unmanaged resources and performs other cleanup operations before the <a href="../MailKit/ProtocolLogger.html">MailKit.ProtocolLogger</a>
+            is reclaimed by garbage collection.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.ProtocolLogger.LogClient(System.Byte[],System.Int32,System.Int32)">LogClient</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[], <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<blockquote>
             Logs a sequence of bytes sent by the client.
@@ -319,6 +332,26 @@
                 </table>
               </div>
             </div>
+            <h2 class="Section">Protected Methods</h2>
+            <div class="SectionBox" id="Protected Methods">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.ProtocolLogger.Dispose(System.Boolean)">Dispose</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>
+            Releases the unmanaged resources used by the <a href="../MailKit/ProtocolLogger.html">MailKit.ProtocolLogger</a> and
+            optionally releases the managed resources.
+            </blockquote></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
         <div class="Members" id="T:MailKit.ProtocolLogger:Members">
@@ -346,7 +379,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.ProtocolLogger(System.IO.Stream):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="C:MailKit.ProtocolLogger(System.String)">ProtocolLogger Constructor</h3>
@@ -371,7 +404,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.ProtocolLogger(System.String):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.ProtocolLogger.Dispose()">Dispose Method</h3>
@@ -388,7 +421,53 @@
             collector can reclaim the memory that the <a href="../MailKit/ProtocolLogger.html">MailKit.ProtocolLogger</a> was occupying.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.ProtocolLogger.Dispose():Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.ProtocolLogger.Dispose(System.Boolean)">Dispose Method</h3>
+            <blockquote id="M:MailKit.ProtocolLogger.Dispose(System.Boolean):member">
+              <p class="Summary">
+            Releases the unmanaged resources used by the <a href="../MailKit/ProtocolLogger.html">MailKit.ProtocolLogger</a> and
+            optionally releases the managed resources.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Dispose</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> disposing)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.ProtocolLogger.Dispose(System.Boolean):Parameters">
+                <dl>
+                  <dt>
+                    <i>disposing</i>
+                  </dt>
+                  <dd>
+                    <tt>true</tt> to release both managed and unmanaged resources;
+            <tt>false</tt> to release only the unmanaged resources.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.ProtocolLogger.Dispose(System.Boolean):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.ProtocolLogger.Dispose(System.Boolean):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.ProtocolLogger.Finalize()">Finalize Method</h3>
+            <blockquote id="M:MailKit.ProtocolLogger.Finalize():member">
+              <p class="Summary">
+            Releases unmanaged resources and performs other cleanup operations before the <a href="../MailKit/ProtocolLogger.html">MailKit.ProtocolLogger</a>
+            is reclaimed by garbage collection.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">
+                <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Finalize</b> ()</div>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.ProtocolLogger.Finalize():Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.ProtocolLogger.Finalize():Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.ProtocolLogger.LogClient(System.Byte[],System.Int32,System.Int32)">LogClient Method</h3>
@@ -466,7 +545,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.ProtocolLogger.LogClient(System.Byte[],System.Int32,System.Int32):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.ProtocolLogger.LogConnect(System.Uri)">LogConnect Method</h3>
@@ -524,7 +603,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.ProtocolLogger.LogConnect(System.Uri):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.ProtocolLogger.LogServer(System.Byte[],System.Int32,System.Int32)">LogServer Method</h3>
@@ -602,7 +681,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.ProtocolLogger.LogServer(System.Byte[],System.Int32,System.Int32):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
