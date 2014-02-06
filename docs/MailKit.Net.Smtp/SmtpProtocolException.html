@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>MailKit.Net.Imap.ImapProtocolException</title>
+    <title>MailKit.Net.Smtp.SmtpProtocolException</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="MailKit: A cross-platform .NET mail-client library optimized for mobile." />
     <link rel="stylesheet" type="text/css" media="screen" href="/MailKit/stylesheets/stylesheet.css" />
@@ -204,31 +204,53 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <div class="CollectionTitle">
-          <a href="../index.html">MailKit</a> : <a href="index.html">MailKit.Net.Imap Namespace</a></div>
-        <h1 class="PageTitle" id="T:MailKit.Net.Imap.ImapProtocolException">ImapProtocolException  Class</h1>
-        <p class="Summary" id="T:MailKit.Net.Imap.ImapProtocolException:Summary">
-            A IMAP protocol exception.
+          <a href="../index.html">MailKit</a> : <a href="index.html">MailKit.Net.Smtp Namespace</a></div>
+        <h1 class="PageTitle" id="T:MailKit.Net.Smtp.SmtpProtocolException">SmtpProtocolException  Class</h1>
+        <p class="Summary" id="T:MailKit.Net.Smtp.SmtpProtocolException:Summary">
+            An SMTP protocol exception.
             </p>
         <div>
           <h2>Syntax</h2>
-          <div class="Signature" id="T:MailKit.Net.Imap.ImapProtocolException:Signature">public class  <b>ImapProtocolException</b> : <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a></div>
+          <div class="Signature" id="T:MailKit.Net.Smtp.SmtpProtocolException:Signature">public class  <b>SmtpProtocolException</b> : <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a></div>
         </div>
-        <div class="Remarks" id="T:MailKit.Net.Imap.ImapProtocolException:Docs">
+        <div class="Remarks" id="T:MailKit.Net.Smtp.SmtpProtocolException:Docs">
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="T:MailKit.Net.Imap.ImapProtocolException:Docs:Remarks">
-            The exception that is thrown when there is an error communicating with an IMAP server. A
-            <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a> is typically fatal and requires the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a>
+          <div class="SectionBox" id="T:MailKit.Net.Smtp.SmtpProtocolException:Docs:Remarks">
+            The exception that is thrown when there is an error communicating with an SMTP server. A
+            <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a> is typically fatal and requires the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a>
             to be reconnected.
             </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="T:MailKit.Net.Imap.ImapProtocolException:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
+          <div class="SectionBox" id="T:MailKit.Net.Smtp.SmtpProtocolException:Docs:Version Information">
+            <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
 								See Also: Inherited members from
 								<a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>.
 							</p>
+            <h2 class="Section">Public Constructors</h2>
+            <div class="SectionBox" id="Public Constructors">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.Net.Smtp.SmtpProtocolException(System.String)">SmtpProtocolException</a>
+                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a> class.
+            </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
             <h2 class="Section">Protected Constructors</h2>
             <div class="SectionBox" id="Protected Constructors">
               <div class="SubsectionBox">
@@ -241,11 +263,11 @@
                     <td>
                       <div>
                         <b>
-                          <a href="#C:MailKit.Net.Imap.ImapProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">ImapProtocolException</a>
+                          <a href="#C:MailKit.Net.Smtp.SmtpProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">SmtpProtocolException</a>
                         </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a>)</div>
                     </td>
                     <td>
-            Initializes a new instance of the <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a> class.
+            Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a> class.
             </td>
                   </tr>
                 </table>
@@ -253,18 +275,43 @@
             </div>
           </div>
         </div>
-        <div class="Members" id="T:MailKit.Net.Imap.ImapProtocolException:Members">
+        <div class="Members" id="T:MailKit.Net.Smtp.SmtpProtocolException:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
-            <h3 id="C:MailKit.Net.Imap.ImapProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">ImapProtocolException Constructor</h3>
-            <blockquote id="C:MailKit.Net.Imap.ImapProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):member">
+            <h3 id="C:MailKit.Net.Smtp.SmtpProtocolException(System.String)">SmtpProtocolException Constructor</h3>
+            <blockquote id="C:MailKit.Net.Smtp.SmtpProtocolException(System.String):member">
               <p class="Summary">
-            Initializes a new instance of the <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a> class.
+            Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a> class.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">protected  <b>ImapProtocolException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a> info, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a> context)</div>
+              <div class="Signature">public  <b>SmtpProtocolException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message)</div>
               <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="C:MailKit.Net.Imap.ImapProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Parameters">
+              <blockquote class="SubsectionBox" id="C:MailKit.Net.Smtp.SmtpProtocolException(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The error message.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpProtocolException(System.String):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpProtocolException(System.String):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="C:MailKit.Net.Smtp.SmtpProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">SmtpProtocolException Constructor</h3>
+            <blockquote id="C:MailKit.Net.Smtp.SmtpProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):member">
+              <p class="Summary">
+            Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a> class.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">protected  <b>SmtpProtocolException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a> info, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a> context)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="C:MailKit.Net.Smtp.SmtpProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Parameters">
                 <dl>
                   <dt>
                     <i>info</i>
@@ -277,12 +324,12 @@
                 </dl>
               </blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Imap.ImapProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Remarks">
+              <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Remarks">
                 <span class="NotEntered">Documentation for this section has not yet been entered.</span>
               </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Imap.ImapProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
+              <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpProtocolException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

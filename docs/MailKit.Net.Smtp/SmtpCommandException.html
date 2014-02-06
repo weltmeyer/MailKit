@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>MailKit.Net.Smtp.SmtpException</title>
+    <title>MailKit.Net.Smtp.SmtpCommandException</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="MailKit: A cross-platform .NET mail-client library optimized for mobile." />
     <link rel="stylesheet" type="text/css" media="screen" href="/MailKit/stylesheets/stylesheet.css" />
@@ -205,28 +205,51 @@
       <section id="main_content" class="inner">
         <div class="CollectionTitle">
           <a href="../index.html">MailKit</a> : <a href="index.html">MailKit.Net.Smtp Namespace</a></div>
-        <h1 class="PageTitle" id="T:MailKit.Net.Smtp.SmtpException">SmtpException  Class</h1>
-        <p class="Summary" id="T:MailKit.Net.Smtp.SmtpException:Summary">
+        <h1 class="PageTitle" id="T:MailKit.Net.Smtp.SmtpCommandException">SmtpCommandException  Class</h1>
+        <p class="Summary" id="T:MailKit.Net.Smtp.SmtpCommandException:Summary">
             An SMTP protocol exception.
             </p>
         <div>
           <h2>Syntax</h2>
-          <div class="Signature" id="T:MailKit.Net.Smtp.SmtpException:Signature">public class  <b>SmtpException</b> : <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a></div>
+          <div class="Signature" id="T:MailKit.Net.Smtp.SmtpCommandException:Signature">public class  <b>SmtpCommandException</b> : <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a></div>
         </div>
-        <div class="Remarks" id="T:MailKit.Net.Smtp.SmtpException:Docs">
+        <div class="Remarks" id="T:MailKit.Net.Smtp.SmtpCommandException:Docs">
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="T:MailKit.Net.Smtp.SmtpException:Docs:Remarks">
-            Indicates an error communicating with an SMTP server.
+          <div class="SectionBox" id="T:MailKit.Net.Smtp.SmtpCommandException:Docs:Remarks">
+            The exception that is thrown when an SMTP command fails. Unlike a <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a>,
+            a <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a> does not require the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> to be reconnected.
             </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="T:MailKit.Net.Smtp.SmtpException:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
+          <div class="SectionBox" id="T:MailKit.Net.Smtp.SmtpCommandException:Docs:Version Information">
+            <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
 								See Also: Inherited members from
 								<a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>.
 							</p>
+            <h2 class="Section">Protected Constructors</h2>
+            <div class="SectionBox" id="Protected Constructors">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.Net.Smtp.SmtpCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">SmtpCommandException</a>
+                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a>)</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a> class.
+            </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
             <h2 class="Section">Public Properties</h2>
             <div class="SectionBox" id="Public Properties">
               <div class="SubsectionBox">
@@ -235,7 +258,7 @@
                     <td>[read-only]<div></div></td>
                     <td>
                       <b>
-                        <a href="#P:MailKit.Net.Smtp.SmtpException.ErrorCode">ErrorCode</a>
+                        <a href="#P:MailKit.Net.Smtp.SmtpCommandException.ErrorCode">ErrorCode</a>
                       </b>
                     </td>
                     <td>
@@ -249,7 +272,7 @@
                     <td>[read-only]<div></div></td>
                     <td>
                       <b>
-                        <a href="#P:MailKit.Net.Smtp.SmtpException.Mailbox">Mailbox</a>
+                        <a href="#P:MailKit.Net.Smtp.SmtpCommandException.Mailbox">Mailbox</a>
                       </b>
                     </td>
                     <td>
@@ -263,7 +286,7 @@
                     <td>[read-only]<div></div></td>
                     <td>
                       <b>
-                        <a href="#P:MailKit.Net.Smtp.SmtpException.StatusCode">StatusCode</a>
+                        <a href="#P:MailKit.Net.Smtp.SmtpCommandException.StatusCode">StatusCode</a>
                       </b>
                     </td>
                     <td>
@@ -278,68 +301,96 @@
             </div>
           </div>
         </div>
-        <div class="Members" id="T:MailKit.Net.Smtp.SmtpException:Members">
+        <div class="Members" id="T:MailKit.Net.Smtp.SmtpCommandException:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
-            <h3 id="P:MailKit.Net.Smtp.SmtpException.ErrorCode">ErrorCode Property</h3>
-            <blockquote id="P:MailKit.Net.Smtp.SmtpException.ErrorCode:member">
+            <h3 id="C:MailKit.Net.Smtp.SmtpCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">SmtpCommandException Constructor</h3>
+            <blockquote id="C:MailKit.Net.Smtp.SmtpCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):member">
+              <p class="Summary">
+            Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a> class.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">protected  <b>SmtpCommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a> info, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a> context)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="C:MailKit.Net.Smtp.SmtpCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Parameters">
+                <dl>
+                  <dt>
+                    <i>info</i>
+                  </dt>
+                  <dd>The serialization info.</dd>
+                  <dt>
+                    <i>context</i>
+                  </dt>
+                  <dd>The streaming context.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.Net.Smtp.SmtpCommandException.ErrorCode">ErrorCode Property</h3>
+            <blockquote id="P:MailKit.Net.Smtp.SmtpCommandException.ErrorCode:member">
               <p class="Summary">
             Gets the error code which may provide additional information.
             </p>
               <h2>Syntax</h2>
               <div class="Signature">public <a href="../MailKit.Net.Smtp/SmtpErrorCode.html">SmtpErrorCode</a> <b>ErrorCode</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.Net.Smtp.SmtpException.ErrorCode:Value">The status code.</blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.ErrorCode:Value">The status code.</blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpException.ErrorCode:Remarks">
+              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.ErrorCode:Remarks">
             The error code can be used to programatically deal with the
             exception without necessarily needing to display the raw
             exception message to the user.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpException.ErrorCode:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
+              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.ErrorCode:Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
               <hr size="1" />
             </blockquote>
-            <h3 id="P:MailKit.Net.Smtp.SmtpException.Mailbox">Mailbox Property</h3>
-            <blockquote id="P:MailKit.Net.Smtp.SmtpException.Mailbox:member">
+            <h3 id="P:MailKit.Net.Smtp.SmtpCommandException.Mailbox">Mailbox Property</h3>
+            <blockquote id="P:MailKit.Net.Smtp.SmtpCommandException.Mailbox:member">
               <p class="Summary">
             Gets the mailbox that the error occurred on.
             </p>
               <h2>Syntax</h2>
               <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a> <b>Mailbox</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.Net.Smtp.SmtpException.Mailbox:Value">The mailbox.</blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.Mailbox:Value">The mailbox.</blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpException.Mailbox:Remarks">
-            This property will only be available when the <a href="../MailKit.Net.Smtp/SmtpException.html#P:MailKit.Net.Smtp.SmtpException.ErrorCode">SmtpException.ErrorCode</a>
+              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.Mailbox:Remarks">
+            This property will only be available when the <a href="../MailKit.Net.Smtp/SmtpCommandException.html#P:MailKit.Net.Smtp.SmtpCommandException.ErrorCode">SmtpCommandException.ErrorCode</a>
             value is either <a href="../MailKit.Net.Smtp/SmtpErrorCode.html#F:MailKit.Net.Smtp.SmtpErrorCode.SenderNotAccepted">SmtpErrorCode.SenderNotAccepted</a> or
             <a href="../MailKit.Net.Smtp/SmtpErrorCode.html#F:MailKit.Net.Smtp.SmtpErrorCode.RecipientNotAccepted">SmtpErrorCode.RecipientNotAccepted</a> and may be used
             to help the user decide how to proceed.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpException.Mailbox:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
+              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.Mailbox:Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
               <hr size="1" />
             </blockquote>
-            <h3 id="P:MailKit.Net.Smtp.SmtpException.StatusCode">StatusCode Property</h3>
-            <blockquote id="P:MailKit.Net.Smtp.SmtpException.StatusCode:member">
+            <h3 id="P:MailKit.Net.Smtp.SmtpCommandException.StatusCode">StatusCode Property</h3>
+            <blockquote id="P:MailKit.Net.Smtp.SmtpCommandException.StatusCode:member">
               <p class="Summary">
             Gets the status code returned by the SMTP server.
             </p>
               <h2>Syntax</h2>
               <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>StatusCode</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.Net.Smtp.SmtpException.StatusCode:Value">The status code.</blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.StatusCode:Value">The status code.</blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpException.StatusCode:Remarks">
-            The raw SMTP status code that resulted in the <a href="../MailKit.Net.Smtp/SmtpException.html">MailKit.Net.Smtp.SmtpException</a>
-            being thrown or <tt>-1</tt> if the error was a
-            <a href="../MailKit.Net.Smtp/SmtpErrorCode.html#F:MailKit.Net.Smtp.SmtpErrorCode.ProtocolError">SmtpErrorCode.ProtocolError</a>.
+              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.StatusCode:Remarks">
+            The raw SMTP status code that resulted in the <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a>
+            being thrown.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpException.StatusCode:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
+              <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpCommandException.StatusCode:Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

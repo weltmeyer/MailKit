@@ -216,7 +216,8 @@
         <div class="Remarks" id="T:MailKit.Net.Imap.ImapCommandException:Docs">
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="T:MailKit.Net.Imap.ImapCommandException:Docs:Remarks">
-            This exception can be thrown by most of the methods in <a href="../MailKit.Net.Imap/ImapFolder.html">MailKit.Net.Imap.ImapFolder</a>.
+            The exception that is thrown when an IMAP command fails. Unlike a <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>,
+            a <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a> does not require the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> to be reconnected.
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.Net.Imap.ImapCommandException:Docs:Version Information">
@@ -227,11 +228,62 @@
 								See Also: Inherited members from
 								<a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>.
 							</p>
+            <h2 class="Section">Protected Constructors</h2>
+            <div class="SectionBox" id="Protected Constructors">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.Net.Imap.ImapCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">ImapCommandException</a>
+                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a>)</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a> class.
+            </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
         <div class="Members" id="T:MailKit.Net.Imap.ImapCommandException:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
+            <h3 id="C:MailKit.Net.Imap.ImapCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">ImapCommandException Constructor</h3>
+            <blockquote id="C:MailKit.Net.Imap.ImapCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):member">
+              <p class="Summary">
+            Initializes a new instance of the <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a> class.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">protected  <b>ImapCommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a> info, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a> context)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="C:MailKit.Net.Imap.ImapCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Parameters">
+                <dl>
+                  <dt>
+                    <i>info</i>
+                  </dt>
+                  <dd>The serialization info.</dd>
+                  <dt>
+                    <i>context</i>
+                  </dt>
+                  <dd>The streaming context.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="C:MailKit.Net.Imap.ImapCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="C:MailKit.Net.Imap.ImapCommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
+              <hr size="1" />
+            </blockquote>
           </div>
         </div>
       </section>

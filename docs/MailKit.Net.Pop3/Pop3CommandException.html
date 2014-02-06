@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>MailKit.Net.Pop3.Pop3Exception</title>
+    <title>MailKit.Net.Pop3.Pop3CommandException</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="MailKit: A cross-platform .NET mail-client library optimized for mobile." />
     <link rel="stylesheet" type="text/css" media="screen" href="/MailKit/stylesheets/stylesheet.css" />
@@ -205,44 +205,46 @@
       <section id="main_content" class="inner">
         <div class="CollectionTitle">
           <a href="../index.html">MailKit</a> : <a href="index.html">MailKit.Net.Pop3 Namespace</a></div>
-        <h1 class="PageTitle" id="T:MailKit.Net.Pop3.Pop3Exception">Pop3Exception  Class</h1>
-        <p class="Summary" id="T:MailKit.Net.Pop3.Pop3Exception:Summary">
-            A POP3 protocol exception.
+        <h1 class="PageTitle" id="T:MailKit.Net.Pop3.Pop3CommandException">Pop3CommandException  Class</h1>
+        <p class="Summary" id="T:MailKit.Net.Pop3.Pop3CommandException:Summary">
+            A POP3 command exception.
             </p>
         <div>
           <h2>Syntax</h2>
-          <div class="Signature" id="T:MailKit.Net.Pop3.Pop3Exception:Signature">public class  <b>Pop3Exception</b> : <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a></div>
+          <div class="Signature" id="T:MailKit.Net.Pop3.Pop3CommandException:Signature">public class  <b>Pop3CommandException</b> : <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a></div>
         </div>
-        <div class="Remarks" id="T:MailKit.Net.Pop3.Pop3Exception:Docs">
+        <div class="Remarks" id="T:MailKit.Net.Pop3.Pop3CommandException:Docs">
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3Exception:Docs:Remarks">
-            The exception that is thrown when there is an error communicating with a POP3 server.
+          <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3CommandException:Docs:Remarks">
+            The exception that is thrown when a POP3 command fails. Unlike a <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>,
+            a <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> does not require the <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> to be reconnected.
             </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3Exception:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
+          <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3CommandException:Docs:Version Information">
+            <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
 								See Also: Inherited members from
 								<a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>.
 							</p>
-            <h2 class="Section">Public Properties</h2>
-            <div class="SectionBox" id="Public Properties">
+            <h2 class="Section">Protected Constructors</h2>
+            <div class="SectionBox" id="Protected Constructors">
               <div class="SubsectionBox">
                 <table class="TypeMembers">
                   <tr valign="top">
-                    <td>[read-only]<div></div></td>
                     <td>
-                      <b>
-                        <a href="#P:MailKit.Net.Pop3.Pop3Exception.ErrorType">ErrorType</a>
-                      </b>
+                      <div>
+                      </div>
                     </td>
                     <td>
-                      <i>
-                        <a href="../MailKit.Net.Pop3/Pop3ErrorType.html">Pop3ErrorType</a>
-                      </i>. 
-            Gets the type of the error.
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">Pop3CommandException</a>
+                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a>)</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
             </td>
                   </tr>
                 </table>
@@ -250,25 +252,36 @@
             </div>
           </div>
         </div>
-        <div class="Members" id="T:MailKit.Net.Pop3.Pop3Exception:Members">
+        <div class="Members" id="T:MailKit.Net.Pop3.Pop3CommandException:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
-            <h3 id="P:MailKit.Net.Pop3.Pop3Exception.ErrorType">ErrorType Property</h3>
-            <blockquote id="P:MailKit.Net.Pop3.Pop3Exception.ErrorType:member">
+            <h3 id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">Pop3CommandException Constructor</h3>
+            <blockquote id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):member">
               <p class="Summary">
-            Gets the type of the error.
+            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="../MailKit.Net.Pop3/Pop3ErrorType.html">Pop3ErrorType</a> <b>ErrorType</b>  { get; }</div>
-              <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.Net.Pop3.Pop3Exception.ErrorType:Value">The type of the error.</blockquote>
+              <div class="Signature">protected  <b>Pop3CommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a> info, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a> context)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Parameters">
+                <dl>
+                  <dt>
+                    <i>info</i>
+                  </dt>
+                  <dd>The serialization info.</dd>
+                  <dt>
+                    <i>context</i>
+                  </dt>
+                  <dd>The streaming context.</dd>
+                </dl>
+              </blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Exception.ErrorType:Remarks">
-                <a href="../MailKit.Net.Pop3/Pop3ErrorType.html#F:MailKit.Net.Pop3.Pop3ErrorType.ProtocolError">Pop3ErrorType.ProtocolError</a> always requires the client to reconnect before coninuing.
-            </div>
+              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Exception.ErrorType:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0</div>
+              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
