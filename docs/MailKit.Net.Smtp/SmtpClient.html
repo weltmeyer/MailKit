@@ -224,7 +224,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.Net.Smtp.SmtpClient:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+            <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -245,6 +245,21 @@
                         <b>
                           <a href="#C:MailKit.Net.Smtp.SmtpClient()">SmtpClient</a>
                         </b>()</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> class.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger)">SmtpClient</a>
+                        </b>(<a href="../MailKit/IProtocolLogger.html">MailKit.IProtocolLogger</a>)</div>
                     </td>
                     <td>
             Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> class.
@@ -466,7 +481,52 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpClient():Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger)">SmtpClient Constructor</h3>
+            <blockquote id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger):member">
+              <p class="Summary">
+            Initializes a new instance of the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> class.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public  <b>SmtpClient</b> (<a href="../MailKit/IProtocolLogger.html">MailKit.IProtocolLogger</a> protocolLogger)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger):Parameters">
+                <dl>
+                  <dt>
+                    <i>protocolLogger</i>
+                  </dt>
+                  <dd>The protocol logger.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>protocolLogger</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger):Remarks">
+            Before you can send messages with the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a>, you
+            must first call the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">SmtpClient.Connect(Uri, System.Threading.CancellationToken)</a> method. Depending on the
+            server, you may also need to authenticate using the
+            <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">SmtpClient.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate Method</h3>
@@ -590,7 +650,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.AuthenticationMechanisms">AuthenticationMechanisms Property</h3>
@@ -608,7 +668,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.AuthenticationMechanisms:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.Capabilities">Capabilities Property</h3>
@@ -628,7 +688,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.Capabilities:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.ClientCertificates">ClientCertificates Property</h3>
@@ -648,7 +708,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.ClientCertificates:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">Connect Method</h3>
@@ -759,7 +819,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean,System.Threading.CancellationToken)">Disconnect Method</h3>
@@ -813,7 +873,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Dispose()">Dispose Method</h3>
@@ -830,7 +890,7 @@
             the garbage collector can reclaim the memory that the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> was occupying.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Dispose():Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Dispose(System.Boolean)">Dispose Method</h3>
@@ -858,7 +918,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Dispose(System.Boolean):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Finalize()">Finalize Method</h3>
@@ -876,7 +936,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Finalize():Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.IsConnected">IsConnected Property</h3>
@@ -896,7 +956,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.IsConnected:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.MaxSize">MaxSize Property</h3>
@@ -919,7 +979,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.MaxSize:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.NoOp(System.Threading.CancellationToken)">NoOp Method</h3>
@@ -1007,7 +1067,7 @@
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.NoOp(System.Threading.CancellationToken):Remarks">Mail servers, if left idle for too long, will automatically drop the connection.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.NoOp(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,System.Threading.CancellationToken)">Send Method</h3>
@@ -1121,7 +1181,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.1.0.0, 0.2.0.0, 0.3.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.3.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
