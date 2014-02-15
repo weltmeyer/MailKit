@@ -298,8 +298,8 @@ namespace TestClient {
             using (var client = new Pop3Client ()) {
                 var credentials = new NetworkCredential ("joey", "password");
 
-                // Note: if the server requires SSL-on-connect, use the "pop3s" protocol instead
-                var uri = new Uri ("pop3://mail.friends.com");
+                // Note: if the server requires SSL-on-connect, use the "pops" protocol instead
+                var uri = new Uri ("pop://mail.friends.com");
 
                 using (var cancel = new CancellationTokenSource ()) {
                     client.Connect (uri, cancel.Token);
@@ -486,6 +486,22 @@ namespace TestClient {
             </tr>
             <tr valign="top">
               <td>
+                <a href="./ISortable.html">ISortable</a>
+              </td>
+              <td>
+            An interface for message sorting.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
+                <a href="./IThreadable.html">IThreadable</a>
+              </td>
+              <td>
+            An interface for a threading messages.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
                 <a href="./MessageEventArgs.html">MessageEventArgs</a>
               </td>
               <td>
@@ -506,6 +522,14 @@ namespace TestClient {
               </td>
               <td>
             Event args for the <a href="../MailKit/IFolder.html#E:MailKit.IFolder.MessageFlagsChanged">MailKit.IFolder.MessageFlagsChanged</a> event.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
+                <a href="./MessageSorter.html">MessageSorter</a>
+              </td>
+              <td>
+            Sorts messages.
             </td>
             </tr>
             <tr valign="top">
@@ -538,6 +562,14 @@ namespace TestClient {
               </td>
               <td>
             A message thread.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
+                <a href="./MessageThreader.html">MessageThreader</a>
+              </td>
+              <td>
+            Threads messages according to the algorithms defined in rfc5256.
             </td>
             </tr>
             <tr valign="top">
