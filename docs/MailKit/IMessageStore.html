@@ -220,7 +220,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.IMessageStore:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.5.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <h2 class="Section">Public Properties</h2>
@@ -314,6 +314,18 @@
             Gets the specified special folder.
             </blockquote></td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageStore.GetFolder(System.String,System.Threading.CancellationToken)">GetFolder</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="../MailKit/IFolder.html">IFolder</a></nobr><blockquote>
+            Gets the folder for the specified path.
+            </blockquote></td>
+                  </tr>
                 </table>
               </div>
             </div>
@@ -357,7 +369,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="E:MailKit.IMessageStore.Alert:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.5.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageStore.GetFolder(MailKit.FolderNamespace)">GetFolder Method</h3>
@@ -377,7 +389,7 @@
                 </dl>
               </blockquote>
               <h4 class="Subsection">Returns</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.IMessageStore.GetFolder(MailKit.FolderNamespace):Returns">The folder if available; otherwise <tt>null</tt>.</blockquote>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageStore.GetFolder(MailKit.FolderNamespace):Returns">The folder.</blockquote>
               <h4 class="Subsection">Exceptions</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.IMessageStore.GetFolder(MailKit.FolderNamespace):Exceptions">
                 <table class="TypeDocumentation">
@@ -393,6 +405,14 @@
                       <i>namespace</i> is <tt>null</tt>.
             </td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/FolderNotFoundException.html">MailKit.FolderNotFoundException</a>
+                    </td>
+                    <td>
+            The folder could not be found.
+            </td>
+                  </tr>
                 </table>
               </blockquote>
               <h2 class="Section">Remarks</h2>
@@ -402,7 +422,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageStore.GetFolder(MailKit.FolderNamespace):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.5.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageStore.GetFolder(MailKit.SpecialFolder)">GetFolder Method</h3>
@@ -447,7 +467,63 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageStore.GetFolder(MailKit.SpecialFolder):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.5.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageStore.GetFolder(System.String,System.Threading.CancellationToken)">GetFolder Method</h3>
+            <blockquote id="M:MailKit.IMessageStore.GetFolder(System.String,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Gets the folder for the specified path.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="../MailKit/IFolder.html">IFolder</a> <b>GetFolder</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> path, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageStore.GetFolder(System.String,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>path</i>
+                  </dt>
+                  <dd>The folder path.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageStore.GetFolder(System.String,System.Threading.CancellationToken):Returns">The folder.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageStore.GetFolder(System.String,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>path</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/FolderNotFoundException.html">MailKit.FolderNotFoundException</a>
+                    </td>
+                    <td>
+            The folder could not be found.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageStore.GetFolder(System.String,System.Threading.CancellationToken):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageStore.GetFolder(System.String,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMessageStore.Inbox">Inbox Property</h3>
@@ -466,7 +542,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMessageStore.Inbox:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.5.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMessageStore.OtherNamespaces">OtherNamespaces Property</h3>
@@ -484,7 +560,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMessageStore.OtherNamespaces:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.5.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMessageStore.PersonalNamespaces">PersonalNamespaces Property</h3>
@@ -502,7 +578,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMessageStore.PersonalNamespaces:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.5.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMessageStore.SharedNamespaces">SharedNamespaces Property</h3>
@@ -520,7 +596,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMessageStore.SharedNamespaces:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.5.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.6.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
