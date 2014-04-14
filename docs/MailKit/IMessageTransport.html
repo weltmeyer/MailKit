@@ -220,7 +220,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.IMessageTransport:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <h2 class="Section">Public Methods</h2>
@@ -234,9 +234,33 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage)">Send</a>
+                      </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>)<blockquote>
+            Send the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,System.Threading.CancellationToken)">Send</a>
                       </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Send the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress})">Send</a>
+                      </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a>)<blockquote>
+            Send the specified message using the supplied sender and recipients.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -259,6 +283,31 @@
         <div class="Members" id="T:MailKit.IMessageTransport:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
+            <h3 id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage)">Send Method</h3>
+            <blockquote id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage):member">
+              <p class="Summary">
+            Send the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage):Parameters">
+                <dl>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The message.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage):Remarks">
+            Sends the message by uploading it to an SMTP server.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
             <h3 id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,System.Threading.CancellationToken)">Send Method</h3>
             <blockquote id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,System.Threading.CancellationToken):member">
               <p class="Summary">
@@ -285,7 +334,40 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress})">Send Method</h3>
+            <blockquote id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):member">
+              <p class="Summary">
+            Send the specified message using the supplied sender and recipients.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a> sender, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a> recipients)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):Parameters">
+                <dl>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The message.</dd>
+                  <dt>
+                    <i>sender</i>
+                  </dt>
+                  <dd>The mailbox address to use for sending the message.</dd>
+                  <dt>
+                    <i>recipients</i>
+                  </dt>
+                  <dd>The mailbox addresses that should receive the message.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):Remarks">
+            Sends the message by uploading it to an SMTP server using the supplied sender and recipients.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">Send Method</h3>
@@ -322,7 +404,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

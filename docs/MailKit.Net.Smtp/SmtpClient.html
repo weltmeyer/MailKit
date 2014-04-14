@@ -224,7 +224,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.Net.Smtp.SmtpClient:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+            <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -362,6 +362,18 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials)">Authenticate</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>)<blockquote>
+            Authenticates using the supplied credentials.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Authenticates using the supplied credentials.
@@ -374,9 +386,33 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri)">Connect</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>)<blockquote>
+            Establishes a connection to the specified SMTP server.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">Connect</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Establishes a connection to the specified SMTP server.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean)">Disconnect</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>
+            Disconnect the service.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -423,6 +459,18 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Smtp.SmtpClient.NoOp()">NoOp</a>
+                      </b>()<blockquote>
+            Pings the SMTP server to keep the connection alive.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Smtp.SmtpClient.NoOp(System.Threading.CancellationToken)">NoOp</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Pings the SMTP server to keep the connection alive.
@@ -435,9 +483,33 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage)">Send</a>
+                      </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>)<blockquote>
+            Send the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,System.Threading.CancellationToken)">Send</a>
                       </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Send the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress})">Send</a>
+                      </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a>)<blockquote>
+            Send the specified message using the supplied sender and recipients.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -489,14 +561,14 @@
               <div class="Signature">public  <b>SmtpClient</b> ()</div>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpClient():Remarks">
-            Before you can send messages with the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a>, you
-            must first call the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">SmtpClient.Connect(Uri, System.Threading.CancellationToken)</a> method. Depending on the
-            server, you may also need to authenticate using the
+            Before you can send messages with the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a>, you must first call
+            the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">SmtpClient.Connect(Uri, System.Threading.CancellationToken)</a> method. Depending on the server,
+            you may also need to authenticate using the
             <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">SmtpClient.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpClient():Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger)">SmtpClient Constructor</h3>
@@ -534,14 +606,118 @@
               </blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger):Remarks">
-            Before you can send messages with the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a>, you
-            must first call the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">SmtpClient.Connect(Uri, System.Threading.CancellationToken)</a> method. Depending on the
-            server, you may also need to authenticate using the
+            Before you can send messages with the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a>, you must first call
+            the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">SmtpClient.Connect(Uri, System.Threading.CancellationToken)</a> method. Depending on the server,
+            you may also need to authenticate using the
             <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">SmtpClient.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.Net.Smtp.SmtpClient(MailKit.IProtocolLogger):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials)">Authenticate Method</h3>
+            <blockquote id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials):member">
+              <p class="Summary">
+            Authenticates using the supplied credentials.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Authenticate</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a> credentials)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials):Parameters">
+                <dl>
+                  <dt>
+                    <i>credentials</i>
+                  </dt>
+                  <dd>The user's credentials.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>credentials</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> is not connected or is already authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The SMTP server does not support authentication.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Security/AuthenticationException.html">MailKit.Security.AuthenticationException</a>
+                    </td>
+                    <td>
+            Authentication using the supplied credentials has failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Security/SaslException.html">MailKit.Security.SaslException</a>
+                    </td>
+                    <td>
+            A SASL authentication error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a>
+                    </td>
+                    <td>
+            The SMTP command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a>
+                    </td>
+                    <td>
+            An SMTP protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials):Remarks">
+                <p>If the SMTP server supports authentication, then the SASL mechanisms
+            that both the client and server support are tried in order of greatest
+            security to weakest security. Once a SASL authentication mechanism is
+            found that both client and server support, the credentials are used to
+            authenticate.</p>
+                <p>If, on the other hand, authentication is not supported, then
+            this method simply returns without attempting to authenticate.</p>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate Method</h3>
@@ -673,7 +849,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.AuthenticationMechanisms">AuthenticationMechanisms Property</h3>
@@ -691,7 +867,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.AuthenticationMechanisms:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.Capabilities">Capabilities Property</h3>
@@ -722,13 +898,13 @@
               </blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.Capabilities:Remarks">
-            The capabilities will not be known until a successful connection
-            has been made via the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">SmtpClient.Connect(Uri, System.Threading.CancellationToken)</a> method and may change
-            as a side-effect of the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">SmtpClient.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
+            The capabilities will not be known until a successful connection has been made via
+            the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">SmtpClient.Connect(Uri, System.Threading.CancellationToken)</a> method and may change as a side-effect
+            of the <a href="../MailKit.Net.Smtp/SmtpClient.html#M:MailKit.Net.Smtp.SmtpClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">SmtpClient.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.Capabilities:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.ClientCertificates">ClientCertificates Property</h3>
@@ -748,7 +924,107 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.ClientCertificates:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri)">Connect Method</h3>
+            <blockquote id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri):member">
+              <p class="Summary">
+            Establishes a connection to the specified SMTP server.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Connect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri):Parameters">
+                <dl>
+                  <dt>
+                    <i>uri</i>
+                  </dt>
+                  <dd>The server URI. The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Uri.Scheme">Uri.Scheme</a> should either
+            be "smtp" to make a clear-text connection or "smtps" to make an SSL connection.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>The <i>uri</i> is <tt>null</tt>.</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+            The <i>uri</i> is not an absolute URI.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> is already connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a>
+                    </td>
+                    <td>
+            An SMTP command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a>
+                    </td>
+                    <td>
+            An SMTP protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri):Remarks">
+                <p>Establishes a connection to an SMTP or SMTP/S server. If the schema
+            in the uri is "smtp", a clear-text connection is made and defaults to using
+            port 25 if no port is specified in the URI. However, if the schema in the
+            uri is "smtps", an SSL connection is made using the
+            <a href="../MailKit.Net.Smtp/SmtpClient.html#P:MailKit.Net.Smtp.SmtpClient.ClientCertificates">SmtpClient.ClientCertificates</a> and defaults to port 465 unless a port
+            is specified in the URI.</p>
+                <p>It should be noted that when using a clear-text SMTP connection,
+            if the server advertizes support for the STARTTLS extension, the client
+            will automatically switch into TLS mode before authenticating unless the
+            <i>uri</i> contains a query string to disable it.</p>
+            If a successful connection is made, the <a href="../MailKit.Net.Smtp/SmtpClient.html#P:MailKit.Net.Smtp.SmtpClient.AuthenticationMechanisms">SmtpClient.AuthenticationMechanisms</a>
+            and <a href="../MailKit.Net.Smtp/SmtpClient.html#P:MailKit.Net.Smtp.SmtpClient.Capabilities">SmtpClient.Capabilities</a> properties will be populated.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken)">Connect Method</h3>
@@ -868,7 +1144,49 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Connect(System.Uri,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean)">Disconnect Method</h3>
+            <blockquote id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean):member">
+              <p class="Summary">
+            Disconnect the service.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Disconnect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> quit)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean):Parameters">
+                <dl>
+                  <dt>
+                    <i>quit</i>
+                  </dt>
+                  <dd>If set to <tt>true</tt>, a "QUIT" command will be issued in order to disconnect cleanly.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> has been disposed.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean):Remarks">
+            If <i>quit</i> is <tt>true</tt>, a "QUIT" command will be issued in order to disconnect cleanly.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean,System.Threading.CancellationToken)">Disconnect Method</h3>
@@ -922,7 +1240,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Disconnect(System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Dispose()">Dispose Method</h3>
@@ -939,7 +1257,7 @@
             the garbage collector can reclaim the memory that the <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> was occupying.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Dispose():Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Dispose(System.Boolean)">Dispose Method</h3>
@@ -967,7 +1285,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Dispose(System.Boolean):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Finalize()">Finalize Method</h3>
@@ -985,7 +1303,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Finalize():Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.IsConnected">IsConnected Property</h3>
@@ -1005,7 +1323,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.IsConnected:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Smtp.SmtpClient.MaxSize">MaxSize Property</h3>
@@ -1028,7 +1346,70 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Smtp.SmtpClient.MaxSize:Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Smtp.SmtpClient.NoOp()">NoOp Method</h3>
+            <blockquote id="M:MailKit.Net.Smtp.SmtpClient.NoOp():member">
+              <p class="Summary">
+            Pings the SMTP server to keep the connection alive.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>NoOp</b> ()</div>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.NoOp():Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a>
+                    </td>
+                    <td>
+            The SMTP command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a>
+                    </td>
+                    <td>
+            An SMTP protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.NoOp():Remarks">Mail servers, if left idle for too long, will automatically drop the connection.</div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.NoOp():Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.NoOp(System.Threading.CancellationToken)">NoOp Method</h3>
@@ -1116,7 +1497,101 @@
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.NoOp(System.Threading.CancellationToken):Remarks">Mail servers, if left idle for too long, will automatically drop the connection.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.NoOp(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage)">Send Method</h3>
+            <blockquote id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage):member">
+              <p class="Summary">
+            Send the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage):Parameters">
+                <dl>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>message</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>A sender has not been specified.</p>
+                      <p>-or-</p>
+                      <p>No recipients have been specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            Authentication is required before sending a message.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a>
+                    </td>
+                    <td>
+            The SMTP command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a>
+                    </td>
+                    <td>
+            An SMTP protocol exception occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage):Remarks">
+            Sends the message by uploading it to an SMTP server.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,System.Threading.CancellationToken)">Send Method</h3>
@@ -1230,7 +1705,116 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress})">Send Method</h3>
+            <blockquote id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):member">
+              <p class="Summary">
+            Send the specified message using the supplied sender and recipients.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a> sender, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a> recipients)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):Parameters">
+                <dl>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The message.</dd>
+                  <dt>
+                    <i>sender</i>
+                  </dt>
+                  <dd>The mailbox address to use for sending the message.</dd>
+                  <dt>
+                    <i>recipients</i>
+                  </dt>
+                  <dd>The mailbox addresses that should receive the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>message</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>sender</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>recipients</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Smtp/SmtpClient.html">MailKit.Net.Smtp.SmtpClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>A sender has not been specified.</p>
+                      <p>-or-</p>
+                      <p>No recipients have been specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            Authentication is required before sending a message.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpCommandException.html">MailKit.Net.Smtp.SmtpCommandException</a>
+                    </td>
+                    <td>
+            The SMTP command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Smtp/SmtpProtocolException.html">MailKit.Net.Smtp.SmtpProtocolException</a>
+                    </td>
+                    <td>
+            An SMTP protocol exception occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):Remarks">
+            Sends the message by uploading it to an SMTP server using the supplied sender and recipients.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress}):Version Information">
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">Send Method</h3>
@@ -1351,7 +1935,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Smtp.SmtpClient.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Smtp<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

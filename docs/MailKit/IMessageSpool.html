@@ -220,7 +220,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.IMessageSpool:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <h2 class="Section">Public Properties</h2>
@@ -255,6 +255,30 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.IMessageSpool.DeleteMessage(System.Int32)">DeleteMessage</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<blockquote>
+            Mark the specified message for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageSpool.DeleteMessage(System.String)">DeleteMessage</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+            Mark the specified message for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.IMessageSpool.DeleteMessage(System.Int32,System.Threading.CancellationToken)">DeleteMessage</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Mark the specified message for deletion.
@@ -270,6 +294,30 @@
                         <a href="#M:MailKit.IMessageSpool.DeleteMessage(System.String,System.Threading.CancellationToken)">DeleteMessage</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Mark the specified message for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessage(System.Int32)">GetMessage</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a></nobr><blockquote>
+            Gets the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessage(System.String)">GetMessage</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a></nobr><blockquote>
+            Gets the specified message.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -303,9 +351,45 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessageCount()">GetMessageCount</a>
+                      </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+            Gets the number of messages available in the message spool.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.IMessageSpool.GetMessageCount(System.Threading.CancellationToken)">GetMessageCount</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
             Gets the number of messages available in the message spool.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32)">GetMessageHeaders</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a></nobr><blockquote>
+            Gets the headers for the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessageHeaders(System.String)">GetMessageHeaders</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a></nobr><blockquote>
+            Gets the headers for the specified message.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -339,6 +423,30 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessageSize(System.Int32)">GetMessageSize</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+            Gets the size of the specified message, in bytes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessageSize(System.String)">GetMessageSize</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+            Gets the size of the specified message, in bytes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.IMessageSpool.GetMessageSize(System.Int32,System.Threading.CancellationToken)">GetMessageSize</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
             Gets the size of the specified message, in bytes.
@@ -363,9 +471,33 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessageSizes()">GetMessageSizes</a>
+                      </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[]</nobr><blockquote>
+            Gets the sizes for all available messages, in bytes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.IMessageSpool.GetMessageSizes(System.Threading.CancellationToken)">GetMessageSizes</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[]</nobr><blockquote>
             Gets the sizes for all available messages, in bytes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessageUid(System.Int32)">GetMessageUid</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Gets the UID of the message at the specified index.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -387,9 +519,33 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.IMessageSpool.GetMessageUids()">GetMessageUids</a>
+                      </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[]</nobr><blockquote>
+            Gets the full list of available message UIDs.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.IMessageSpool.GetMessageUids(System.Threading.CancellationToken)">GetMessageUids</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[]</nobr><blockquote>
             Gets the full list of available message UIDs.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMessageSpool.Reset()">Reset</a>
+                      </b>()<blockquote>
+            Reset the state of all messages marked for deletion.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -412,6 +568,60 @@
         <div class="Members" id="T:MailKit.IMessageSpool:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
+            <h3 id="M:MailKit.IMessageSpool.DeleteMessage(System.Int32)">DeleteMessage Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.DeleteMessage(System.Int32):member">
+              <p class="Summary">
+            Mark the specified message for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteMessage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.DeleteMessage(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The index of the message.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.DeleteMessage(System.Int32):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMessageService.html#M:MailKit.IMessageService.Disconnect(System.Boolean)">IMessageService.Disconnect(bool)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.DeleteMessage(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.DeleteMessage(System.String)">DeleteMessage Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.DeleteMessage(System.String):member">
+              <p class="Summary">
+            Mark the specified message for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteMessage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uid)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.DeleteMessage(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>uid</i>
+                  </dt>
+                  <dd>The UID of the message.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.DeleteMessage(System.String):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMessageService.html#M:MailKit.IMessageService.Disconnect(System.Boolean)">IMessageService.Disconnect(bool)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.DeleteMessage(System.String):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
             <h3 id="M:MailKit.IMessageSpool.DeleteMessage(System.Int32,System.Threading.CancellationToken)">DeleteMessage Method</h3>
             <blockquote id="M:MailKit.IMessageSpool.DeleteMessage(System.Int32,System.Threading.CancellationToken):member">
               <p class="Summary">
@@ -440,7 +650,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.DeleteMessage(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.DeleteMessage(System.String,System.Threading.CancellationToken)">DeleteMessage Method</h3>
@@ -471,7 +681,61 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.DeleteMessage(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessage(System.Int32)">GetMessage Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessage(System.Int32):member">
+              <p class="Summary">
+            Gets the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> <b>GetMessage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The index of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.Int32):Returns">The message.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.Int32):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessage(System.String)">GetMessage Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessage(System.String):member">
+              <p class="Summary">
+            Gets the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> <b>GetMessage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uid)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>uid</i>
+                  </dt>
+                  <dd>The UID of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.String):Returns">The message.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.String):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.String):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessage(System.Int32,System.Threading.CancellationToken)">GetMessage Method</h3>
@@ -502,7 +766,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessage(System.String,System.Threading.CancellationToken)">GetMessage Method</h3>
@@ -533,7 +797,25 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessage(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessageCount()">GetMessageCount Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessageCount():member">
+              <p class="Summary">
+            Gets the number of messages available in the message spool.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetMessageCount</b> ()</div>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageCount():Returns">The number of available messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageCount():Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageCount():Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessageCount(System.Threading.CancellationToken)">GetMessageCount Method</h3>
@@ -560,7 +842,61 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageCount(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32)">GetMessageHeaders Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32):member">
+              <p class="Summary">
+            Gets the headers for the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a> <b>GetMessageHeaders</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The index of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32):Returns">The message headers.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessageHeaders(System.String)">GetMessageHeaders Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessageHeaders(System.String):member">
+              <p class="Summary">
+            Gets the headers for the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a> <b>GetMessageHeaders</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uid)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>uid</i>
+                  </dt>
+                  <dd>The UID of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.String):Returns">The message headers.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.String):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.String):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32,System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
@@ -591,7 +927,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessageHeaders(System.String,System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
@@ -622,7 +958,61 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageHeaders(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessageSize(System.Int32)">GetMessageSize Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessageSize(System.Int32):member">
+              <p class="Summary">
+            Gets the size of the specified message, in bytes.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetMessageSize</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The index of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.Int32):Returns">The message size, in bytes.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.Int32):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessageSize(System.String)">GetMessageSize Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessageSize(System.String):member">
+              <p class="Summary">
+            Gets the size of the specified message, in bytes.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetMessageSize</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uid)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>uid</i>
+                  </dt>
+                  <dd>The UID of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.String):Returns">The message size, in bytes.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.String):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.String):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessageSize(System.Int32,System.Threading.CancellationToken)">GetMessageSize Method</h3>
@@ -653,7 +1043,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessageSize(System.String,System.Threading.CancellationToken)">GetMessageSize Method</h3>
@@ -684,7 +1074,25 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSize(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessageSizes()">GetMessageSizes Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessageSizes():member">
+              <p class="Summary">
+            Gets the sizes for all available messages, in bytes.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[] <b>GetMessageSizes</b> ()</div>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageSizes():Returns">The message sizes, in bytes.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSizes():Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSizes():Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessageSizes(System.Threading.CancellationToken)">GetMessageSizes Method</h3>
@@ -711,7 +1119,35 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageSizes(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessageUid(System.Int32)">GetMessageUid Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessageUid(System.Int32):member">
+              <p class="Summary">
+            Gets the UID of the message at the specified index.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetMessageUid</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageUid(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The message index.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageUid(System.Int32):Returns">The message UID.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageUid(System.Int32):Remarks">
+            Not all servers support UIDs, so you should first check
+            the <a href="../MailKit/IMessageSpool.html#P:MailKit.IMessageSpool.SupportsUids">IMessageSpool.SupportsUids</a> property.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageUid(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessageUid(System.Int32,System.Threading.CancellationToken)">GetMessageUid Method</h3>
@@ -743,7 +1179,26 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageUid(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.GetMessageUids()">GetMessageUids Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.GetMessageUids():member">
+              <p class="Summary">
+            Gets the full list of available message UIDs.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] <b>GetMessageUids</b> ()</div>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMessageSpool.GetMessageUids():Returns">The message UIDs.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageUids():Remarks">
+            Not all servers support UIDs, so you should first check
+            the <a href="../MailKit/IMessageSpool.html#P:MailKit.IMessageSpool.SupportsUids">IMessageSpool.SupportsUids</a> property.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageUids():Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.GetMessageUids(System.Threading.CancellationToken)">GetMessageUids Method</h3>
@@ -771,7 +1226,25 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.GetMessageUids(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMessageSpool.Reset()">Reset Method</h3>
+            <blockquote id="M:MailKit.IMessageSpool.Reset():member">
+              <p class="Summary">
+            Reset the state of all messages marked for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Reset</b> ()</div>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.Reset():Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMessageService.html#M:MailKit.IMessageService.Disconnect(System.Boolean)">IMessageService.Disconnect(bool)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMessageSpool.Reset():Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageSpool.Reset(System.Threading.CancellationToken)">Reset Method</h3>
@@ -798,7 +1271,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageSpool.Reset(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMessageSpool.SupportsUids">SupportsUids Property</h3>
@@ -813,12 +1286,16 @@
                 <tt>true</tt> if supports uids; otherwise, <tt>false</tt>.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.IMessageSpool.SupportsUids:Remarks">
-            Not all servers support referencing messages by UID, so this property should
-            be checked before using <a href="../MailKit/IMessageSpool.html#M:MailKit.IMessageSpool.GetMessageUid(System.Int32,System.Threading.CancellationToken)">IMessageSpool.GetMessageUid(int, System.Threading.CancellationToken)</a> and <a href="../MailKit/IMessageSpool.html#M:MailKit.IMessageSpool.GetMessageUids(System.Threading.CancellationToken)">IMessageSpool.GetMessageUids(System.Threading.CancellationToken)</a>.
-            </div>
+                <p>Not all servers support referencing messages by UID, so this property should
+            be checked before using <a href="../MailKit/IMessageSpool.html#M:MailKit.IMessageSpool.GetMessageUid(System.Int32,System.Threading.CancellationToken)">IMessageSpool.GetMessageUid(int, System.Threading.CancellationToken)</a>
+            and <a href="../MailKit/IMessageSpool.html#M:MailKit.IMessageSpool.GetMessageUids(System.Threading.CancellationToken)">IMessageSpool.GetMessageUids(System.Threading.CancellationToken)</a>.</p>
+                <p>If the server does not support UIDs, then all methods that take UID arguments
+            along with <a href="../MailKit/IMessageSpool.html#M:MailKit.IMessageSpool.GetMessageUid(System.Int32,System.Threading.CancellationToken)">IMessageSpool.GetMessageUid(int, System.Threading.CancellationToken)</a> and
+            <a href="../MailKit/IMessageSpool.html#M:MailKit.IMessageSpool.GetMessageUids(System.Threading.CancellationToken)">IMessageSpool.GetMessageUids(System.Threading.CancellationToken)</a> will fail.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMessageSpool.SupportsUids:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

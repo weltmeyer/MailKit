@@ -224,7 +224,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3Client:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+            <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -404,6 +404,18 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials)">Authenticate</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>)<blockquote>
+            Authenticates using the supplied credentials.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Authenticates using the supplied credentials.
@@ -416,9 +428,45 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri)">Connect</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>)<blockquote>
+            Establishes a connection to the specified POP3 server.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken)">Connect</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Establishes a connection to the specified POP3 server.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32)">DeleteMessage</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<blockquote>
+            Mark the specified message for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String)">DeleteMessage</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+            Mark the specified message for deletion.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -443,6 +491,18 @@
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String,System.Threading.CancellationToken)">DeleteMessage</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Mark the specified message for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean)">Disconnect</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>
+            Disconnect the service.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -501,6 +561,30 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32)">GetMessage</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a></nobr><blockquote>
+            Gets the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String)">GetMessage</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a></nobr><blockquote>
+            Gets the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32,System.Threading.CancellationToken)">GetMessage</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a></nobr><blockquote>
             Gets the specified message.
@@ -525,9 +609,45 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageCount()">GetMessageCount</a>
+                      </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+            Gets the number of messages available in the message spool.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageCount(System.Threading.CancellationToken)">GetMessageCount</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
             Gets the number of messages available in the message spool.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32)">GetMessageHeaders</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a></nobr><blockquote>
+            Gets the headers for the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String)">GetMessageHeaders</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a></nobr><blockquote>
+            Gets the headers for the specified message.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -561,6 +681,30 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32)">GetMessageSize</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+            Gets the size of the specified message, in bytes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String)">GetMessageSize</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+            Gets the size of the specified message, in bytes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32,System.Threading.CancellationToken)">GetMessageSize</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
             Gets the size of the specified message, in bytes.
@@ -585,9 +729,33 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes()">GetMessageSizes</a>
+                      </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[]</nobr><blockquote>
+            Gets the sizes for all available messages, in bytes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes(System.Threading.CancellationToken)">GetMessageSizes</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[]</nobr><blockquote>
             Gets the sizes for all available messages, in bytes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32)">GetMessageUid</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Gets the UID of the message at the specified index.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -609,6 +777,18 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageUids()">GetMessageUids</a>
+                      </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[]</nobr><blockquote>
+            Gets the full list of available message UIDs.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.GetMessageUids(System.Threading.CancellationToken)">GetMessageUids</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[]</nobr><blockquote>
             Gets the full list of available message UIDs.
@@ -621,9 +801,33 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.NoOp()">NoOp</a>
+                      </b>()<blockquote>
+            Pings the POP3 server to keep the connection alive.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Pop3.Pop3Client.NoOp(System.Threading.CancellationToken)">NoOp</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Pings the POP3 server to keep the connection alive.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Pop3.Pop3Client.Reset()">Reset</a>
+                      </b>()<blockquote>
+            Reset the state of all messages marked for deletion.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -696,13 +900,13 @@
               <div class="Signature">public  <b>Pop3Client</b> ()</div>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3Client():Remarks">
-            Before you can retrieve messages with the <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a>, you
-            must first call the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken)">Pop3Client.Connect(Uri, System.Threading.CancellationToken)</a> method and authenticate with
+            Before you can retrieve messages with the <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a>, you must first
+            call the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken)">Pop3Client.Connect(Uri, System.Threading.CancellationToken)</a> method and authenticate with
             the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Pop3Client.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3Client():Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="C:MailKit.Net.Pop3.Pop3Client(MailKit.IProtocolLogger)">Pop3Client Constructor</h3>
@@ -740,13 +944,120 @@
               </blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3Client(MailKit.IProtocolLogger):Remarks">
-            Before you can retrieve messages with the <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a>, you
-            must first call the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken)">Pop3Client.Connect(Uri, System.Threading.CancellationToken)</a> method and authenticate with
+            Before you can retrieve messages with the <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a>, you must first
+            call the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken)">Pop3Client.Connect(Uri, System.Threading.CancellationToken)</a> method and authenticate with
             the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Pop3Client.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3Client(MailKit.IProtocolLogger):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials)">Authenticate Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials):member">
+              <p class="Summary">
+            Authenticates using the supplied credentials.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Authenticate</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a> credentials)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials):Parameters">
+                <dl>
+                  <dt>
+                    <i>credentials</i>
+                  </dt>
+                  <dd>The user's credentials.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>credentials</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected or is already authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Security/AuthenticationException.html">MailKit.Security.AuthenticationException</a>
+                    </td>
+                    <td>
+            Authentication using the supplied credentials has failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Security/SaslException.html">MailKit.Security.SaslException</a>
+                    </td>
+                    <td>
+            A SASL authentication error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            A POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            An POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials):Remarks">
+                <p>If the POP3 server supports the APOP authentication mechanism,
+            then APOP is used.</p>
+                <p>If the APOP authentication mechanism is not supported and the
+            server supports one or more SASL authentication mechanisms, then
+            the SASL mechanisms that both the client and server support are tried
+            in order of greatest security to weakest security. Once a SASL
+            authentication mechanism is found that both client and server support,
+            the credentials are used to authenticate.</p>
+                <p>If the server does not support SASL or if no common SASL mechanisms
+            can be found, then the USER and PASS commands are used as a fallback.</p>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate Method</h3>
@@ -881,7 +1192,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Pop3.Pop3Client.AuthenticationMechanisms">AuthenticationMechanisms Property</h3>
@@ -902,7 +1213,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.AuthenticationMechanisms:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Pop3.Pop3Client.Capabilities">Capabilities Property</h3>
@@ -933,13 +1244,13 @@
               </blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.Capabilities:Remarks">
-            The capabilities will not be known until a successful connection
-            has been made via the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken)">Pop3Client.Connect(Uri, System.Threading.CancellationToken)</a> method and may change
-            as a side-effect of the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Pop3Client.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
+            The capabilities will not be known until a successful connection has been made via
+            the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken)">Pop3Client.Connect(Uri, System.Threading.CancellationToken)</a> method and may change as a side-effect
+            of the <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Pop3Client.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a> method.
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.Capabilities:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Pop3.Pop3Client.ClientCertificates">ClientCertificates Property</h3>
@@ -959,7 +1270,109 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.ClientCertificates:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri)">Connect Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri):member">
+              <p class="Summary">
+            Establishes a connection to the specified POP3 server.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Connect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri):Parameters">
+                <dl>
+                  <dt>
+                    <i>uri</i>
+                  </dt>
+                  <dd>The server URI. The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Uri.Scheme">Uri.Scheme</a> should either
+            be "pop" to make a clear-text connection or "pops" to make an SSL connection.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+            The <i>uri</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+            The <i>uri</i> is not an absolute URI.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is already connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            A POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri):Remarks">
+                <p>Establishes a connection to an POP3 or POP3/S server. If the schema
+            in the uri is "pop", a clear-text connection is made and defaults to using
+            port 110 if no port is specified in the URI. However, if the schema in the
+            uri is "pops", an SSL connection is made using the
+            <a href="../MailKit.Net.Pop3/Pop3Client.html#P:MailKit.Net.Pop3.Pop3Client.ClientCertificates">Pop3Client.ClientCertificates</a> and defaults to port 995 unless a port
+            is specified in the URI.</p>
+                <p>It should be noted that when using a clear-text POP3 connection,
+            if the server advertizes support for the STLS extension, the client
+            will automatically switch into TLS mode before authenticating unless
+            the <i>uri</i> contains a query string to disable it.</p>
+            If a successful connection is made, the <a href="../MailKit.Net.Pop3/Pop3Client.html#P:MailKit.Net.Pop3.Pop3Client.AuthenticationMechanisms">Pop3Client.AuthenticationMechanisms</a>
+            and <a href="../MailKit.Net.Pop3/Pop3Client.html#P:MailKit.Net.Pop3.Pop3Client.Capabilities">Pop3Client.Capabilities</a> properties will be populated.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken)">Connect Method</h3>
@@ -1081,7 +1494,205 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Connect(System.Uri,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32)">DeleteMessage Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32):member">
+              <p class="Summary">
+            Mark the specified message for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteMessage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The index of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                    </td>
+                    <td>
+                      <i>index</i> is not a valid message index.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected (see <a href="../MailKit/IMessageService.html#M:MailKit.IMessageService.Disconnect(System.Boolean)">MailKit.IMessageService.Disconnect(bool)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String)">DeleteMessage Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String):member">
+              <p class="Summary">
+            Mark the specified message for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteMessage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uid)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>uid</i>
+                  </dt>
+                  <dd>The UID of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>uid</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <i>uid</i> is not a valid message UID.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The POP3 server does not support the UIDL extension.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected (see <a href="../MailKit/IMessageService.html#M:MailKit.IMessageService.Disconnect(System.Boolean)">MailKit.IMessageService.Disconnect(bool)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32,System.Threading.CancellationToken)">DeleteMessage Method</h3>
@@ -1193,7 +1804,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String,System.Threading.CancellationToken)">DeleteMessage Method</h3>
@@ -1321,7 +1932,49 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.DeleteMessage(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean)">Disconnect Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean):member">
+              <p class="Summary">
+            Disconnect the service.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Disconnect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> quit)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean):Parameters">
+                <dl>
+                  <dt>
+                    <i>quit</i>
+                  </dt>
+                  <dd>If set to <tt>true</tt>, a "QUIT" command will be issued in order to disconnect cleanly.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean):Remarks">
+            If <i>quit</i> is <tt>true</tt>, a "QUIT" command will be issued in order to disconnect cleanly.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean,System.Threading.CancellationToken)">Disconnect Method</h3>
@@ -1367,7 +2020,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Disconnect(System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.Dispose()">Dispose Method</h3>
@@ -1384,7 +2037,7 @@
             the garbage collector can reclaim the memory that the <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> was occupying.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Dispose():Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.Dispose(System.Boolean)">Dispose Method</h3>
@@ -1412,7 +2065,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Dispose(System.Boolean):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Pop3.Pop3Client.ExpirePolicy">ExpirePolicy Property</h3>
@@ -1436,7 +2089,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.ExpirePolicy:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.Finalize()">Finalize Method</h3>
@@ -1454,7 +2107,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Finalize():Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetEnumerator()">GetEnumerator Method</h3>
@@ -1545,7 +2198,207 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetEnumerator():Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32)">GetMessage Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32):member">
+              <p class="Summary">
+            Gets the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> <b>GetMessage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The index of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32):Returns">The message.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                    </td>
+                    <td>
+                      <i>index</i> is not a valid message index.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String)">GetMessage Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String):member">
+              <p class="Summary">
+            Gets the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> <b>GetMessage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uid)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>uid</i>
+                  </dt>
+                  <dd>The UID of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String):Returns">The message.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>uid</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <i>uid</i> is not a valid message UID.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The POP3 server does not support the UIDL extension.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32,System.Threading.CancellationToken)">GetMessage Method</h3>
@@ -1657,7 +2510,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String,System.Threading.CancellationToken)">GetMessage Method</h3>
@@ -1785,7 +2638,82 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessage(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageCount()">GetMessageCount Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessageCount():member">
+              <p class="Summary">
+            Gets the number of messages available in the message spool.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetMessageCount</b> ()</div>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageCount():Returns">The number of available messages.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageCount():Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageCount():Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageCount():Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageCount(System.Threading.CancellationToken)">GetMessageCount Method</h3>
@@ -1885,7 +2813,207 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageCount(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32)">GetMessageHeaders Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32):member">
+              <p class="Summary">
+            Gets the headers for the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a> <b>GetMessageHeaders</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The index of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32):Returns">The message headers.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                    </td>
+                    <td>
+                      <i>index</i> is not a valid message index.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String)">GetMessageHeaders Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String):member">
+              <p class="Summary">
+            Gets the headers for the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a> <b>GetMessageHeaders</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uid)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>uid</i>
+                  </dt>
+                  <dd>The UID of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String):Returns">The message headers.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>uid</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <i>uid</i> is not a valid message UID.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The POP3 server does not support the UIDL extension.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32,System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
@@ -1997,7 +3125,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String,System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
@@ -2125,7 +3253,199 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageHeaders(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32)">GetMessageSize Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32):member">
+              <p class="Summary">
+            Gets the size of the specified message, in bytes.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetMessageSize</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The index of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32):Returns">The message size, in bytes.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                    </td>
+                    <td>
+                      <i>index</i> is not a valid message index.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String)">GetMessageSize Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String):member">
+              <p class="Summary">
+            Gets the size of the specified message, in bytes.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetMessageSize</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uid)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>uid</i>
+                  </dt>
+                  <dd>The UID of the message.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String):Returns">The message size, in bytes.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>uid</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <i>uid</i> is not a valid message UID.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32,System.Threading.CancellationToken)">GetMessageSize Method</h3>
@@ -2237,7 +3557,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String,System.Threading.CancellationToken)">GetMessageSize Method</h3>
@@ -2357,7 +3677,82 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSize(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes()">GetMessageSizes Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes():member">
+              <p class="Summary">
+            Gets the sizes for all available messages, in bytes.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[] <b>GetMessageSizes</b> ()</div>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes():Returns">The message sizes, in bytes.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes():Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes():Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes():Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes(System.Threading.CancellationToken)">GetMessageSizes Method</h3>
@@ -2457,7 +3852,107 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageSizes(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32)">GetMessageUid Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32):member">
+              <p class="Summary">
+            Gets the UID of the message at the specified index.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetMessageUid</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> index)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32):Parameters">
+                <dl>
+                  <dt>
+                    <i>index</i>
+                  </dt>
+                  <dd>The message index.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32):Returns">The message UID.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                    </td>
+                    <td>
+                      <i>index</i> is not a valid message index.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The POP3 server does not support the UIDL extension.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32):Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32):Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32,System.Threading.CancellationToken)">GetMessageUid Method</h3>
@@ -2577,7 +4072,90 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUids()">GetMessageUids Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUids():member">
+              <p class="Summary">
+            Gets the full list of available message UIDs.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] <b>GetMessageUids</b> ()</div>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUids():Returns">The message uids.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUids():Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The POP3 server does not support the UIDL extension.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUids():Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUids():Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUids(System.Threading.CancellationToken)">GetMessageUids Method</h3>
@@ -2685,7 +4263,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.GetMessageUids(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Pop3.Pop3Client.Implementation">Implementation Property</h3>
@@ -2704,7 +4282,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.Implementation:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Pop3.Pop3Client.IsConnected">IsConnected Property</h3>
@@ -2724,7 +4302,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.IsConnected:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Pop3.Pop3Client.LoginDelay">LoginDelay Property</h3>
@@ -2743,7 +4321,70 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.LoginDelay:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.NoOp()">NoOp Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.NoOp():member">
+              <p class="Summary">
+            Pings the POP3 server to keep the connection alive.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>NoOp</b> ()</div>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.NoOp():Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected or authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.NoOp():Remarks">Mail servers, if left idle for too long, will automatically drop the connection.</div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.NoOp():Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.NoOp(System.Threading.CancellationToken)">NoOp Method</h3>
@@ -2831,7 +4472,80 @@
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.NoOp(System.Threading.CancellationToken):Remarks">Mail servers, if left idle for too long, will automatically drop the connection.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.NoOp(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Pop3.Pop3Client.Reset()">Reset Method</h3>
+            <blockquote id="M:MailKit.Net.Pop3.Pop3Client.Reset():member">
+              <p class="Summary">
+            Reset the state of all messages marked for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Reset</b> ()</div>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Reset():Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not connected.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> is not authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>
+                    </td>
+                    <td>
+            The POP3 command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>
+                    </td>
+                    <td>
+            A POP3 protocol error occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Reset():Remarks">
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Reset():Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.Reset(System.Threading.CancellationToken)">Reset Method</h3>
@@ -2929,7 +4643,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.Reset(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Pop3.Pop3Client.SupportsUids">SupportsUids Property</h3>
@@ -2944,12 +4658,16 @@
                 <tt>true</tt> if supports UIDs; otherwise, <tt>false</tt>.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.SupportsUids:Remarks">
-            If the server does not support UIDs, then all methods that take UID arguments along with
-            <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32,System.Threading.CancellationToken)">Pop3Client.GetMessageUid(int, System.Threading.CancellationToken)</a> and <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.GetMessageUids(System.Threading.CancellationToken)">Pop3Client.GetMessageUids(System.Threading.CancellationToken)</a> will fail.
-            </div>
+                <p>Not all servers support referencing messages by UID, so this property should
+            be checked before using <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32,System.Threading.CancellationToken)">Pop3Client.GetMessageUid(int, System.Threading.CancellationToken)</a>
+            and <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.GetMessageUids(System.Threading.CancellationToken)">Pop3Client.GetMessageUids(System.Threading.CancellationToken)</a>.</p>
+                <p>If the server does not support UIDs, then all methods that take UID arguments
+            along with <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.GetMessageUid(System.Int32,System.Threading.CancellationToken)">Pop3Client.GetMessageUid(int, System.Threading.CancellationToken)</a> and
+            <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.GetMessageUids(System.Threading.CancellationToken)">Pop3Client.GetMessageUids(System.Threading.CancellationToken)</a> will fail.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Client.SupportsUids:Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Pop3.Pop3Client.System#Collections#IEnumerable#GetEnumerator()">System.Collections.IEnumerable.GetEnumerator Method</h3>
@@ -3041,7 +4759,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Pop3.Pop3Client.System#Collections#IEnumerable#GetEnumerator():Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.10.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.11.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
