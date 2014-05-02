@@ -221,7 +221,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.IMessageService:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <h2 class="Section">Public Properties</h2>
@@ -287,33 +287,9 @@
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="#M:MailKit.IMessageService.Authenticate(System.Net.ICredentials)">Authenticate</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>)<blockquote>
-            Authenticates using the supplied credentials.
-            </blockquote></td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <div>
-                      </div>
-                    </td>
-                    <td colspan="2">
-                      <b>
                         <a href="#M:MailKit.IMessageService.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Authenticates using the supplied credentials.
-            </blockquote></td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <div>
-                      </div>
-                    </td>
-                    <td colspan="2">
-                      <b>
-                        <a href="#M:MailKit.IMessageService.Connect(System.Uri)">Connect</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>)<blockquote>
-            Establishes a connection to the server specified in the URI.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -335,33 +311,9 @@
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="#M:MailKit.IMessageService.Disconnect(System.Boolean)">Disconnect</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>
-            Disconnect the service.
-            </blockquote></td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <div>
-                      </div>
-                    </td>
-                    <td colspan="2">
-                      <b>
                         <a href="#M:MailKit.IMessageService.Disconnect(System.Boolean,System.Threading.CancellationToken)">Disconnect</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Disconnect the service.
-            </blockquote></td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <div>
-                      </div>
-                    </td>
-                    <td colspan="2">
-                      <b>
-                        <a href="#M:MailKit.IMessageService.NoOp()">NoOp</a>
-                      </b>()<blockquote>
-            Pings the message service to keep the connection alive.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -384,32 +336,6 @@
         <div class="Members" id="T:MailKit.IMessageService:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
-            <h3 id="M:MailKit.IMessageService.Authenticate(System.Net.ICredentials)">Authenticate Method</h3>
-            <blockquote id="M:MailKit.IMessageService.Authenticate(System.Net.ICredentials):member">
-              <p class="Summary">
-            Authenticates using the supplied credentials.
-            </p>
-              <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Authenticate</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a> credentials)</div>
-              <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.IMessageService.Authenticate(System.Net.ICredentials):Parameters">
-                <dl>
-                  <dt>
-                    <i>credentials</i>
-                  </dt>
-                  <dd>The user's credentials.</dd>
-                </dl>
-              </blockquote>
-              <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="M:MailKit.IMessageService.Authenticate(System.Net.ICredentials):Remarks">
-            If the service supports authentication, then the credentials are used
-            to authenticate. Otherwise, this method simply returns.
-            </div>
-              <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="M:MailKit.IMessageService.Authenticate(System.Net.ICredentials):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
-              <hr size="1" />
-            </blockquote>
             <h3 id="M:MailKit.IMessageService.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate Method</h3>
             <blockquote id="M:MailKit.IMessageService.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken):member">
               <p class="Summary">
@@ -437,7 +363,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageService.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMessageService.AuthenticationMechanisms">AuthenticationMechanisms Property</h3>
@@ -456,7 +382,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMessageService.AuthenticationMechanisms:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMessageService.ClientCertificates">ClientCertificates Property</h3>
@@ -476,33 +402,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMessageService.ClientCertificates:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
-              <hr size="1" />
-            </blockquote>
-            <h3 id="M:MailKit.IMessageService.Connect(System.Uri)">Connect Method</h3>
-            <blockquote id="M:MailKit.IMessageService.Connect(System.Uri):member">
-              <p class="Summary">
-            Establishes a connection to the server specified in the URI.
-            </p>
-              <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Connect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri)</div>
-              <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.IMessageService.Connect(System.Uri):Parameters">
-                <dl>
-                  <dt>
-                    <i>uri</i>
-                  </dt>
-                  <dd>The server URI.</dd>
-                </dl>
-              </blockquote>
-              <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="M:MailKit.IMessageService.Connect(System.Uri):Remarks">
-            If a successful connection is made, the <a href="../MailKit/IMessageService.html#P:MailKit.IMessageService.AuthenticationMechanisms">IMessageService.AuthenticationMechanisms</a>
-            property will be populated.
-            </div>
-              <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="M:MailKit.IMessageService.Connect(System.Uri):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageService.Connect(System.Uri,System.Threading.CancellationToken)">Connect Method</h3>
@@ -532,32 +432,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageService.Connect(System.Uri,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
-              <hr size="1" />
-            </blockquote>
-            <h3 id="M:MailKit.IMessageService.Disconnect(System.Boolean)">Disconnect Method</h3>
-            <blockquote id="M:MailKit.IMessageService.Disconnect(System.Boolean):member">
-              <p class="Summary">
-            Disconnect the service.
-            </p>
-              <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Disconnect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> quit)</div>
-              <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.IMessageService.Disconnect(System.Boolean):Parameters">
-                <dl>
-                  <dt>
-                    <i>quit</i>
-                  </dt>
-                  <dd>If set to <tt>true</tt>, a "QUIT" command will be issued in order to disconnect cleanly.</dd>
-                </dl>
-              </blockquote>
-              <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="M:MailKit.IMessageService.Disconnect(System.Boolean):Remarks">
-            If <i>quit</i> is <tt>true</tt>, a "QUIT" command will be issued in order to disconnect cleanly.
-            </div>
-              <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="M:MailKit.IMessageService.Disconnect(System.Boolean):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageService.Disconnect(System.Boolean,System.Threading.CancellationToken)">Disconnect Method</h3>
@@ -586,7 +461,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageService.Disconnect(System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMessageService.IsConnected">IsConnected Property</h3>
@@ -605,23 +480,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMessageService.IsConnected:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
-              <hr size="1" />
-            </blockquote>
-            <h3 id="M:MailKit.IMessageService.NoOp()">NoOp Method</h3>
-            <blockquote id="M:MailKit.IMessageService.NoOp():member">
-              <p class="Summary">
-            Pings the message service to keep the connection alive.
-            </p>
-              <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>NoOp</b> ()</div>
-              <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="M:MailKit.IMessageService.NoOp():Remarks">
-            Mail servers, if left idle for too long, will automatically drop the connection.
-            </div>
-              <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="M:MailKit.IMessageService.NoOp():Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMessageService.NoOp(System.Threading.CancellationToken)">NoOp Method</h3>
@@ -646,7 +505,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMessageService.NoOp(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.12.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
