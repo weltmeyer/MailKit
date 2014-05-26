@@ -223,7 +223,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.MessageSummary:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -299,9 +299,9 @@
                     </td>
                     <td>
                       <i>
-                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;ulong&gt;</a>
                       </i>. 
-            Gets the GMail message identifier.
+            Gets the GMail message identifier, if available.
             </td>
                   </tr>
                   <tr valign="top">
@@ -313,9 +313,9 @@
                     </td>
                     <td>
                       <i>
-                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;ulong&gt;</a>
                       </i>. 
-            Gets the GMail thread identifier.
+            Gets the GMail thread identifier, if available.
             </td>
                   </tr>
                   <tr valign="top">
@@ -419,7 +419,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets whether or not the messages can be sorted.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -431,7 +433,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets whether the message can be threaded.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -443,7 +447,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets a value indicating whether this instance is a reply.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -455,7 +461,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the Cc header value.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -467,7 +475,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTimeOffset">DateTimeOffset</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the Date header value.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -479,7 +489,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the From header value.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -491,7 +503,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the message index in the folder it belongs to.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -503,7 +517,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the size of the message, in bytes.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -515,7 +531,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the Subject header value.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -527,7 +545,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the To header value.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -539,7 +559,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the threadable message identifier.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -551,7 +573,9 @@
                     <td>
                       <i>
                         <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MessageIdList</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the threadable references.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -563,7 +587,9 @@
                     <td>
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the threadable subject.
+            </td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -575,7 +601,9 @@
                     <td>
                       <i>
                         <a href="../MailKit/UniqueId.html">UniqueId</a>
-                      </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                      </i>. 
+            Gets the unique identifier.
+            </td>
                   </tr>
                 </table>
               </div>
@@ -596,13 +624,16 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Body:Value">The body structure of the message.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.Body:Remarks">
-            The body will be one of <a href="../MailKit/BodyPartText.html">MailKit.BodyPartText</a>,
+                <p>The body will be one of <a href="../MailKit/BodyPartText.html">MailKit.BodyPartText</a>,
             <a href="../MailKit/BodyPartMessage.html">MailKit.BodyPartMessage</a>, <a href="../MailKit/BodyPartBasic.html">MailKit.BodyPartBasic</a>,
-            or <a href="../MailKit/BodyPartMultipart.html">MailKit.BodyPartMultipart</a>.
-            </div>
+            or <a href="../MailKit/BodyPartMultipart.html">MailKit.BodyPartMultipart</a>.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.Body">MessageSummaryItems.Body</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.Body:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.Envelope">Envelope Property</h3>
@@ -616,15 +647,18 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Envelope:Value">The envelope of the message.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.Envelope:Remarks">
-            The envelope of a message contains information such as the
+                <p>The envelope of a message contains information such as the
             date the message was sent, the subject of the message,
             the sender of the message, who the message was sent to,
             which message(s) the message may be in reply to,
-            and the message id.
-            </div>
+            and the message id.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.Envelope">MessageSummaryItems.Envelope</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.Envelope:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.Flags">Flags Property</h3>
@@ -638,11 +672,14 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Flags:Value">The message flags.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.Flags:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the message flags, if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.Flags">MessageSummaryItems.Flags</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.Flags:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.GMailLabels">GMailLabels Property</h3>
@@ -656,47 +693,56 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.GMailLabels:Value">The GMail labels.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.GMailLabels:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the list of GMail labels, if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.GMailLabels">MessageSummaryItems.GMailLabels</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.GMailLabels:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.GMailMessageId">GMailMessageId Property</h3>
             <blockquote id="P:MailKit.MessageSummary.GMailMessageId:member">
               <p class="Summary">
-            Gets the GMail message identifier.
+            Gets the GMail message identifier, if available.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a> <b>GMailMessageId</b>  { get; }</div>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;ulong&gt;</a> <b>GMailMessageId</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.GMailMessageId:Value">The GMail message identifier.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.GMailMessageId:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the GMail message identifier, if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.GMailMessageId">MessageSummaryItems.GMailMessageId</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.GMailMessageId:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.GMailThreadId">GMailThreadId Property</h3>
             <blockquote id="P:MailKit.MessageSummary.GMailThreadId:member">
               <p class="Summary">
-            Gets the GMail thread identifier.
+            Gets the GMail thread identifier, if available.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a> <b>GMailThreadId</b>  { get; }</div>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;ulong&gt;</a> <b>GMailThreadId</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.GMailThreadId:Value">The GMail thread identifier.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.GMailThreadId:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the GMail thread identifier, if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.GMailThreadId">MessageSummaryItems.GMailThreadId</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.GMailThreadId:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.Index">Index Property</h3>
@@ -710,11 +756,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.Index:Value">The index of the message.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.Index:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the index of the message.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.Index:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.InternalDate">InternalDate Property</h3>
@@ -728,305 +774,286 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.InternalDate:Value">The internal date of the message.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.InternalDate:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the internal date of the message (i.e. the "received" date), if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.InternalDate">MessageSummaryItems.InternalDate</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.InternalDate:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#ISortable#CanSort">MailKit.ISortable.CanSort Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#ISortable#CanSort:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets whether or not the messages can be sorted.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>MailKit.ISortable.CanSort</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#CanSort:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+                <tt>true</tt> if the messages can be sorted; otherwise, <tt>false</tt>.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#CanSort:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets whether or not the messages can be sorted.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#CanSort:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#ISortable#SortableCc">MailKit.ISortable.SortableCc Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#ISortable#SortableCc:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the Cc header value.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MailKit.ISortable.SortableCc</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableCc:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableCc:Value">The Cc header value.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableCc:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Cc header value.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableCc:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#ISortable#SortableDate">MailKit.ISortable.SortableDate Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#ISortable#SortableDate:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the Date header value.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTimeOffset">DateTimeOffset</a> <b>MailKit.ISortable.SortableDate</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableDate:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableDate:Value">The date.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableDate:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Date header value.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableDate:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#ISortable#SortableFrom">MailKit.ISortable.SortableFrom Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#ISortable#SortableFrom:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the From header value.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MailKit.ISortable.SortableFrom</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableFrom:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableFrom:Value">The From header value.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableFrom:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the From header value.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableFrom:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#ISortable#SortableIndex">MailKit.ISortable.SortableIndex Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#ISortable#SortableIndex:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the message index in the folder it belongs to.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>MailKit.ISortable.SortableIndex</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableIndex:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableIndex:Value">The index.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableIndex:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the message index in the folder it belongs to.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableIndex:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSize">MailKit.ISortable.SortableSize Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSize:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the size of the message, in bytes.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> <b>MailKit.ISortable.SortableSize</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSize:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSize:Value">The size of the message, in bytes.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSize:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the size of the message, in bytes.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSize:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSubject">MailKit.ISortable.SortableSubject Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSubject:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the Subject header value.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MailKit.ISortable.SortableSubject</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSubject:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSubject:Value">The Subject header value.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSubject:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Subject header value.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableSubject:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#ISortable#SortableTo">MailKit.ISortable.SortableTo Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#ISortable#SortableTo:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the To header value.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MailKit.ISortable.SortableTo</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableTo:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableTo:Value">The To header value.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableTo:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the To header value.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#ISortable#SortableTo:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#IThreadable#CanThread">MailKit.IThreadable.CanThread Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#IThreadable#CanThread:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets whether the message can be threaded.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>MailKit.IThreadable.CanThread</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#CanThread:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+                <tt>true</tt> if the messages can be threaded; otherwise, <tt>false</tt>.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#CanThread:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets whether the message can be threaded.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#CanThread:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#IThreadable#IsThreadableReply">MailKit.IThreadable.IsThreadableReply Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#IThreadable#IsThreadableReply:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets a value indicating whether this instance is a reply.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>MailKit.IThreadable.IsThreadableReply</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#IsThreadableReply:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+                <tt>true</tt> if this instance is a reply; otherwise, <tt>false</tt>.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#IsThreadableReply:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            This value should be based on whether the message subject contained any "Re:" or "Fwd:" prefixes.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#IsThreadableReply:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableMessageId">MailKit.IThreadable.ThreadableMessageId Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableMessageId:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the threadable message identifier.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MailKit.IThreadable.ThreadableMessageId</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableMessageId:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableMessageId:Value">The threadable message identifier.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableMessageId:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            This value should be the canonicalized Message-Id header value
+            without the angle brackets.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableMessageId:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableReferences">MailKit.IThreadable.ThreadableReferences Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableReferences:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the threadable references.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MessageIdList</a> <b>MailKit.IThreadable.ThreadableReferences</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableReferences:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableReferences:Value">The threadable references.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableReferences:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            This value should be the list of canonicalized Message-Ids
+            found in the In-Reply-To and References headers.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableReferences:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableSubject">MailKit.IThreadable.ThreadableSubject Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableSubject:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the threadable subject.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MailKit.IThreadable.ThreadableSubject</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableSubject:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableSubject:Value">The threadable subject.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableSubject:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            A normalized Subject header value where prefixes such as
+            "Re:", "Re[#]:", etc have been pruned.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableSubject:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableUniqueId">MailKit.IThreadable.ThreadableUniqueId Property</h3>
             <blockquote id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableUniqueId:member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Gets the unique identifier.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">
                 <a href="../MailKit/UniqueId.html">UniqueId</a> <b>MailKit.IThreadable.ThreadableUniqueId</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableUniqueId:Value">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableUniqueId:Value">The unique identifier.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableUniqueId:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the unique identifier.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MailKit#IThreadable#ThreadableUniqueId:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.MessageSize">MessageSize Property</h3>
@@ -1040,11 +1067,14 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.MessageSize:Value">The size of the message.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MessageSize:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the size of the message, in bytes, if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.MessageSize">MessageSummaryItems.MessageSize</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.MessageSize:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.ModSeq">ModSeq Property</h3>
@@ -1058,11 +1088,14 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.ModSeq:Value">The mod-sequence value.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.ModSeq:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the mod-sequence value for the message, if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.ModSeq">MessageSummaryItems.ModSeq</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.ModSeq:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.References">References Property</h3>
@@ -1076,11 +1109,14 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.References:Value">The references.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.References:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the message-ids that the message references, if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.References">MessageSummaryItems.References</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.References:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MessageSummary.UniqueId">UniqueId Property</h3>
@@ -1094,11 +1130,14 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MessageSummary.UniqueId:Value">The uid of the message.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.UniqueId:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                <p>Gets the unique ID of the message, if available.</p>
+                <p>This property will only be set if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.UniqueId">MessageSummaryItems.UniqueId</a> flag is passed to
+            <a href="../MailKit/IFolder.html#M:MailKit.IFolder.Fetch(MailKit.UniqueId[],MailKit.MessageSummaryItems,System.Threading.CancellationToken)">IFolder.Fetch(UniqueId[], MessageSummaryItems, System.Threading.CancellationToken)</a>.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MessageSummary.UniqueId:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

@@ -222,7 +222,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.BodyPart:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -245,8 +245,8 @@
                         </b>()</div>
                     </td>
                     <td>
-                      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-                    </td>
+            Initializes a new instance of the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> class.
+            </td>
                   </tr>
                 </table>
               </div>
@@ -286,6 +286,53 @@
                 </table>
               </div>
             </div>
+            <h2 class="Section">Public Methods</h2>
+            <div class="SectionBox" id="Public Methods">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.BodyPart.ToString()">ToString</a>
+                      </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> that represents the current <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a>.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>static </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.BodyPart.TryParse(System.String,MailKit.BodyPart@)">TryParse</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <i>out</i> <a href="../MailKit/BodyPart.html">BodyPart</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Tries to parse the given text into a new <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> instance.
+            </blockquote></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h2 class="Section">Protected Methods</h2>
+            <div class="SectionBox" id="Protected Methods">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.BodyPart.Encode(System.Text.StringBuilder)">Encode</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>)<blockquote>
+            Encodes the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> into the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>.
+            </blockquote></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
         <div class="Members" id="T:MailKit.BodyPart:Members">
@@ -294,17 +341,17 @@
             <h3 id="C:MailKit.BodyPart()">BodyPart Constructor</h3>
             <blockquote id="C:MailKit.BodyPart():member">
               <p class="Summary">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </p>
+            Initializes a new instance of the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> class.
+            </p>
               <h2>Syntax</h2>
               <div class="Signature">protected  <b>BodyPart</b> ()</div>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="C:MailKit.BodyPart():Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Creates a new <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a>.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.BodyPart():Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPart.ContentType">ContentType Property</h3>
@@ -318,11 +365,36 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPart.ContentType:Value">The content type.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPart.ContentType:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Content-Type of the body part.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPart.ContentType:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.BodyPart.Encode(System.Text.StringBuilder)">Encode Method</h3>
+            <blockquote id="M:MailKit.BodyPart.Encode(System.Text.StringBuilder):member">
+              <p class="Summary">
+            Encodes the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> into the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">protected abstract <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Encode</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> builder)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.BodyPart.Encode(System.Text.StringBuilder):Parameters">
+                <dl>
+                  <dt>
+                    <i>builder</i>
+                  </dt>
+                  <dd>The string builder.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.BodyPart.Encode(System.Text.StringBuilder):Remarks">
+            Encodes the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> into the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.BodyPart.Encode(System.Text.StringBuilder):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPart.PartSpecifier">PartSpecifier Property</h3>
@@ -336,11 +408,81 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPart.PartSpecifier:Value">The part specifier.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPart.PartSpecifier:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the part specifier.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPart.PartSpecifier:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.BodyPart.ToString()">ToString Method</h3>
+            <blockquote id="M:MailKit.BodyPart.ToString():member">
+              <p class="Summary">
+            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> that represents the current <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a>.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.BodyPart.ToString():Returns">A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> that represents the current <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a>.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.BodyPart.ToString():Remarks">
+                <p>Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> that represents the current <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a>.</p>
+                <p>Note: The syntax of the string returned, while similar to IMAP's BODYSTRUCTURE syntax,
+            is not completely compatible.</p>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.BodyPart.ToString():Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.BodyPart.TryParse(System.String,MailKit.BodyPart@)">TryParse Method</h3>
+            <blockquote id="M:MailKit.BodyPart.TryParse(System.String,MailKit.BodyPart@):member">
+              <p class="Summary">
+            Tries to parse the given text into a new <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> instance.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>TryParse</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> text, <i>out</i> <a href="../MailKit/BodyPart.html">BodyPart</a> part)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.BodyPart.TryParse(System.String,MailKit.BodyPart@):Parameters">
+                <dl>
+                  <dt>
+                    <i>text</i>
+                  </dt>
+                  <dd>The text to parse.</dd>
+                  <dt>
+                    <i>part</i>
+                  </dt>
+                  <dd>The parsed body part.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.BodyPart.TryParse(System.String,MailKit.BodyPart@):Returns">
+                <tt>true</tt>, if the body part was successfully parsed, <tt>false</tt> otherwise.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.BodyPart.TryParse(System.String,MailKit.BodyPart@):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>text</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.BodyPart.TryParse(System.String,MailKit.BodyPart@):Remarks">
+                <p>Parses a body part from the specified text.</p>
+                <p>Note: This syntax, while similar to IMAP's BODYSTRUCTURE syntax, is not completely compatible.</p>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.BodyPart.TryParse(System.String,MailKit.BodyPart@):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

@@ -221,7 +221,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.BodyPartBasic:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -312,7 +312,7 @@
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
                       </i>. 
-            Gets the Content-Md5 of the body part, if available.
+            Gets the MD5 hash of the content, if available.
             </td>
                   </tr>
                   <tr valign="top">
@@ -368,7 +368,7 @@
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>
                       </i>. 
-            Gets the size of the body part.
+            Gets the size of the body part, in bytes.
             </td>
                   </tr>
                   <tr valign="top">
@@ -384,6 +384,53 @@
                       </i>. 
             Gets the part specifier.
              (<i>Inherited from <a href="../MailKit/BodyPart.html">BodyPart</a>.</i>)</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h2 class="Section">Public Methods</h2>
+            <div class="SectionBox" id="Public Methods">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/BodyPart.html#M:MailKit.BodyPart.ToString()">ToString</a>
+                      </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> that represents the current <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a>.
+             (<i>Inherited from <a href="../MailKit/BodyPart.html">BodyPart</a>.</i>)</blockquote></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h2 class="Section">Protected Methods</h2>
+            <div class="SectionBox" id="Protected Methods">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.BodyPartBasic.Encode(System.Text.StringBuilder)">Encode</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>)<blockquote>
+            Encodes the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> into the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/BodyPart.html#M:MailKit.BodyPart.Encode(System.Text.StringBuilder)">Encode</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>)<blockquote>
+            Encodes the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> into the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>.
+             (<i>Inherited from <a href="../MailKit/BodyPart.html">BodyPart</a>.</i>)</blockquote></td>
                   </tr>
                 </table>
               </div>
@@ -404,11 +451,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentDescription:Value">The content description.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentDescription:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Content-Description of the body part, if available.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentDescription:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPartBasic.ContentDisposition">ContentDisposition Property</h3>
@@ -422,11 +469,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentDisposition:Value">The content disposition.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentDisposition:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Content-Disposition of the body part, if available.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentDisposition:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPartBasic.ContentId">ContentId Property</h3>
@@ -440,11 +487,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentId:Value">The content identifier.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentId:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Content-Id of the body part, if available.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentId:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPartBasic.ContentLanguage">ContentLanguage Property</h3>
@@ -458,11 +505,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentLanguage:Value">The content language.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentLanguage:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Content-Language of the body part, if available.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentLanguage:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPartBasic.ContentLocation">ContentLocation Property</h3>
@@ -476,17 +523,17 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentLocation:Value">The content location.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentLocation:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Content-Location of the body part, if available.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentLocation:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPartBasic.ContentMd5">ContentMd5 Property</h3>
             <blockquote id="P:MailKit.BodyPartBasic.ContentMd5:member">
               <p class="Summary">
-            Gets the Content-Md5 of the body part, if available.
+            Gets the MD5 hash of the content, if available.
             </p>
               <h2>Syntax</h2>
               <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ContentMd5</b>  { get; }</div>
@@ -494,11 +541,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentMd5:Value">The content md5.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentMd5:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the MD5 hash of the content, if available.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentMd5:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPartBasic.ContentTransferEncoding">ContentTransferEncoding Property</h3>
@@ -512,11 +559,36 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentTransferEncoding:Value">The content transfer encoding.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentTransferEncoding:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the Content-Transfer-Encoding of the body part.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentTransferEncoding:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.BodyPartBasic.Encode(System.Text.StringBuilder)">Encode Method</h3>
+            <blockquote id="M:MailKit.BodyPartBasic.Encode(System.Text.StringBuilder):member">
+              <p class="Summary">
+            Encodes the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> into the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">protected override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Encode</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> builder)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.BodyPartBasic.Encode(System.Text.StringBuilder):Parameters">
+                <dl>
+                  <dt>
+                    <i>builder</i>
+                  </dt>
+                  <dd>The string builder.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.BodyPartBasic.Encode(System.Text.StringBuilder):Remarks">
+            Encodes the <a href="../MailKit/BodyPart.html">MailKit.BodyPart</a> into the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.BodyPartBasic.Encode(System.Text.StringBuilder):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPartBasic.IsAttachment">IsAttachment Property</h3>
@@ -531,17 +603,17 @@
                 <tt>true</tt> if thie part is an attachment; otherwise, <tt>false</tt>.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.IsAttachment:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Determines whether or not the body part is an attachment.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.IsAttachment:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.BodyPartBasic.Octets">Octets Property</h3>
             <blockquote id="P:MailKit.BodyPartBasic.Octets:member">
               <p class="Summary">
-            Gets the size of the body part.
+            Gets the size of the body part, in bytes.
             </p>
               <h2>Syntax</h2>
               <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> <b>Octets</b>  { get; }</div>
@@ -549,11 +621,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.Octets:Value">The number of octets.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.Octets:Remarks">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </div>
+            Gets the size of the body part, in bytes.
+            </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.Octets:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.13.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.15.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
