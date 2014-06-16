@@ -8095,7 +8095,8 @@
             of getting the desired information should be used.</p>
                 <p>For example, a common use for the <a href="../MailKit.Net.Imap/ImapFolder.html#M:MailKit.Net.Imap.ImapFolder.Status(MailKit.StatusItems,System.Threading.CancellationToken)">ImapFolder.Status(MailKit.StatusItems, System.Threading.CancellationToken)</a>
             method is to get the number of unread messages in the folder. When the folder is open, however, it is
-            possible to use <table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">var unreadCount = folder.Search (SearchQuery.NotSeen).Length;</pre></td></tr></table></p>
+            possible to use the <a href="../MailKit.Net.Imap/ImapFolder.html#M:MailKit.Net.Imap.ImapFolder.Search(MailKit.Search.SearchQuery,System.Threading.CancellationToken)">ImapFolder.Search(MailKit.Search.SearchQuery, System.Threading.CancellationToken)</a>
+            method to query for the list of unread messages.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Status(MailKit.StatusItems,System.Threading.CancellationToken):Version Information">
