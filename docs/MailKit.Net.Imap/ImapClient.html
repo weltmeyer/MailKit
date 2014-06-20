@@ -211,7 +211,7 @@
             </p>
         <div>
           <h2>Syntax</h2>
-          <div class="Signature" id="T:MailKit.Net.Imap.ImapClient:Signature">public class  <b>ImapClient</b> : <a href="../MailKit/IMessageStore.html">MailKit.IMessageStore</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IDisposable">IDisposable</a></div>
+          <div class="Signature" id="T:MailKit.Net.Imap.ImapClient:Signature">public class  <b>ImapClient</b> : <a href="../MailKit/MailStore.html">MailKit.MailStore</a></div>
         </div>
         <div class="Remarks" id="T:MailKit.Net.Imap.ImapClient:Docs">
           <h2 class="Section">Remarks</h2>
@@ -224,12 +224,12 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.Net.Imap.ImapClient:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+            <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
 								See Also: Inherited members from
-								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+								<a href="../MailKit/MailStore.html">MailKit.MailStore</a>.
 							</p>
             <h2 class="Section">Public Constructors</h2>
             <div class="SectionBox" id="Public Constructors">
@@ -273,7 +273,7 @@
               <div class="SubsectionBox">
                 <table class="TypeMembers">
                   <tr valign="top">
-                    <td>[read-only]<div></div></td>
+                    <td>[read-only]<div>override </div></td>
                     <td>
                       <b>
                         <a href="#P:MailKit.Net.Imap.ImapClient.AuthenticationMechanisms">AuthenticationMechanisms</a>
@@ -283,8 +283,22 @@
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.HashSet`1">HashSet&lt;string&gt;</a>
                       </i>. 
-            Gets the authentication mechanisms supported by the IMAP server.
+            Get the authentication mechanisms supported by the IMAP server.
             </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div>abstract </div></td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailService.html#P:MailKit.MailService.AuthenticationMechanisms">AuthenticationMechanisms</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.HashSet`1">HashSet&lt;string&gt;</a>
+                      </i>. 
+            Gets the authentication mechanisms supported by the mail server.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</td>
                   </tr>
                   <tr valign="top">
                     <td>
@@ -300,7 +314,7 @@
                       <i>
                         <a href="../MailKit.Net.Imap/ImapCapabilities.html">ImapCapabilities</a>
                       </i>. 
-            Gets the capabilities supported by the IMAP server.
+            Get the capabilities supported by the IMAP server.
             </td>
                   </tr>
                   <tr valign="top">
@@ -310,7 +324,7 @@
                     </td>
                     <td>
                       <b>
-                        <a href="#P:MailKit.Net.Imap.ImapClient.ClientCertificates">ClientCertificates</a>
+                        <a href="../MailKit/MailService.html#P:MailKit.MailService.ClientCertificates">ClientCertificates</a>
                       </b>
                     </td>
                     <td>
@@ -318,10 +332,10 @@
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Security.Cryptography.X509Certificates.X509CertificateCollection">System.Security.Cryptography.X509Certificates.X509CertificateCollection</a>
                       </i>. 
             Gets or sets the client SSL certificates.
-            </td>
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</td>
                   </tr>
                   <tr valign="top">
-                    <td>[read-only]<div></div></td>
+                    <td>[read-only]<div>override </div></td>
                     <td>
                       <b>
                         <a href="#P:MailKit.Net.Imap.ImapClient.Inbox">Inbox</a>
@@ -329,13 +343,27 @@
                     </td>
                     <td>
                       <i>
-                        <a href="../MailKit/IFolder.html">MailKit.IFolder</a>
+                        <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a>
                       </i>. 
-            Gets the Inbox folder.
+            Get the Inbox folder.
             </td>
                   </tr>
                   <tr valign="top">
-                    <td>[read-only]<div></div></td>
+                    <td>[read-only]<div>abstract </div></td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailStore.html#P:MailKit.MailStore.Inbox">Inbox</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a>
+                      </i>. 
+            Gets the Inbox folder.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div>override </div></td>
                     <td>
                       <b>
                         <a href="#P:MailKit.Net.Imap.ImapClient.IsConnected">IsConnected</a>
@@ -345,11 +373,25 @@
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
                       </i>. 
-            Gets whether or not the client is currently connected to an IMAP server.
+            Get whether or not the client is currently connected to an IMAP server.
             </td>
                   </tr>
                   <tr valign="top">
-                    <td>[read-only]<div></div></td>
+                    <td>[read-only]<div>abstract </div></td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailService.html#P:MailKit.MailService.IsConnected">IsConnected</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                      </i>. 
+            Gets whether or not the client is currently connected to an mail server.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div>override </div></td>
                     <td>
                       <b>
                         <a href="#P:MailKit.Net.Imap.ImapClient.OtherNamespaces">OtherNamespaces</a>
@@ -359,11 +401,25 @@
                       <i>
                         <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a>
                       </i>. 
-            Gets the other namespaces.
+            Get the other namespaces.
             </td>
                   </tr>
                   <tr valign="top">
-                    <td>[read-only]<div></div></td>
+                    <td>[read-only]<div>abstract </div></td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailStore.html#P:MailKit.MailStore.OtherNamespaces">OtherNamespaces</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a>
+                      </i>. 
+            Gets the other namespaces.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div>override </div></td>
                     <td>
                       <b>
                         <a href="#P:MailKit.Net.Imap.ImapClient.PersonalNamespaces">PersonalNamespaces</a>
@@ -373,11 +429,25 @@
                       <i>
                         <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a>
                       </i>. 
-            Gets the personal namespaces.
+            Get the personal namespaces.
             </td>
                   </tr>
                   <tr valign="top">
-                    <td>[read-only]<div></div></td>
+                    <td>[read-only]<div>abstract </div></td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailStore.html#P:MailKit.MailStore.PersonalNamespaces">PersonalNamespaces</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a>
+                      </i>. 
+            Gets the personal namespaces.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div>override </div></td>
                     <td>
                       <b>
                         <a href="#P:MailKit.Net.Imap.ImapClient.SharedNamespaces">SharedNamespaces</a>
@@ -387,8 +457,22 @@
                       <i>
                         <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a>
                       </i>. 
-            Gets the shared namespaces.
+            Get the shared namespaces.
             </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div>abstract </div></td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailStore.html#P:MailKit.MailStore.SharedNamespaces">SharedNamespaces</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a>
+                      </i>. 
+            Gets the shared namespaces.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -401,13 +485,12 @@
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.HashSet`1">HashSet&lt;MailKit.ThreadingAlgorithm&gt;</a>
                       </i>. 
-            Gets the threading algorithms supported by the IMAP server.
+            Get the threading algorithms supported by the IMAP server.
             </td>
                   </tr>
                   <tr valign="top">
                     <td>
-                      <div>
-                      </div>
+                      <div>override </div>
                     </td>
                     <td>
                       <b>
@@ -418,8 +501,59 @@
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
                       </i>. 
-            Gets or sets the timeout for network streaming operations, in milliseconds.
+            Get or set the timeout for network streaming operations, in milliseconds.
             </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailService.html#P:MailKit.MailService.Timeout">Timeout</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                      </i>. 
+            Gets or sets the timeout for network streaming operations, in milliseconds.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h2 class="Section">Protected Properties</h2>
+            <div class="SectionBox" id="Protected Properties">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>[read-only]<div>override </div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.Net.Imap.ImapClient.Protocol">Protocol</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                      </i>. 
+            Get the protocol supported by the message service.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div>abstract </div></td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailService.html#P:MailKit.MailService.Protocol">Protocol</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                      </i>. 
+            Gets the protocol supported by the message service.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</td>
                   </tr>
                 </table>
               </div>
@@ -430,15 +564,25 @@
                 <table class="TypeMembers">
                   <tr valign="top">
                     <td>
-                      <div>
-                      </div>
+                      <div>override </div>
                     </td>
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.Net.Imap.ImapClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
-            Authenticates using the supplied credentials.
+            Authenticate using the supplied credentials.
             </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Authenticates using the supplied credentials.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
@@ -447,15 +591,96 @@
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="#M:MailKit.Net.Imap.ImapClient.Connect(System.Uri,System.Threading.CancellationToken)">Connect</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
-            Establishes a connection to the specified IMAP server.
-            </blockquote></td>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.Authenticate(System.String,System.String,System.Threading.CancellationToken)">Authenticate</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Authenticates using the specified user name and password.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
                       <div>
                       </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.AuthenticateAsync(System.Net.ICredentials,System.Threading.CancellationToken)">AuthenticateAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously authenticates using the supplied credentials.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.AuthenticateAsync(System.String,System.String,System.Threading.CancellationToken)">AuthenticateAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously authenticates using the specified user name and password.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapClient.Connect(System.Uri,System.Threading.CancellationToken)">Connect</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Connect to the specified server.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.Connect(System.Uri,System.Threading.CancellationToken)">Connect</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Establishes a connection to the specified mail server.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.Connect(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)">Connect</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Establishes a connection to the specified mail server.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.ConnectAsync(System.Uri,System.Threading.CancellationToken)">ConnectAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously establishes a connection to the specified mail server.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.ConnectAsync(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)">ConnectAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously establishes a connection to the specified mail server.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
                     </td>
                     <td colspan="2">
                       <b>
@@ -466,27 +691,60 @@
                   </tr>
                   <tr valign="top">
                     <td>
-                      <div>
-                      </div>
+                      <div>abstract </div>
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="#M:MailKit.Net.Imap.ImapClient.Dispose()">Dispose</a>
-                      </b>()<blockquote>
-            Releases all resource used by the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> object.
-            </blockquote></td>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">Disconnect</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Disconnects the service.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
                       <div>
                       </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.DisconnectAsync(System.Boolean,System.Threading.CancellationToken)">DisconnectAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously disconnects the service.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.Dispose()">Dispose</a>
+                      </b>()<blockquote>
+            Releases all resource used by the <a href="../MailKit/MailService.html">MailKit.MailService</a> object.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
                     </td>
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.Net.Imap.ImapClient.EnableQuickResync(System.Threading.CancellationToken)">EnableQuickResync</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
-            Enables the QRESYNC feature.
+            Enable the QRESYNC feature.
             </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailStore.html#M:MailKit.MailStore.EnableQuickResync(System.Threading.CancellationToken)">EnableQuickResync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Enable the quick resynchronization feature.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
@@ -495,35 +753,89 @@
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="#M:MailKit.Net.Imap.ImapClient.Finalize()">Finalize</a>
-                      </b>()<blockquote>
-            Releases unmanaged resources and performs other cleanup operations before the
-            <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is reclaimed by garbage collection.
-            </blockquote></td>
+                        <a href="../MailKit/MailStore.html#M:MailKit.MailStore.EnableQuickResyncAsync(System.Threading.CancellationToken)">EnableQuickResyncAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously enable the quick resynchronization feature.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
                       <div>
                       </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.Finalize()">Finalize</a>
+                      </b>()<blockquote>
+            Releases unmanaged resources and performs other cleanup operations before the
+            <a href="../MailKit/MailService.html">MailKit.MailService</a> is reclaimed by garbage collection.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
                     </td>
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.FolderNamespace)">GetFolder</a>
-                      </b>(<a href="../MailKit/FolderNamespace.html">MailKit.FolderNamespace</a>)<nobr> : <a href="../MailKit/IFolder.html">MailKit.IFolder</a></nobr><blockquote>
-            Gets the folder for the specified namespace.
+                      </b>(<a href="../MailKit/FolderNamespace.html">MailKit.FolderNamespace</a>)<nobr> : <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a></nobr><blockquote>
+            Get the folder for the specified namespace.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
-                      <div>
-                      </div>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailStore.html#M:MailKit.MailStore.GetFolder(MailKit.FolderNamespace)">GetFolder</a>
+                      </b>(<a href="../MailKit/FolderNamespace.html">MailKit.FolderNamespace</a>)<nobr> : <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a></nobr><blockquote>
+            Get the folder for the specified namespace.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
                     </td>
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.SpecialFolder)">GetFolder</a>
-                      </b>(<a href="../MailKit/SpecialFolder.html">MailKit.SpecialFolder</a>)<nobr> : <a href="../MailKit/IFolder.html">MailKit.IFolder</a></nobr><blockquote>
-            Gets the specified special folder.
+                      </b>(<a href="../MailKit/SpecialFolder.html">MailKit.SpecialFolder</a>)<nobr> : <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a></nobr><blockquote>
+            Get the specified special folder.
             </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailStore.html#M:MailKit.MailStore.GetFolder(MailKit.SpecialFolder)">GetFolder</a>
+                      </b>(<a href="../MailKit/SpecialFolder.html">MailKit.SpecialFolder</a>)<nobr> : <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a></nobr><blockquote>
+            Get the specified special folder.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapClient.GetFolder(System.String,System.Threading.CancellationToken)">GetFolder</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a></nobr><blockquote>
+            Get the folder for the specified path.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailStore.html#M:MailKit.MailStore.GetFolder(System.String,System.Threading.CancellationToken)">GetFolder</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a></nobr><blockquote>
+            Get the folder for the specified path.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
@@ -532,22 +844,44 @@
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="#M:MailKit.Net.Imap.ImapClient.GetFolder(System.String,System.Threading.CancellationToken)">GetFolder</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="../MailKit/IFolder.html">MailKit.IFolder</a></nobr><blockquote>
-            Gets the folder for the specified path.
-            </blockquote></td>
+                        <a href="../MailKit/MailStore.html#M:MailKit.MailStore.GetFolderAsync(System.String,System.Threading.CancellationToken)">GetFolderAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;MailKit.IMailFolder&gt;</a></nobr><blockquote>
+            Asynchronously get the folder for the specified path.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
-                      <div>
-                      </div>
+                      <div>override </div>
                     </td>
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.Net.Imap.ImapClient.NoOp(System.Threading.CancellationToken)">NoOp</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
-            Pings the IMAP server to keep the connection alive.
+            Ping the IMAP server to keep the connection alive.
             </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.NoOp(System.Threading.CancellationToken)">NoOp</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Pings the mail server to keep the connection alive.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.NoOpAsync(System.Threading.CancellationToken)">NoOpAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously pings the mail server to keep the connection alive.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
                   </tr>
                 </table>
               </div>
@@ -558,8 +892,7 @@
                 <table class="TypeMembers">
                   <tr valign="top">
                     <td>
-                      <div>
-                      </div>
+                      <div>override </div>
                     </td>
                     <td colspan="2">
                       <b>
@@ -568,6 +901,31 @@
             Releases the unmanaged resources used by the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> and
             optionally releases the managed resources.
             </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.Dispose(System.Boolean)">Dispose</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>
+            Releases the unmanaged resources used by the <a href="../MailKit/MailService.html">MailKit.MailService</a> and
+            optionally releases the managed resources.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailKit.MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailStore.html#M:MailKit.MailStore.OnAlert(MailKit.AlertEventArgs)">OnAlert</a>
+                      </b>(<a href="../MailKit/AlertEventArgs.html">MailKit.AlertEventArgs</a>)<blockquote>
+            Raise the alert event.
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</blockquote></td>
                   </tr>
                 </table>
               </div>
@@ -583,12 +941,12 @@
                     </td>
                     <td>
                       <b>
-                        <a href="#E:MailKit.Net.Imap.ImapClient.Alert">Alert</a>
+                        <a href="../MailKit/MailStore.html#E:MailKit.MailStore.Alert">Alert</a>
                       </b>
                     </td>
                     <td>
             Occurs when a remote message store receives an alert message from the server.
-            </td>
+             (<i>Inherited from <a href="../MailKit/MailStore.html">MailKit.MailStore</a>.</i>)</td>
                   </tr>
                 </table>
               </div>
@@ -613,7 +971,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.Net.Imap.ImapClient():Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="C:MailKit.Net.Imap.ImapClient(MailKit.IProtocolLogger)">ImapClient Constructor</h3>
@@ -657,33 +1015,16 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.Net.Imap.ImapClient(MailKit.IProtocolLogger):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
-              <hr size="1" />
-            </blockquote>
-            <h3 id="E:MailKit.Net.Imap.ImapClient.Alert">Alert Event</h3>
-            <blockquote id="E:MailKit.Net.Imap.ImapClient.Alert:member">
-              <p class="Summary">
-            Occurs when a remote message store receives an alert message from the server.
-            </p>
-              <h2>Syntax</h2>
-              <div class="Signature">public event <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.EventHandler`1">EventHandler&lt;MailKit.AlertEventArgs&gt;</a> <b>Alert</b> </div>
-              <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="E:MailKit.Net.Imap.ImapClient.Alert:Remarks">
-            The <a href="../MailKit.Net.Imap/ImapClient.html#E:MailKit.Net.Imap.ImapClient.Alert">ImapClient.Alert</a> event is raised whenever the IMAP server includes an
-            <tt>"[ALERT]"</tt> code in a response to a client query.
-            </div>
-              <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="E:MailKit.Net.Imap.ImapClient.Alert:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">Authenticate Method</h3>
             <blockquote id="M:MailKit.Net.Imap.ImapClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken):member">
               <p class="Summary">
-            Authenticates using the supplied credentials.
+            Authenticate using the supplied credentials.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Authenticate</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a> credentials, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Authenticate</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a> credentials, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -694,7 +1035,7 @@
                   <dt>
                     <i>cancellationToken</i>
                   </dt>
-                  <dd>A cancellation token.</dd>
+                  <dd>The cancellation token.</dd>
                 </dl>
               </blockquote>
               <h4 class="Subsection">Exceptions</h4>
@@ -790,16 +1131,16 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.AuthenticationMechanisms">AuthenticationMechanisms Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.AuthenticationMechanisms:member">
               <p class="Summary">
-            Gets the authentication mechanisms supported by the IMAP server.
+            Get the authentication mechanisms supported by the IMAP server.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.HashSet`1">HashSet&lt;string&gt;</a> <b>AuthenticationMechanisms</b>  { get; }</div>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.HashSet`1">HashSet&lt;string&gt;</a> <b>AuthenticationMechanisms</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.AuthenticationMechanisms:Value">The authentication mechanisms.</blockquote>
               <h2 class="Section">Remarks</h2>
@@ -808,13 +1149,13 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.AuthenticationMechanisms:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.Capabilities">Capabilities Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.Capabilities:member">
               <p class="Summary">
-            Gets the capabilities supported by the IMAP server.
+            Get the capabilities supported by the IMAP server.
             </p>
               <h2>Syntax</h2>
               <div class="Signature">public <a href="../MailKit.Net.Imap/ImapCapabilities.html">ImapCapabilities</a> <b>Capabilities</b>  { get; set; }</div>
@@ -845,36 +1186,16 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.Capabilities:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
-              <hr size="1" />
-            </blockquote>
-            <h3 id="P:MailKit.Net.Imap.ImapClient.ClientCertificates">ClientCertificates Property</h3>
-            <blockquote id="P:MailKit.Net.Imap.ImapClient.ClientCertificates:member">
-              <p class="Summary">
-            Gets or sets the client SSL certificates.
-            </p>
-              <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Security.Cryptography.X509Certificates.X509CertificateCollection">System.Security.Cryptography.X509Certificates.X509CertificateCollection</a> <b>ClientCertificates</b>  { get; set; }</div>
-              <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.ClientCertificates:Value">The client SSL certificates.</blockquote>
-              <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.ClientCertificates:Remarks">
-                <p>Some servers may require the client SSL certificates in order
-            to allow the user to connect.</p>
-                <p>This property should be set before calling <a href="../MailKit.Net.Imap/ImapClient.html#M:MailKit.Net.Imap.ImapClient.Connect(System.Uri,System.Threading.CancellationToken)">ImapClient.Connect(Uri, System.Threading.CancellationToken)</a>.</p>
-              </div>
-              <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.ClientCertificates:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.Connect(System.Uri,System.Threading.CancellationToken)">Connect Method</h3>
             <blockquote id="M:MailKit.Net.Imap.ImapClient.Connect(System.Uri,System.Threading.CancellationToken):member">
               <p class="Summary">
-            Establishes a connection to the specified IMAP server.
+            Connect to the specified server.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Connect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Connect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.Connect(System.Uri,System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -886,7 +1207,7 @@
                   <dt>
                     <i>cancellationToken</i>
                   </dt>
-                  <dd>A cancellation token.</dd>
+                  <dd>The cancellation token.</dd>
                 </dl>
               </blockquote>
               <h4 class="Subsection">Exceptions</h4>
@@ -960,7 +1281,7 @@
             in the uri is "imap", a clear-text connection is made and defaults to using
             port 143 if no port is specified in the URI. However, if the schema in the
             uri is "imaps", an SSL connection is made using the
-            <a href="../MailKit.Net.Imap/ImapClient.html#P:MailKit.Net.Imap.ImapClient.ClientCertificates">ImapClient.ClientCertificates</a> and defaults to port 993 unless a port
+            <a href="../MailKit/MailService.html#P:MailKit.MailService.ClientCertificates">MailKit.MailService.ClientCertificates</a> and defaults to port 993 unless a port
             is specified in the URI.</p>
                 <p>It should be noted that when using a clear-text IMAP connection,
             if the server advertizes support for the STARTTLS extension, the client
@@ -976,7 +1297,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Connect(System.Uri,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.Disconnect(System.Boolean,System.Threading.CancellationToken)">Disconnect Method</h3>
@@ -985,7 +1306,7 @@
             Disconnect the service.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Disconnect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> quit, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Disconnect</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> quit, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.Disconnect(System.Boolean,System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -996,7 +1317,7 @@
                   <dt>
                     <i>cancellationToken</i>
                   </dt>
-                  <dd>A cancellation token.</dd>
+                  <dd>The cancellation token.</dd>
                 </dl>
               </blockquote>
               <h4 class="Subsection">Exceptions</h4>
@@ -1022,24 +1343,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Disconnect(System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
-              <hr size="1" />
-            </blockquote>
-            <h3 id="M:MailKit.Net.Imap.ImapClient.Dispose()">Dispose Method</h3>
-            <blockquote id="M:MailKit.Net.Imap.ImapClient.Dispose():member">
-              <p class="Summary">
-            Releases all resource used by the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> object.
-            </p>
-              <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Dispose</b> ()</div>
-              <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Dispose():Remarks">Call <a href="../MailKit.Net.Imap/ImapClient.html#M:MailKit.Net.Imap.ImapClient.Dispose">ImapClient.Dispose</a> when you are finished using the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a>. The
-            <a href="../MailKit.Net.Imap/ImapClient.html#M:MailKit.Net.Imap.ImapClient.Dispose">ImapClient.Dispose</a> method leaves the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> in an unusable state. After
-            calling <a href="../MailKit.Net.Imap/ImapClient.html#M:MailKit.Net.Imap.ImapClient.Dispose">ImapClient.Dispose</a>, you must release all references to the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> so
-            the garbage collector can reclaim the memory that the <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> was occupying.</div>
-              <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Dispose():Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.Dispose(System.Boolean)">Dispose Method</h3>
@@ -1049,7 +1353,7 @@
             optionally releases the managed resources.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Dispose</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> disposing)</div>
+              <div class="Signature">protected override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Dispose</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> disposing)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.Dispose(System.Boolean):Parameters">
                 <dl>
@@ -1068,23 +1372,23 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Dispose(System.Boolean):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.EnableQuickResync(System.Threading.CancellationToken)">EnableQuickResync Method</h3>
             <blockquote id="M:MailKit.Net.Imap.ImapClient.EnableQuickResync(System.Threading.CancellationToken):member">
               <p class="Summary">
-            Enables the QRESYNC feature.
+            Enable the QRESYNC feature.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>EnableQuickResync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>EnableQuickResync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.EnableQuickResync(System.Threading.CancellationToken):Parameters">
                 <dl>
                   <dt>
                     <i>cancellationToken</i>
                   </dt>
-                  <dd>Cancellation token.</dd>
+                  <dd>The cancellation token.</dd>
                 </dl>
               </blockquote>
               <h4 class="Subsection">Exceptions</h4>
@@ -1150,42 +1454,23 @@
             querying the IMAP server for a list of changes when the folder is opened using the
             <a href="../MailKit.Net.Imap/ImapFolder.html#M:MailKit.Net.Imap.ImapFolder.Open(MailKit.FolderAccess,MailKit.UniqueId,System.UInt64,MailKit.UniqueId[],System.Threading.CancellationToken)">ImapFolder.Open(MailKit.FolderAccess, MailKit.UniqueId, ulong, MailKit.UniqueId[], System.Threading.CancellationToken)</a>
             method.</p>
-                <p>If this feature is enabled, the <a href="../MailKit.Net.Imap/ImapFolder.html#E:MailKit.Net.Imap.ImapFolder.Expunged">ImapFolder.Expunged</a> event is replaced
-            with the <a href="../MailKit.Net.Imap/ImapFolder.html#E:MailKit.Net.Imap.ImapFolder.Vanished">ImapFolder.Vanished</a> event.</p>
+                <p>If this feature is enabled, the <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageExpunged">MailKit.MailFolder.MessageExpunged</a> event is replaced
+            with the <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessagesVanished">MailKit.MailFolder.MessagesVanished</a> event.</p>
                 <p>This method needs to be called immediately after
             <a href="../MailKit.Net.Imap/ImapClient.html#M:MailKit.Net.Imap.ImapClient.Authenticate(System.Net.ICredentials,System.Threading.CancellationToken)">ImapClient.Authenticate(System.Net.ICredentials, System.Threading.CancellationToken)</a>, before the opening of any folders.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.EnableQuickResync(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
-              <hr size="1" />
-            </blockquote>
-            <h3 id="M:MailKit.Net.Imap.ImapClient.Finalize()">Finalize Method</h3>
-            <blockquote id="M:MailKit.Net.Imap.ImapClient.Finalize():member">
-              <p class="Summary">
-            Releases unmanaged resources and performs other cleanup operations before the
-            <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is reclaimed by garbage collection.
-            </p>
-              <h2>Syntax</h2>
-              <div class="Signature">
-                <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Finalize</b> ()</div>
-              <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Finalize():Remarks">
-            Releases unmanaged resources and performs other cleanup operations before the
-            <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is reclaimed by garbage collection.
-            </div>
-              <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Finalize():Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.FolderNamespace)">GetFolder Method</h3>
             <blockquote id="M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.FolderNamespace):member">
               <p class="Summary">
-            Gets the folder for the specified namespace.
+            Get the folder for the specified namespace.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="../MailKit/IFolder.html">MailKit.IFolder</a> <b>GetFolder</b> (<a href="../MailKit/FolderNamespace.html">MailKit.FolderNamespace</a> namespace)</div>
+              <div class="Signature">public override <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a> <b>GetFolder</b> (<a href="../MailKit/FolderNamespace.html">MailKit.FolderNamespace</a> namespace)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.FolderNamespace):Parameters">
                 <dl>
@@ -1246,16 +1531,16 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.FolderNamespace):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.SpecialFolder)">GetFolder Method</h3>
             <blockquote id="M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.SpecialFolder):member">
               <p class="Summary">
-            Gets the specified special folder.
+            Get the specified special folder.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="../MailKit/IFolder.html">MailKit.IFolder</a> <b>GetFolder</b> (<a href="../MailKit/SpecialFolder.html">MailKit.SpecialFolder</a> folder)</div>
+              <div class="Signature">public override <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a> <b>GetFolder</b> (<a href="../MailKit/SpecialFolder.html">MailKit.SpecialFolder</a> folder)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.SpecialFolder):Parameters">
                 <dl>
@@ -1311,16 +1596,16 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.GetFolder(MailKit.SpecialFolder):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.GetFolder(System.String,System.Threading.CancellationToken)">GetFolder Method</h3>
             <blockquote id="M:MailKit.Net.Imap.ImapClient.GetFolder(System.String,System.Threading.CancellationToken):member">
               <p class="Summary">
-            Gets the folder for the specified path.
+            Get the folder for the specified path.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="../MailKit/IFolder.html">MailKit.IFolder</a> <b>GetFolder</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> path, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public override <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a> <b>GetFolder</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> path, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.GetFolder(System.String,System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -1371,18 +1656,18 @@
                   </tr>
                   <tr valign="top">
                     <td>
-                      <a href="../MailKit/FolderNotFoundException.html">MailKit.FolderNotFoundException</a>
-                    </td>
-                    <td>
-            The folder could not be found.
-            </td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
                       <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
                     </td>
                     <td>
             The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/FolderNotFoundException.html">MailKit.FolderNotFoundException</a>
+                    </td>
+                    <td>
+            The folder could not be found.
             </td>
                   </tr>
                 </table>
@@ -1393,16 +1678,16 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.GetFolder(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.Inbox">Inbox Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.Inbox:member">
               <p class="Summary">
-            Gets the Inbox folder.
+            Get the Inbox folder.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="../MailKit/IFolder.html">MailKit.IFolder</a> <b>Inbox</b>  { get; }</div>
+              <div class="Signature">public override <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a> <b>Inbox</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.Inbox:Value">The Inbox folder.</blockquote>
               <h2 class="Section">Remarks</h2>
@@ -1411,16 +1696,16 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.Inbox:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.IsConnected">IsConnected Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.IsConnected:member">
               <p class="Summary">
-            Gets whether or not the client is currently connected to an IMAP server.
+            Get whether or not the client is currently connected to an IMAP server.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsConnected</b>  { get; }</div>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsConnected</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.IsConnected:Value">
                 <tt>true</tt> if the client is connected; otherwise, <tt>false</tt>.</blockquote>
@@ -1431,23 +1716,23 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.IsConnected:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapClient.NoOp(System.Threading.CancellationToken)">NoOp Method</h3>
             <blockquote id="M:MailKit.Net.Imap.ImapClient.NoOp(System.Threading.CancellationToken):member">
               <p class="Summary">
-            Pings the IMAP server to keep the connection alive.
+            Ping the IMAP server to keep the connection alive.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>NoOp</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>NoOp</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapClient.NoOp(System.Threading.CancellationToken):Parameters">
                 <dl>
                   <dt>
                     <i>cancellationToken</i>
                   </dt>
-                  <dd>A cancellation token.</dd>
+                  <dd>The cancellation token.</dd>
                 </dl>
               </blockquote>
               <h4 class="Subsection">Exceptions</h4>
@@ -1513,16 +1798,16 @@
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.NoOp(System.Threading.CancellationToken):Remarks">Mail servers, if left idle for too long, will automatically drop the connection.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.NoOp(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.OtherNamespaces">OtherNamespaces Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.OtherNamespaces:member">
               <p class="Summary">
-            Gets the other namespaces.
+            Get the other namespaces.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a> <b>OtherNamespaces</b>  { get; }</div>
+              <div class="Signature">public override <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a> <b>OtherNamespaces</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.OtherNamespaces:Value">The other namespaces.</blockquote>
               <h2 class="Section">Remarks</h2>
@@ -1531,16 +1816,16 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.OtherNamespaces:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.PersonalNamespaces">PersonalNamespaces Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.PersonalNamespaces:member">
               <p class="Summary">
-            Gets the personal namespaces.
+            Get the personal namespaces.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a> <b>PersonalNamespaces</b>  { get; }</div>
+              <div class="Signature">public override <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a> <b>PersonalNamespaces</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.PersonalNamespaces:Value">The personal namespaces.</blockquote>
               <h2 class="Section">Remarks</h2>
@@ -1549,16 +1834,34 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.PersonalNamespaces:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.Net.Imap.ImapClient.Protocol">Protocol Property</h3>
+            <blockquote id="P:MailKit.Net.Imap.ImapClient.Protocol:member">
+              <p class="Summary">
+            Get the protocol supported by the message service.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">protected override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Protocol</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.Protocol:Value">The protocol.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.Protocol:Remarks">
+            Gets the protocol supported by the message service.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.Protocol:Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.SharedNamespaces">SharedNamespaces Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.SharedNamespaces:member">
               <p class="Summary">
-            Gets the shared namespaces.
+            Get the shared namespaces.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a> <b>SharedNamespaces</b>  { get; }</div>
+              <div class="Signature">public override <a href="../MailKit/FolderNamespaceCollection.html">MailKit.FolderNamespaceCollection</a> <b>SharedNamespaces</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.SharedNamespaces:Value">The shared namespaces.</blockquote>
               <h2 class="Section">Remarks</h2>
@@ -1567,13 +1870,13 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.SharedNamespaces:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.ThreadingAlgorithms">ThreadingAlgorithms Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.ThreadingAlgorithms:member">
               <p class="Summary">
-            Gets the threading algorithms supported by the IMAP server.
+            Get the threading algorithms supported by the IMAP server.
             </p>
               <h2>Syntax</h2>
               <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.HashSet`1">HashSet&lt;MailKit.ThreadingAlgorithm&gt;</a> <b>ThreadingAlgorithms</b>  { get; }</div>
@@ -1586,16 +1889,16 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.ThreadingAlgorithms:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapClient.Timeout">Timeout Property</h3>
             <blockquote id="P:MailKit.Net.Imap.ImapClient.Timeout:member">
               <p class="Summary">
-            Gets or sets the timeout for network streaming operations, in milliseconds.
+            Get or set the timeout for network streaming operations, in milliseconds.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Timeout</b>  { get; set; }</div>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Timeout</b>  { get; set; }</div>
               <h4 class="Subsection">Value</h4>
               <blockquote class="SubsectionBox" id="P:MailKit.Net.Imap.ImapClient.Timeout:Value">The timeout in milliseconds.</blockquote>
               <h2 class="Section">Remarks</h2>
@@ -1605,7 +1908,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapClient.Timeout:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.18.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

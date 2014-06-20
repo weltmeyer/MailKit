@@ -382,6 +382,14 @@ namespace TestClient {
             </tr>
             <tr valign="top">
               <td>
+                <a href="./CommandException.html">CommandException</a>
+              </td>
+              <td>
+            The exception that is thrown when there is a command error.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
                 <a href="./Envelope.html">Envelope</a>
               </td>
               <td>
@@ -401,7 +409,7 @@ namespace TestClient {
                 <a href="./FolderAttributes.html">FolderAttributes</a>
               </td>
               <td>
-            Folder attributes as used by <a href="../MailKit/IFolder.html#P:MailKit.IFolder.Attributes">MailKit.IFolder.Attributes</a>.
+            Folder attributes as used by <a href="../MailKit/IMailFolder.html#P:MailKit.IMailFolder.Attributes">MailKit.IMailFolder.Attributes</a>.
             </td>
             </tr>
             <tr valign="top">
@@ -433,20 +441,20 @@ namespace TestClient {
                 <a href="./FolderRenamedEventArgs.html">FolderRenamedEventArgs</a>
               </td>
               <td>
-            Event args used when a <a href="../MailKit/IFolder.html">MailKit.IFolder</a> is renamed.
+            Event args used when a <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a> is renamed.
             </td>
             </tr>
             <tr valign="top">
               <td>
-                <a href="./IFolder.html">IFolder</a>
+                <a href="./IMailFolder.html">IMailFolder</a>
               </td>
               <td>
-            An interface for a mailbox folder as used by <a href="../MailKit/IMessageStore.html">MailKit.IMessageStore</a>.
+            An interface for a mailbox folder as used by <a href="../MailKit/IMailStore.html">MailKit.IMailStore</a>.
             </td>
             </tr>
             <tr valign="top">
               <td>
-                <a href="./IMessageService.html">IMessageService</a>
+                <a href="./IMailService.html">IMailService</a>
               </td>
               <td>
             An interface for message services such as SMTP, POP3, or IMAP.
@@ -454,7 +462,7 @@ namespace TestClient {
             </tr>
             <tr valign="top">
               <td>
-                <a href="./IMessageSpool.html">IMessageSpool</a>
+                <a href="./IMailSpool.html">IMailSpool</a>
               </td>
               <td>
             An interface for retreiving messages from a spool.
@@ -462,7 +470,7 @@ namespace TestClient {
             </tr>
             <tr valign="top">
               <td>
-                <a href="./IMessageStore.html">IMessageStore</a>
+                <a href="./IMailStore.html">IMailStore</a>
               </td>
               <td>
             An interface for retreiving messages from a message store such as IMAP.
@@ -470,7 +478,7 @@ namespace TestClient {
             </tr>
             <tr valign="top">
               <td>
-                <a href="./IMessageTransport.html">IMessageTransport</a>
+                <a href="./IMailTransport.html">IMailTransport</a>
               </td>
               <td>
             An interface for sending messages.
@@ -502,6 +510,46 @@ namespace TestClient {
             </tr>
             <tr valign="top">
               <td>
+                <a href="./MailFolder.html">MailFolder</a>
+              </td>
+              <td>
+            An abstract mail folder implementation.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
+                <a href="./MailService.html">MailService</a>
+              </td>
+              <td>
+            An abstract mail service implementation.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
+                <a href="./MailSpool.html">MailSpool</a>
+              </td>
+              <td>
+            An abstract mail spool implementation.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
+                <a href="./MailStore.html">MailStore</a>
+              </td>
+              <td>
+            An abstract mail store implementation.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
+                <a href="./MailTransport.html">MailTransport</a>
+              </td>
+              <td>
+            An abstract mail transport implementation.
+            </td>
+            </tr>
+            <tr valign="top">
+              <td>
                 <a href="./MessageEventArgs.html">MessageEventArgs</a>
               </td>
               <td>
@@ -521,7 +569,7 @@ namespace TestClient {
                 <a href="./MessageFlagsChangedEventArgs.html">MessageFlagsChangedEventArgs</a>
               </td>
               <td>
-            Event args for the <a href="../MailKit/IFolder.html#E:MailKit.IFolder.MessageFlagsChanged">MailKit.IFolder.MessageFlagsChanged</a> event.
+            Event args for the <a href="../MailKit/IMailFolder.html#E:MailKit.IMailFolder.MessageFlagsChanged">MailKit.IMailFolder.MessageFlagsChanged</a> event.
             </td>
             </tr>
             <tr valign="top">

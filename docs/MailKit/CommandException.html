@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>MailKit.Net.Pop3.Pop3CommandException</title>
+    <title>MailKit.CommandException</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="MailKit: A cross-platform .NET mail-client library optimized for mobile." />
     <link rel="stylesheet" type="text/css" media="screen" href="/MailKit/stylesheets/stylesheet.css" />
@@ -204,82 +204,32 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <div class="CollectionTitle">
-          <a href="../index.html">MailKit</a> : <a href="index.html">MailKit.Net.Pop3 Namespace</a></div>
-        <h1 class="PageTitle" id="T:MailKit.Net.Pop3.Pop3CommandException">Pop3CommandException  Class</h1>
-        <p class="Summary" id="T:MailKit.Net.Pop3.Pop3CommandException:Summary">
-            A POP3 command exception.
+          <a href="../index.html">MailKit</a> : <a href="index.html">MailKit Namespace</a></div>
+        <h1 class="PageTitle" id="T:MailKit.CommandException">CommandException  Class</h1>
+        <p class="Summary" id="T:MailKit.CommandException:Summary">
+            The exception that is thrown when there is a command error.
             </p>
         <div>
           <h2>Syntax</h2>
-          <div class="Signature" id="T:MailKit.Net.Pop3.Pop3CommandException:Signature">public class  <b>Pop3CommandException</b> : <a href="../MailKit/CommandException.html">MailKit.CommandException</a></div>
+          <div class="Signature" id="T:MailKit.CommandException:Signature">public abstract class  <b>CommandException</b> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a></div>
         </div>
-        <div class="Remarks" id="T:MailKit.Net.Pop3.Pop3CommandException:Docs">
+        <div class="Remarks" id="T:MailKit.CommandException:Docs">
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3CommandException:Docs:Remarks">
-            The exception that is thrown when a POP3 command fails. Unlike a <a href="../MailKit.Net.Pop3/Pop3ProtocolException.html">MailKit.Net.Pop3.Pop3ProtocolException</a>,
-            a <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> does not require the <a href="../MailKit.Net.Pop3/Pop3Client.html">MailKit.Net.Pop3.Pop3Client</a> to be reconnected.
+          <div class="SectionBox" id="T:MailKit.CommandException:Docs:Remarks">
+            A <a href="../MailKit/CommandException.html">MailKit.CommandException</a> can be thrown by any of the various client
+            methods in MailKit. Unlike a <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>, a
+            <a href="../MailKit/CommandException.html">MailKit.CommandException</a> is typically non-fatal (meaning that it does
+            not force the client to disconnect).
             </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3CommandException:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
+          <div class="SectionBox" id="T:MailKit.CommandException:Docs:Version Information">
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
 								See Also: Inherited members from
-								<a href="../MailKit/CommandException.html">MailKit.CommandException</a>.
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a>.
 							</p>
-            <h2 class="Section">Public Constructors</h2>
-            <div class="SectionBox" id="Public Constructors">
-              <div class="SubsectionBox">
-                <table class="TypeMembers">
-                  <tr valign="top">
-                    <td>
-                      <div>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <b>
-                          <a href="#C:MailKit.Net.Pop3.Pop3CommandException()">Pop3CommandException</a>
-                        </b>()</div>
-                    </td>
-                    <td>
-            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
-            </td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <div>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <b>
-                          <a href="#C:MailKit.Net.Pop3.Pop3CommandException(System.String)">Pop3CommandException</a>
-                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
-                    </td>
-                    <td>
-            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
-            </td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <div>
-                      </div>
-                    </td>
-                    <td>
-                      <div>
-                        <b>
-                          <a href="#C:MailKit.Net.Pop3.Pop3CommandException(System.String,System.Exception)">Pop3CommandException</a>
-                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a>)</div>
-                    </td>
-                    <td>
-            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
-            </td>
-                  </tr>
-                </table>
-              </div>
-            </div>
             <h2 class="Section">Protected Constructors</h2>
             <div class="SectionBox" id="Protected Constructors">
               <div class="SubsectionBox">
@@ -292,11 +242,56 @@
                     <td>
                       <div>
                         <b>
-                          <a href="#C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">Pop3CommandException</a>
+                          <a href="#C:MailKit.CommandException()">CommandException</a>
+                        </b>()</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit/CommandException.html">MailKit.CommandException</a> class.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.CommandException(System.String)">CommandException</a>
+                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit/CommandException.html">MailKit.CommandException</a> class.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">CommandException</a>
                         </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a>)</div>
                     </td>
                     <td>
-            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
+            Initializes a new instance of the <a href="../MailKit/CommandException.html">MailKit.CommandException</a> class.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.CommandException(System.String,System.Exception)">CommandException</a>
+                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a>)</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit/CommandException.html">MailKit.CommandException</a> class.
             </td>
                   </tr>
                 </table>
@@ -304,34 +299,34 @@
             </div>
           </div>
         </div>
-        <div class="Members" id="T:MailKit.Net.Pop3.Pop3CommandException:Members">
+        <div class="Members" id="T:MailKit.CommandException:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
-            <h3 id="C:MailKit.Net.Pop3.Pop3CommandException()">Pop3CommandException Constructor</h3>
-            <blockquote id="C:MailKit.Net.Pop3.Pop3CommandException():member">
+            <h3 id="C:MailKit.CommandException()">CommandException Constructor</h3>
+            <blockquote id="C:MailKit.CommandException():member">
               <p class="Summary">
-            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
+            Initializes a new instance of the <a href="../MailKit/CommandException.html">MailKit.CommandException</a> class.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public  <b>Pop3CommandException</b> ()</div>
+              <div class="Signature">protected  <b>CommandException</b> ()</div>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException():Remarks">
-            Creates a new <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>.
+              <div class="SectionBox" id="C:MailKit.CommandException():Remarks">
+            Creates a new <a href="../MailKit/CommandException.html">MailKit.CommandException</a>.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException():Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
+              <div class="SectionBox" id="C:MailKit.CommandException():Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
-            <h3 id="C:MailKit.Net.Pop3.Pop3CommandException(System.String)">Pop3CommandException Constructor</h3>
-            <blockquote id="C:MailKit.Net.Pop3.Pop3CommandException(System.String):member">
+            <h3 id="C:MailKit.CommandException(System.String)">CommandException Constructor</h3>
+            <blockquote id="C:MailKit.CommandException(System.String):member">
               <p class="Summary">
-            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
+            Initializes a new instance of the <a href="../MailKit/CommandException.html">MailKit.CommandException</a> class.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public  <b>Pop3CommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message)</div>
+              <div class="Signature">protected  <b>CommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message)</div>
               <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.String):Parameters">
+              <blockquote class="SubsectionBox" id="C:MailKit.CommandException(System.String):Parameters">
                 <dl>
                   <dt>
                     <i>message</i>
@@ -340,23 +335,23 @@
                 </dl>
               </blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.String):Remarks">
-            Creates a new <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>.
+              <div class="SectionBox" id="C:MailKit.CommandException(System.String):Remarks">
+            Creates a new <a href="../MailKit/CommandException.html">MailKit.CommandException</a>.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.String):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
+              <div class="SectionBox" id="C:MailKit.CommandException(System.String):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
-            <h3 id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">Pop3CommandException Constructor</h3>
-            <blockquote id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):member">
+            <h3 id="C:MailKit.CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">CommandException Constructor</h3>
+            <blockquote id="C:MailKit.CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):member">
               <p class="Summary">
-            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
+            Initializes a new instance of the <a href="../MailKit/CommandException.html">MailKit.CommandException</a> class.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">protected  <b>Pop3CommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a> info, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a> context)</div>
+              <div class="Signature">protected  <b>CommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.SerializationInfo">System.Runtime.Serialization.SerializationInfo</a> info, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Runtime.Serialization.StreamingContext">System.Runtime.Serialization.StreamingContext</a> context)</div>
               <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Parameters">
+              <blockquote class="SubsectionBox" id="C:MailKit.CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Parameters">
                 <dl>
                   <dt>
                     <i>info</i>
@@ -369,23 +364,23 @@
                 </dl>
               </blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Remarks">
-            Creates a new <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> from the serialized data.
+              <div class="SectionBox" id="C:MailKit.CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Remarks">
+            Creates a new <a href="../MailKit/CommandException.html">MailKit.CommandException</a>.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
+              <div class="SectionBox" id="C:MailKit.CommandException(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
-            <h3 id="C:MailKit.Net.Pop3.Pop3CommandException(System.String,System.Exception)">Pop3CommandException Constructor</h3>
-            <blockquote id="C:MailKit.Net.Pop3.Pop3CommandException(System.String,System.Exception):member">
+            <h3 id="C:MailKit.CommandException(System.String,System.Exception)">CommandException Constructor</h3>
+            <blockquote id="C:MailKit.CommandException(System.String,System.Exception):member">
               <p class="Summary">
-            Initializes a new instance of the <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a> class.
+            Initializes a new instance of the <a href="../MailKit/CommandException.html">MailKit.CommandException</a> class.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public  <b>Pop3CommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a> innerException)</div>
+              <div class="Signature">protected  <b>CommandException</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Exception">Exception</a> innerException)</div>
               <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.String,System.Exception):Parameters">
+              <blockquote class="SubsectionBox" id="C:MailKit.CommandException(System.String,System.Exception):Parameters">
                 <dl>
                   <dt>
                     <i>message</i>
@@ -398,12 +393,12 @@
                 </dl>
               </blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.String,System.Exception):Remarks">
-            Creates a new <a href="../MailKit.Net.Pop3/Pop3CommandException.html">MailKit.Net.Pop3.Pop3CommandException</a>.
+              <div class="SectionBox" id="C:MailKit.CommandException(System.String,System.Exception):Remarks">
+            Creates a new <a href="../MailKit/CommandException.html">MailKit.CommandException</a>.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="C:MailKit.Net.Pop3.Pop3CommandException(System.String,System.Exception):Version Information">
-                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
+              <div class="SectionBox" id="C:MailKit.CommandException(System.String,System.Exception):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.19.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
