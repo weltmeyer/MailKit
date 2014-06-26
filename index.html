@@ -46,9 +46,10 @@
 <li>SASL Authentication
 
 <ul>
-<li>DIGEST-MD5</li>
 <li>CRAM-MD5</li>
+<li>DIGEST-MD5</li>
 <li>LOGIN</li>
+<li>NTLM</li>
 <li>PLAIN</li>
 <li>XOAUTH2 (partial support - you need to fetch the auth tokens yourself)</li>
 </ul>
@@ -64,6 +65,7 @@
 <li>Supports the PIPELINING extension.</li>
 <li>Parses the SIZE extension value.</li>
 <li>All APIs are cancellable.</li>
+<li>Async APIs are available.</li>
 </ul>
 </li>
 <li>POP3 Client
@@ -71,11 +73,12 @@
 <ul>
 <li>Supports all of the SASL mechanisms listed above.</li>
 <li>Also supports authentication via APOP and USER/PASS.</li>
-<li>Supports SSL-wrapped connections via the "pop3s" protocol.</li>
+<li>Supports SSL-wrapped connections via the "pops" protocol.</li>
 <li>Supports the STLS extension.</li>
 <li>Supports client SSL/TLS certificates.</li>
 <li>Supports the UIDL command.</li>
 <li>All APIs are cancellable.</li>
+<li>Async APIs are available.</li>
 </ul>
 </li>
 <li>IMAP4 Client
@@ -88,6 +91,7 @@
 
 <ul>
 <li>LITERAL+</li>
+<li>IDLE</li>
 <li>NAMESPACE</li>
 <li>CHILDREN</li>
 <li>LOGINDISABLED</li>
@@ -98,17 +102,23 @@
 <li>CONDSTORE</li>
 <li>ESEARCH</li>
 <li>SASL-IR</li>
+<li>COMPRESS</li>
+<li>ENABLE</li>
+<li>QRESYNC</li>
 <li>SORT</li>
 <li>THREAD</li>
+<li>ESORT (partial)</li>
 <li>SPECIAL-USE</li>
 <li>MOVE</li>
 <li>XLIST</li>
-<li>X-GM-EXT1 (X-GM-MSGID and X-GM-THRID)</li>
+<li>X-GM-EXT1 (X-GM-MSGID, X-GM-THRID, X-GM-RAW and X-GM-LABELS)</li>
 </ul>
 </li>
 <li>All APIs are cancellable.</li>
+<li>Async APIs are available.</li>
 </ul>
 </li>
+<li>Client-side sorting and threading of messages.</li>
 </ul><h2>
 <a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>TODO</h2>
 
@@ -119,8 +129,7 @@
 <li>Improve XOAUTH2</li>
 <li>ANONYMOUS</li>
 <li>GSSAPI</li>
-<li>KERBEROS_v4</li>
-<li>NTLM</li>
+<li>SCRAM-SHA-1</li>
 <li>SCRAM-*</li>
 </ul>
 </li>
@@ -129,14 +138,12 @@
 <ul>
 <li>CHUNKING (hmmm, doesn't really seem all that useful...)</li>
 <li>Throw an exception if the MimeMessage is larger than the SIZE value?</li>
-<li>Async APIs</li>
 </ul>
 </li>
 <li>POP3 Client
 
 <ul>
 <li>PIPELINING</li>
-<li>Async APIs</li>
 </ul>
 </li>
 <li>IMAP4 Client
@@ -146,30 +153,17 @@
 
 <ul>
 <li>QUOTA</li>
-<li>IDLE</li>
 <li>BINARY</li>
 <li>CATENATE</li>
-<li>COMPRESS</li>
-<li>ENABLE</li>
-<li>QRESYNC</li>
 <li>LIST-EXTENDED</li>
 <li>CONVERT</li>
-<li>ESORT</li>
 <li>METADATA</li>
 <li>NOTIFY</li>
 <li>FILTERS</li>
 <li>LIST-STATUS</li>
 <li>MULTISEARCH</li>
-<li>GMail Extensions
-
-<ul>
-<li>X-GM-RAW</li>
-<li>X-GM-LABELS</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Async APIs</li>
 </ul>
 </li>
 <li>Maildir</li>
@@ -192,7 +186,7 @@ pre-.NET 4.5 platforms. If you haven't already, I'd highly recommend installing 
 <h2>
 <a name="license-information" class="anchor" href="#license-information"><span class="octicon octicon-link"></span></a>License Information</h2>
 
-<p>MailKit is Copyright (C) 2013, 2014 Jeffrey Stedfast and is licensed under the MIT license:</p>
+<p>MailKit is Copyright (C) 2013-2014 Xamarin Inc. and is licensed under the MIT license:</p>
 
 <pre><code>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -214,13 +208,25 @@ THE SOFTWARE.
 </code></pre>
 
 <h2>
+<a name="installing-via-nuget" class="anchor" href="#installing-via-nuget"><span class="octicon octicon-link"></span></a>Installing via NuGet</h2>
+
+<p>The easiest way to install MailKit is via <a href="https://www.nuget.org/packages/MailKit/">NuGet</a>.</p>
+
+<p>In Visual Studio's <a href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console">Package Manager Console</a>,
+simply enter the following command:</p>
+
+<pre><code>Install-Package MailKit
+</code></pre>
+
+<h2>
 <a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Building</h2>
 
-<p>First, you'll need to clone MailKit, MimeKit and Bouncy Castle from my GitHub repository:</p>
+<p>First, you'll need to clone MailKit, MimeKit, Bouncy Castle, and Portable.Text.Encoding from my GitHub repository:</p>
 
 <pre><code>git clone https://github.com/jstedfast/MailKit.git
 git clone https://github.com/jstedfast/MimeKit.git
 git clone https://github.com/jstedfast/bc-csharp.git
+git clone https://github.com/jstedfast/Portable.Text.Encoding.git
 </code></pre>
 
 <p>Currently, MailKit (through its use of MimeKit) depends on the visual-studio-2010 branch of bc-csharp for
@@ -231,13 +237,13 @@ To switch to that branch,</p>
 git checkout -b visual-studio-2010 origin/visual-studio-2010
 </code></pre>
 
-<p>In the top-level MailKit source directory, there are three solution files: MailKit.sln, MailKit.Net45.sln and MailKit.Mobile.sln.</p>
+<p>In the top-level MailKit source directory, there are three solution files: MailKit.sln, MailKit.Net40.sln and MailKit.Mobile.sln.</p>
 
 <ul>
+<li>MailKit.sln includes the projects for .NET 4.5, .NET 4.0, Xamarin.Android, and Xamarin.iOS.</li>
+<li>MailKit.Net40.sln just includes the .NET Framework 4.0 C# project (MailKit/MailKit.Net40.csproj)</li>
 <li>MailKit.Mobile.sln just includes the Xamarin.iOS and Xamarin.Android projects.</li>
-<li>MailKit.Net40.sln just includes the .NET Framework 4.0 C# project (MailKit/MailKit.csproj)</li>
-<li>MailKit.sln includes everything that is in the MailKit.Net40.sln solution as well as the projects for Xamarin.Android,
-Xamarin.iOS, and Xamarin.Mac.</li>
+<li>MailKit.Win.sln just includes the Windows 8.1 Universal project (aka wpa81).</li>
 </ul><p>If you don't have the Xamarin products, you'll probably want to open the MailKit.Net45.sln instead of MailKit.sln.</p>
 
 <p>Once you've opened the appropriate MailKit solution file in either Xamarin Studio or Visual Studio 2010+ (either will work),
@@ -254,8 +260,6 @@ you can simply choose the Debug or Release build configuration and then build.</
 <p>One of the more common operations that MailKit is meant for is sending email messages.</p>
 
 <div class="highlight highlight-csharp"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Net</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
 
 <span class="k">using</span> <span class="nn">MailKit.Net.Smtp</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">MailKit</span><span class="p">;</span>
@@ -280,20 +284,17 @@ you can simply choose the Debug or Release build configuration and then build.</
             <span class="p">};</span>
 
             <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SmtpClient</span> <span class="p">())</span> <span class="p">{</span>
-                <span class="kt">var</span> <span class="n">credentials</span> <span class="p">=</span> <span class="k">new</span> <span class="n">NetworkCredential</span> <span class="p">(</span><span class="s">"joey"</span><span class="p">,</span> <span class="s">"password"</span><span class="p">);</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">Connect</span> <span class="p">(</span><span class="s">"smtp.friends.com"</span><span class="p">,</span> <span class="m">587</span><span class="p">,</span> <span class="k">false</span><span class="p">);</span>
 
-                <span class="c1">// Note: if the server requires SSL-on-connect, use the "smtps" protocol instead</span>
-                <span class="kt">var</span> <span class="n">uri</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Uri</span> <span class="p">(</span><span class="s">"smtp://smtp.gmail.com:587"</span><span class="p">);</span>
+                <span class="c1">// Note: since we don't have an OAuth2 token, disable</span>
+                <span class="c1">// the XOAUTH2 authentication mechanism.</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">AuthenticationMechanisms</span><span class="p">.</span><span class="n">Remove</span> <span class="p">(</span><span class="s">"XOAUTH2"</span><span class="p">);</span>
 
-                <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">cancel</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CancellationTokenSource</span> <span class="p">())</span> <span class="p">{</span>
-                    <span class="n">client</span><span class="p">.</span><span class="n">Connect</span> <span class="p">(</span><span class="n">uri</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+                <span class="c1">// Note: only needed if the SMTP server requires authentication</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">Authenticate</span> <span class="p">(</span><span class="s">"joey"</span><span class="p">,</span> <span class="s">"password"</span><span class="p">);</span>
 
-                    <span class="c1">// only needed if the SMTP server requires authentication</span>
-                    <span class="n">client</span><span class="p">.</span><span class="n">Authenticate</span> <span class="p">(</span><span class="n">credentials</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-
-                    <span class="n">client</span><span class="p">.</span><span class="n">Send</span> <span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-                    <span class="n">client</span><span class="p">.</span><span class="n">Disconnect</span> <span class="p">(</span><span class="k">true</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-                <span class="p">}</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">Send</span> <span class="p">(</span><span class="n">message</span><span class="p">);</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">Disconnect</span> <span class="p">(</span><span class="k">true</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
@@ -306,8 +307,6 @@ you can simply choose the Debug or Release build configuration and then build.</
 <p>One of the other main uses of MailKit is retrieving messages from pop3 servers.</p>
 
 <div class="highlight highlight-csharp"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Net</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
 
 <span class="k">using</span> <span class="nn">MailKit.Net.Pop3</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">MailKit</span><span class="p">;</span>
@@ -319,23 +318,21 @@ you can simply choose the Debug or Release build configuration and then build.</
         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span> <span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Pop3Client</span> <span class="p">())</span> <span class="p">{</span>
-                <span class="kt">var</span> <span class="n">credentials</span> <span class="p">=</span> <span class="k">new</span> <span class="n">NetworkCredential</span> <span class="p">(</span><span class="s">"joey"</span><span class="p">,</span> <span class="s">"password"</span><span class="p">);</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">Connect</span> <span class="p">(</span><span class="s">"pop.friends.com"</span><span class="p">,</span> <span class="m">110</span><span class="p">,</span> <span class="k">false</span><span class="p">);</span>
 
-                <span class="c1">// Note: if the server requires SSL-on-connect, use the "pop3s" protocol instead</span>
-                <span class="kt">var</span> <span class="n">uri</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Uri</span> <span class="p">(</span><span class="s">"pop3://mail.friends.com"</span><span class="p">);</span>
+                <span class="c1">// Note: since we don't have an OAuth2 token, disable</span>
+                <span class="c1">// the XOAUTH2 authentication mechanism.</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">AuthenticationMechanisms</span><span class="p">.</span><span class="n">Remove</span> <span class="p">(</span><span class="s">"XOAUTH2"</span><span class="p">);</span>
 
-                <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">cancel</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CancellationTokenSource</span> <span class="p">())</span> <span class="p">{</span>
-                    <span class="n">client</span><span class="p">.</span><span class="n">Connect</span> <span class="p">(</span><span class="n">uri</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-                    <span class="n">client</span><span class="p">.</span><span class="n">Authenticate</span> <span class="p">(</span><span class="n">credentials</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">Authenticate</span> <span class="p">(</span><span class="s">"joey"</span><span class="p">,</span> <span class="s">"password"</span><span class="p">);</span>
 
-                    <span class="kt">int</span> <span class="n">count</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">GetMessageCount</span> <span class="p">(</span><span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-                    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
-                        <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">GetMessage</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-                        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"Subject: {0}"</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">Subject</span><span class="p">);</span>
-                    <span class="p">}</span>
-
-                    <span class="n">client</span><span class="p">.</span><span class="n">Disconnect</span> <span class="p">(</span><span class="k">true</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+                <span class="kt">int</span> <span class="n">count</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">GetMessageCount</span> <span class="p">();</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
+                    <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">GetMessage</span> <span class="p">(</span><span class="n">i</span><span class="p">);</span>
+                    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"Subject: {0}"</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">Subject</span><span class="p">);</span>
                 <span class="p">}</span>
+
+                <span class="n">client</span><span class="p">.</span><span class="n">Disconnect</span> <span class="p">(</span><span class="k">true</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
@@ -348,8 +345,6 @@ you can simply choose the Debug or Release build configuration and then build.</
 <p>More important than POP3 support is the IMAP support. Here's a simple use-case of retreiving messages from an IMAP server:</p>
 
 <div class="highlight highlight-csharp"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Net</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.Threading</span><span class="p">;</span>
 
 <span class="k">using</span> <span class="nn">MailKit.Net.Imap</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">MailKit.Search</span><span class="p">;</span>
@@ -362,27 +357,27 @@ you can simply choose the Debug or Release build configuration and then build.</
         <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span> <span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ImapClient</span> <span class="p">())</span> <span class="p">{</span>
-                <span class="kt">var</span> <span class="n">credentials</span> <span class="p">=</span> <span class="k">new</span> <span class="n">NetworkCredential</span> <span class="p">(</span><span class="s">"joey"</span><span class="p">,</span> <span class="s">"password"</span><span class="p">);</span>
-                <span class="kt">var</span> <span class="n">uri</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Uri</span> <span class="p">(</span><span class="s">"imaps://imap.gmail.com"</span><span class="p">);</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">Connect</span> <span class="p">(</span><span class="s">"imap.friends.com"</span><span class="p">,</span> <span class="m">995</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
 
-                <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">cancel</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CancellationTokenSource</span> <span class="p">())</span> <span class="p">{</span>
-                    <span class="n">client</span><span class="p">.</span><span class="n">Connect</span> <span class="p">(</span><span class="n">uri</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-                    <span class="n">client</span><span class="p">.</span><span class="n">Authenticate</span> <span class="p">(</span><span class="n">credentials</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+                <span class="c1">// Note: since we don't have an OAuth2 token, disable</span>
+                <span class="c1">// the XOAUTH2 authentication mechanism.</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">AuthenticationMechanisms</span><span class="p">.</span><span class="n">Remove</span> <span class="p">(</span><span class="s">"XOAUTH"</span><span class="p">);</span>
 
-                    <span class="c1">// The Inbox folder is always available on all IMAP servers...</span>
-                    <span class="kt">var</span> <span class="n">inbox</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">Inbox</span><span class="p">;</span>
-                    <span class="n">inbox</span><span class="p">.</span><span class="n">Open</span> <span class="p">(</span><span class="n">FolderAccess</span><span class="p">.</span><span class="n">ReadOnly</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+                <span class="n">client</span><span class="p">.</span><span class="n">Authenticate</span> <span class="p">(</span><span class="s">"joey"</span><span class="p">,</span> <span class="s">"password"</span><span class="p">);</span>
 
-                    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"Total messages: {0}"</span><span class="p">,</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Count</span><span class="p">);</span>
-                    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"Recent messages: {0}"</span><span class="p">,</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Recent</span><span class="p">);</span>
+                <span class="c1">// The Inbox folder is always available on all IMAP servers...</span>
+                <span class="kt">var</span> <span class="n">inbox</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">Inbox</span><span class="p">;</span>
+                <span class="n">inbox</span><span class="p">.</span><span class="n">Open</span> <span class="p">(</span><span class="n">FolderAccess</span><span class="p">.</span><span class="n">ReadOnly</span><span class="p">);</span>
 
-                    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
-                        <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">inbox</span><span class="p">.</span><span class="n">GetMessage</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-                        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"Subject: {0}"</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">Subject</span><span class="p">);</span>
-                    <span class="p">}</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"Total messages: {0}"</span><span class="p">,</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Count</span><span class="p">);</span>
+                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"Recent messages: {0}"</span><span class="p">,</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Recent</span><span class="p">);</span>
 
-                    <span class="n">client</span><span class="p">.</span><span class="n">Disconnect</span> <span class="p">(</span><span class="k">true</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
+                    <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">inbox</span><span class="p">.</span><span class="n">GetMessage</span> <span class="p">(</span><span class="n">i</span><span class="p">);</span>
+                    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"Subject: {0}"</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">Subject</span><span class="p">);</span>
                 <span class="p">}</span>
+
+                <span class="n">client</span><span class="p">.</span><span class="n">Disconnect</span> <span class="p">(</span><span class="k">true</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
@@ -393,18 +388,55 @@ you can simply choose the Debug or Release build configuration and then build.</
 so that you can display a list of messages in a mail client without having to first download all of the
 messages from the server:</p>
 
-<div class="highlight highlight-csharp"><pre><span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">summary</span> <span class="k">in</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Fetch</span> <span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="p">-</span><span class="m">1</span><span class="p">,</span> <span class="n">MessageSummaryItems</span><span class="p">.</span><span class="n">Full</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">))</span> <span class="p">{</span>
+<div class="highlight highlight-csharp"><pre><span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">summary</span> <span class="k">in</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Fetch</span> <span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="p">-</span><span class="m">1</span><span class="p">,</span> <span class="n">MessageSummaryItems</span><span class="p">.</span><span class="n">Full</span> <span class="p">|</span> <span class="n">MessageSummaryItems</span><span class="p">.</span><span class="n">UniqueId</span><span class="p">))</span> <span class="p">{</span>
     <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"[summary] {0:D2}: {1}"</span><span class="p">,</span> <span class="n">summary</span><span class="p">.</span><span class="n">Index</span><span class="p">,</span> <span class="n">summary</span><span class="p">.</span><span class="n">Envelope</span><span class="p">.</span><span class="n">Subject</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 
-<p>You may also be interested in searching...</p>
+<p>The results of a Fetch command can also be used to download individual MIME parts rather
+than downloading the entire message. For example:</p>
 
-<div class="highlight highlight-csharp"><pre><span class="kt">var</span> <span class="n">query</span> <span class="p">=</span> <span class="n">SearchQuery</span><span class="p">.</span><span class="n">DeliveredAfter</span> <span class="p">(</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Parse</span> <span class="p">(</span><span class="s">"2013-01-12"</span><span class="p">))</span>
+<div class="highlight highlight-csharp"><pre><span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">summary</span> <span class="k">in</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Fetch</span> <span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="p">-</span><span class="m">1</span><span class="p">,</span> <span class="n">MessageSummaryItems</span><span class="p">.</span><span class="n">Full</span> <span class="p">|</span> <span class="n">MessageSummaryItems</span><span class="p">.</span><span class="n">UniqueId</span><span class="p">))</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">text</span> <span class="p">=</span> <span class="n">summary</span><span class="p">.</span><span class="n">Body</span> <span class="k">as</span> <span class="n">BodyPartText</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">text</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">multipart</span> <span class="p">=</span> <span class="n">summary</span><span class="p">.</span><span class="n">Body</span> <span class="k">as</span> <span class="n">BodyPartMultipart</span><span class="p">;</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">multipart</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+            <span class="n">text</span> <span class="p">=</span> <span class="n">multipart</span><span class="p">.</span><span class="n">BodyParts</span><span class="p">.</span><span class="n">OfType</span><span class="p">&lt;</span><span class="n">BodyPartText</span><span class="p">&gt;</span> <span class="p">().</span><span class="n">FirstOrDefault</span> <span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">text</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+        <span class="k">continue</span><span class="p">;</span>
+
+    <span class="c1">// this will download *just* the text part</span>
+    <span class="kt">var</span> <span class="n">part</span> <span class="p">=</span> <span class="n">inbox</span><span class="p">.</span><span class="n">GetBodyPart</span> <span class="p">(</span><span class="n">summary</span><span class="p">.</span><span class="n">UniqueId</span><span class="p">.</span><span class="n">Value</span><span class="p">,</span> <span class="n">text</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>You may also be interested in sorting and searching...</p>
+
+<div class="highlight highlight-csharp"><pre><span class="c1">// let's search for all messages received after Jan 12, 2013 with "MailKit" in the subject...</span>
+<span class="kt">var</span> <span class="n">query</span> <span class="p">=</span> <span class="n">SearchQuery</span><span class="p">.</span><span class="n">DeliveredAfter</span> <span class="p">(</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Parse</span> <span class="p">(</span><span class="s">"2013-01-12"</span><span class="p">))</span>
     <span class="p">.</span><span class="n">And</span> <span class="p">(</span><span class="n">SearchQuery</span><span class="p">.</span><span class="n">SubjectContains</span> <span class="p">(</span><span class="s">"MailKit"</span><span class="p">)).</span><span class="n">And</span> <span class="p">(</span><span class="n">SearchQuery</span><span class="p">.</span><span class="n">Seen</span><span class="p">);</span>
 
-<span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">uid</span> <span class="k">in</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Search</span> <span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">))</span> <span class="p">{</span>
-    <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">inbox</span><span class="p">.</span><span class="n">GetMessage</span> <span class="p">(</span><span class="n">uid</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">uid</span> <span class="k">in</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Search</span> <span class="p">(</span><span class="n">query</span><span class="p">))</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">inbox</span><span class="p">.</span><span class="n">GetMessage</span> <span class="p">(</span><span class="n">uid</span><span class="p">);</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"[match] {0}: {1}"</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">Subject</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// let's do the same search, but this time sort them in reverse arrival order</span>
+<span class="kt">var</span> <span class="n">orderBy</span> <span class="p">=</span> <span class="k">new</span> <span class="p">[]</span> <span class="p">{</span> <span class="n">OrderBy</span><span class="p">.</span><span class="n">ReverseArrival</span> <span class="p">};</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">uid</span> <span class="k">in</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Search</span> <span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">orderBy</span><span class="p">))</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">inbox</span><span class="p">.</span><span class="n">GetMessage</span> <span class="p">(</span><span class="n">uid</span><span class="p">);</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"[match] {0}: {1}"</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">Subject</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// you'll notice that the orderBy argument is an array... this is because you</span>
+<span class="c1">// can actually sort the search results based on multiple columns:</span>
+<span class="n">orderBy</span> <span class="p">=</span> <span class="k">new</span> <span class="p">[]</span> <span class="p">{</span> <span class="n">OrderBy</span><span class="p">.</span><span class="n">ReverseArrival</span><span class="p">,</span> <span class="n">OrderBy</span><span class="p">.</span><span class="n">Subject</span> <span class="p">};</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">uid</span> <span class="k">in</span> <span class="n">inbox</span><span class="p">.</span><span class="n">Search</span> <span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">orderBy</span><span class="p">))</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="n">inbox</span><span class="p">.</span><span class="n">GetMessage</span> <span class="p">(</span><span class="n">uid</span><span class="p">);</span>
     <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"[match] {0}: {1}"</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">Subject</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
@@ -416,7 +448,7 @@ or do any of a number of other things with the UIDs that are returned.</p>
 
 <div class="highlight highlight-csharp"><pre><span class="c1">// Get the first personal namespace and list the toplevel folders under it.</span>
 <span class="kt">var</span> <span class="n">personal</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">GetFolder</span> <span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">PersonalNamespaces</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
-<span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">folder</span> <span class="k">in</span> <span class="n">personal</span><span class="p">.</span><span class="n">GetSubfolders</span> <span class="p">(</span><span class="k">false</span><span class="p">,</span> <span class="n">cancel</span><span class="p">.</span><span class="n">Token</span><span class="p">))</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">folder</span> <span class="k">in</span> <span class="n">personal</span><span class="p">.</span><span class="n">GetSubfolders</span> <span class="p">(</span><span class="k">false</span><span class="p">))</span>
     <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span> <span class="p">(</span><span class="s">"[folder] {0}"</span><span class="p">,</span> <span class="n">folder</span><span class="p">.</span><span class="n">Name</span><span class="p">);</span>
 </pre></div>
 
@@ -429,6 +461,43 @@ the pre-defined All, Drafts, Flagged (aka Important), Junk, Sent, Trash, etc fol
     <span class="c1">// maybe check the user's preferences for the Drafts folder?</span>
 <span class="p">}</span>
 </pre></div>
+
+<p>In cases where the IMAP server does <em>not</em> support the SPECIAL-USE or XLIST extensions, you'll have to
+come up with your own heuristics for getting the Sent, Drafts, Trash, etc folders. For example, you
+might use logic similar to this:</p>
+
+<div class="highlight highlight-csharp"><pre><span class="k">static</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">CommonSentFolderNames</span> <span class="p">=</span> <span class="p">{</span> <span class="s">"Sent Items"</span><span class="p">,</span> <span class="s">"Sent Mail"</span><span class="p">,</span> <span class="cm">/* maybe add some translated names */</span> <span class="p">};</span>
+
+<span class="k">static</span> <span class="n">IFolder</span> <span class="nf">GetSentFolder</span> <span class="p">(</span><span class="n">ImapClient</span> <span class="n">client</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">personal</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">GetFolder</span> <span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">PersonalNamespaces</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
+
+    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">folder</span> <span class="k">in</span> <span class="n">personal</span><span class="p">.</span><span class="n">GetSubfolders</span> <span class="p">(</span><span class="k">false</span><span class="p">,</span> <span class="n">cancellationToken</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">name</span> <span class="k">in</span> <span class="n">CommonSentFolderNames</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">folder</span><span class="p">.</span><span class="n">Name</span> <span class="p">==</span> <span class="n">commonName</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">folder</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="k">null</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Using LINQ, you could simplify this down to something more like this:</p>
+
+<div class="highlight highlight-csharp"><pre><span class="k">static</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">CommonSentFolderNames</span> <span class="p">=</span> <span class="p">{</span> <span class="s">"Sent Items"</span><span class="p">,</span> <span class="s">"Sent Mail"</span><span class="p">,</span> <span class="cm">/* maybe add some translated names */</span> <span class="p">};</span>
+
+<span class="k">static</span> <span class="n">IFolder</span> <span class="nf">GetSentFolder</span> <span class="p">(</span><span class="n">ImapClient</span> <span class="n">client</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">personal</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">GetFolder</span> <span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">PersonalNamespaces</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
+
+    <span class="k">return</span> <span class="n">personal</span><span class="p">.</span><span class="n">GetSubfolders</span> <span class="p">(</span><span class="k">false</span><span class="p">,</span> <span class="n">cancellationToken</span><span class="p">).</span><span class="n">FirstOrDefault</span> <span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">CommonSentFolderNames</span><span class="p">.</span><span class="n">Contains</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">Name</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Another option might be to allow the user of your application to configure which folder he or she wants to use as their Sent folder, Drafts folder, Trash folder, etc.</p>
+
+<p>How you handle this is up to you.</p>
 
 <h2>
 <a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
