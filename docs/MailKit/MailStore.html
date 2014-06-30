@@ -220,7 +220,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.MailStore:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -677,6 +677,42 @@
             Raise the alert event.
             </blockquote></td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.OnAuthenticated()">OnAuthenticated</a>
+                      </b>()<blockquote>
+            Raise the authenticated event.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.OnConnected()">OnConnected</a>
+                      </b>()<blockquote>
+            Raise the connected event.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailService</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailService.html#M:MailKit.MailService.OnDisconnected()">OnDisconnected</a>
+                      </b>()<blockquote>
+            Raise the disconnected event.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailService</a>.</i>)</blockquote></td>
+                  </tr>
                 </table>
               </div>
             </div>
@@ -697,6 +733,48 @@
                     <td>
             Occurs when a remote message store receives an alert message from the server.
             </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailService.html#E:MailKit.MailService.Authenticated">Authenticated</a>
+                      </b>
+                    </td>
+                    <td>
+            Occurs when the client has been successfully authenticated.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailService</a>.</i>)</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailService.html#E:MailKit.MailService.Connected">Connected</a>
+                      </b>
+                    </td>
+                    <td>
+            Occurs when the client has been successfully connected.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailService</a>.</i>)</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailService.html#E:MailKit.MailService.Disconnected">Disconnected</a>
+                      </b>
+                    </td>
+                    <td>
+            Occurs when the client gets disconnected.
+             (<i>Inherited from <a href="../MailKit/MailService.html">MailService</a>.</i>)</td>
                   </tr>
                 </table>
               </div>
@@ -719,7 +797,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.MailStore():Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="E:MailKit.MailStore.Alert">Alert Event</h3>
@@ -736,7 +814,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="E:MailKit.MailStore.Alert:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailStore.EnableQuickResync(System.Threading.CancellationToken)">EnableQuickResync Method</h3>
@@ -815,7 +893,7 @@
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.EnableQuickResync(System.Threading.CancellationToken):Remarks">
                 <p>Enables quick resynchronization when a folder is opened using the
-            <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Open(MailKit.FolderAccess,MailKit.UniqueId,System.UInt64,MailKit.UniqueId[],System.Threading.CancellationToken)">MailFolder.Open(FolderAccess, UniqueId, ulong, UniqueId[], System.Threading.CancellationToken)</a>
+            <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Open(MailKit.FolderAccess,MailKit.UniqueId,System.UInt64,System.Collections.Generic.IList{MailKit.UniqueId},System.Threading.CancellationToken)">MailFolder.Open(FolderAccess, UniqueId, ulong, IList&lt;MailKit.UniqueId&gt;,System.Threading.CancellationToken)</a>
             method.</p>
                 <p>If this feature is enabled, the <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageExpunged">MailFolder.MessageExpunged</a> event
             is replaced with the <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessagesVanished">MailFolder.MessagesVanished</a> event.</p>
@@ -825,7 +903,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.EnableQuickResync(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailStore.EnableQuickResyncAsync(System.Threading.CancellationToken)">EnableQuickResyncAsync Method</h3>
@@ -908,7 +986,7 @@
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.EnableQuickResyncAsync(System.Threading.CancellationToken):Remarks">
                 <p>Enables quick resynchronization when a folder is opened using the
-            <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Open(MailKit.FolderAccess,MailKit.UniqueId,System.UInt64,MailKit.UniqueId[],System.Threading.CancellationToken)">MailFolder.Open(FolderAccess, UniqueId, ulong, UniqueId[], System.Threading.CancellationToken)</a>
+            <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Open(MailKit.FolderAccess,MailKit.UniqueId,System.UInt64,System.Collections.Generic.IList{MailKit.UniqueId},System.Threading.CancellationToken)">MailFolder.Open(FolderAccess, UniqueId, ulong, IList&lt;MailKit.UniqueId&gt;,System.Threading.CancellationToken)</a>
             method.</p>
                 <p>If this feature is enabled, the <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageExpunged">MailFolder.MessageExpunged</a> event
             is replaced with the <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessagesVanished">MailFolder.MessagesVanished</a> event.</p>
@@ -918,7 +996,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.EnableQuickResyncAsync(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailStore.GetFolder(MailKit.FolderNamespace)">GetFolder Method</h3>
@@ -988,7 +1066,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.GetFolder(MailKit.FolderNamespace):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailStore.GetFolder(MailKit.SpecialFolder)">GetFolder Method</h3>
@@ -1051,7 +1129,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.GetFolder(MailKit.SpecialFolder):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailStore.GetFolder(System.String,System.Threading.CancellationToken)">GetFolder Method</h3>
@@ -1133,7 +1211,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.GetFolder(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailStore.GetFolderAsync(System.String,System.Threading.CancellationToken)">GetFolderAsync Method</h3>
@@ -1215,7 +1293,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.GetFolderAsync(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MailStore.Inbox">Inbox Property</h3>
@@ -1233,7 +1311,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MailStore.Inbox:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailStore.OnAlert(MailKit.AlertEventArgs)">OnAlert Method</h3>
@@ -1242,7 +1320,7 @@
             Raise the alert event.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">protected <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>OnAlert</b> (<a href="../MailKit/AlertEventArgs.html">AlertEventArgs</a> e)</div>
+              <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>OnAlert</b> (<a href="../MailKit/AlertEventArgs.html">AlertEventArgs</a> e)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.MailStore.OnAlert(MailKit.AlertEventArgs):Parameters">
                 <dl>
@@ -1258,7 +1336,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailStore.OnAlert(MailKit.AlertEventArgs):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MailStore.OtherNamespaces">OtherNamespaces Property</h3>
@@ -1276,7 +1354,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MailStore.OtherNamespaces:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MailStore.PersonalNamespaces">PersonalNamespaces Property</h3>
@@ -1294,7 +1372,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MailStore.PersonalNamespaces:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.MailStore.SharedNamespaces">SharedNamespaces Property</h3>
@@ -1312,7 +1390,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MailStore.SharedNamespaces:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.20.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.21.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
