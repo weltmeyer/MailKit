@@ -220,7 +220,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.Net.Imap.ImapFolder:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+            <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -799,6 +799,122 @@
                         <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddFlagsAsync(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">AddFlagsAsync</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt64">ulong</a>, <a href="../MailKit/MessageFlags.html">MailKit.MessageFlags</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;int&gt;&gt;</a></nobr><blockquote>
             Asynchronously add a set of flags to the specified messages only if their mod-sequence value is less than the specified value.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddLabels(MailKit.UniqueId,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabels</a>
+                      </b>(<a href="../MailKit/UniqueId.html">MailKit.UniqueId</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Add a set of labels to the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Add a set of GMail labels to the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Add a set of labels to the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Add a set of GMail labels to the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Add a set of labels to the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddLabels(System.Int32,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Add a set of labels to the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddLabelsAsync(MailKit.UniqueId,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabelsAsync</a>
+                      </b>(<a href="../MailKit/UniqueId.html">MailKit.UniqueId</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously add a set of labels to the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddLabelsAsync(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously add a set of labels to the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddLabelsAsync(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously add a set of labels to the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.AddLabelsAsync(System.Int32,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously add a set of labels to the specified message.
              (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -1761,6 +1877,40 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.Net.Imap.ImapFolder.GetQuota(System.Threading.CancellationToken)">GetQuota</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="../MailKit/FolderQuota.html">MailKit.FolderQuota</a></nobr><blockquote>
+            Get the quota information for the folder.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.GetQuota(System.Threading.CancellationToken)">GetQuota</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="../MailKit/FolderQuota.html">MailKit.FolderQuota</a></nobr><blockquote>
+            Get the quota information for the folder.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.GetQuotaAsync(System.Threading.CancellationToken)">GetQuotaAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;MailKit.FolderQuota&gt;</a></nobr><blockquote>
+            Asynchronously get the quota information for the folder.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.Net.Imap.ImapFolder.GetStream(MailKit.UniqueId,System.Int32,System.Int32,System.Threading.CancellationToken)">GetStream</a>
                       </b>(<a href="../MailKit/UniqueId.html">MailKit.UniqueId</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a></nobr><blockquote>
             Gets a substream of the specified message.
@@ -2329,6 +2479,122 @@
                   </tr>
                   <tr valign="top">
                     <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.RemoveLabels(MailKit.UniqueId,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabels</a>
+                      </b>(<a href="../MailKit/UniqueId.html">MailKit.UniqueId</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Remove a set of labels from the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Remove a set of GMail labels from the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.RemoveLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Remove a set of labels from the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Remove a set of GMail labels from the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.RemoveLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Remove a set of labels from the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.RemoveLabels(System.Int32,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Remove a set of labels from the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.RemoveLabelsAsync(MailKit.UniqueId,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabelsAsync</a>
+                      </b>(<a href="../MailKit/UniqueId.html">MailKit.UniqueId</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously remove a set of labels from the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.RemoveLabelsAsync(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously remove a set of labels from the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.RemoveLabelsAsync(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously remove a set of labels from the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.RemoveLabelsAsync(System.Int32,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously remove a set of labels from the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
                       <div>override </div>
                     </td>
                     <td colspan="2">
@@ -2689,6 +2955,156 @@
                   </tr>
                   <tr valign="top">
                     <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetLabels(MailKit.UniqueId,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabels</a>
+                      </b>(<a href="../MailKit/UniqueId.html">MailKit.UniqueId</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Set the labels of the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Set the GMail labels of the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Set the labels of the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Sets the GMail labels of the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Set the labels of the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetLabels(System.Int32,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabels</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Set the labels of the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetLabelsAsync(MailKit.UniqueId,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabelsAsync</a>
+                      </b>(<a href="../MailKit/UniqueId.html">MailKit.UniqueId</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously set the labels of the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetLabelsAsync(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously set the labels of the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetLabelsAsync(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously set the labels of the specified messages.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetLabelsAsync(System.Int32,System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabelsAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously set the labels of the specified message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Net.Imap.ImapFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken)">SetQuota</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="../MailKit/FolderQuota.html">MailKit.FolderQuota</a></nobr><blockquote>
+            Set the quota limits for the folder.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken)">SetQuota</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="../MailKit/FolderQuota.html">MailKit.FolderQuota</a></nobr><blockquote>
+            Set the quota limits for the folder.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.SetQuotaAsync(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken)">SetQuotaAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;MailKit.FolderQuota&gt;</a></nobr><blockquote>
+            Asynchronously set the quota limits for the folder.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
                       <div>override </div>
                     </td>
                     <td colspan="2">
@@ -2906,9 +3322,9 @@
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.OnFlagsChanged(MailKit.MessageFlagsChangedEventArgs)">OnFlagsChanged</a>
-                      </b>(<a href="../MailKit/MessageFlagsChangedEventArgs.html">MailKit.MessageFlagsChangedEventArgs</a>)<blockquote>
-            Raise the flags changed event.
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.OnMessageExpunged(MailKit.MessageEventArgs)">OnMessageExpunged</a>
+                      </b>(<a href="../MailKit/MessageEventArgs.html">MailKit.MessageEventArgs</a>)<blockquote>
+            Raise the message expunged event.
              (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -2918,9 +3334,21 @@
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.OnMessageExpunged(MailKit.MessageEventArgs)">OnMessageExpunged</a>
-                      </b>(<a href="../MailKit/MessageEventArgs.html">MailKit.MessageEventArgs</a>)<blockquote>
-            Raise the message expunged event.
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.OnMessageFlagsChanged(MailKit.MessageFlagsChangedEventArgs)">OnMessageFlagsChanged</a>
+                      </b>(<a href="../MailKit/MessageFlagsChangedEventArgs.html">MailKit.MessageFlagsChangedEventArgs</a>)<blockquote>
+            Raise the message flags changed event.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.OnMessageLabelsChanged(MailKit.MessageLabelsChangedEventArgs)">OnMessageLabelsChanged</a>
+                      </b>(<a href="../MailKit/MessageLabelsChangedEventArgs.html">MailKit.MessageLabelsChangedEventArgs</a>)<blockquote>
+            Raise the message labels changed event.
              (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -3056,6 +3484,20 @@
                     </td>
                     <td>
             Occurs when flags changed on a message.
+             (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <b>
+                        <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageLabelsChanged">MessageLabelsChanged</a>
+                      </b>
+                    </td>
+                    <td>
+            Occurs when labels changed on a message.
              (<i>Inherited from <a href="../MailKit/MailFolder.html">MailKit.MailFolder</a>.</i>)</td>
                   </tr>
                   <tr valign="top">
@@ -3287,7 +3729,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddFlags(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.AddFlags(System.Collections.Generic.IList{System.Int32},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">AddFlags Method</h3>
@@ -3406,7 +3848,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddFlags(System.Collections.Generic.IList{System.Int32},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.AddFlags(System.Collections.Generic.IList{MailKit.UniqueId},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">AddFlags Method</h3>
@@ -3539,7 +3981,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddFlags(System.Collections.Generic.IList{MailKit.UniqueId},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.AddFlags(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">AddFlags Method</h3>
@@ -3672,7 +4114,253 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddFlags(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabels Method</h3>
+            <blockquote id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Add a set of GMail labels to the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddLabels</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> labels, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> silent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UIDs of the messages.</dd>
+                  <dt>
+                    <i>labels</i>
+                  </dt>
+                  <dd>The GMail labels to add.</dd>
+                  <dt>
+                    <i>silent</i>
+                  </dt>
+                  <dd>If set to <tt>true</tt>, no <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageLabelsChanged">MailKit.MailFolder.MessageLabelsChanged</a> events will be emitted.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>uids</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>labels</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>uids</i> is empty.</p>
+                      <p>-or-</p>
+                      <p>One or more of the <i>uids</i> is invalid.</p>
+                      <p>-or-</p>
+                      <p>No labels were specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not authenticated.</p>
+                      <p>-or-</p>
+                      <p>The folder is not currently open in read-write mode.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>
+                    </td>
+                    <td>
+            The server's response contained unexpected tokens.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a>
+                    </td>
+                    <td>
+            The server replied with a NO or BAD response.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Remarks">
+            Adds a set of GMail labels to the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">AddLabels Method</h3>
+            <blockquote id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Add a set of GMail labels to the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddLabels</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> labels, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> silent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>labels</i>
+                  </dt>
+                  <dd>The GMail labels to add.</dd>
+                  <dt>
+                    <i>silent</i>
+                  </dt>
+                  <dd>If set to <tt>true</tt>, no <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageLabelsChanged">MailKit.MailFolder.MessageLabelsChanged</a> events will be emitted.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>indexes</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>labels</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>indexes</i> is empty.</p>
+                      <p>-or-</p>
+                      <p>One or more of the <i>indexes</i> is invalid.</p>
+                      <p>-or-</p>
+                      <p>No labels were specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not authenticated.</p>
+                      <p>-or-</p>
+                      <p>The folder is not currently open in read-write mode.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>
+                    </td>
+                    <td>
+            The server's response contained unexpected tokens.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a>
+                    </td>
+                    <td>
+            The server replied with a NO or BAD response.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Remarks">
+            Adds a set of GMail labels to the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.AddLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Append(MimeKit.MimeMessage,MailKit.MessageFlags,System.Threading.CancellationToken)">Append Method</h3>
@@ -3772,7 +4460,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Append(MimeKit.MimeMessage,MailKit.MessageFlags,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Append(System.Collections.Generic.IList{MimeKit.MimeMessage},System.Collections.Generic.IList{MailKit.MessageFlags},System.Threading.CancellationToken)">Append Method</h3>
@@ -3886,7 +4574,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Append(System.Collections.Generic.IList{MimeKit.MimeMessage},System.Collections.Generic.IList{MailKit.MessageFlags},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Append(MimeKit.MimeMessage,MailKit.MessageFlags,System.DateTimeOffset,System.Threading.CancellationToken)">Append Method</h3>
@@ -3990,7 +4678,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Append(MimeKit.MimeMessage,MailKit.MessageFlags,System.DateTimeOffset,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Append(System.Collections.Generic.IList{MimeKit.MimeMessage},System.Collections.Generic.IList{MailKit.MessageFlags},System.Collections.Generic.IList{System.DateTimeOffset},System.Threading.CancellationToken)">Append Method</h3>
@@ -4111,7 +4799,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Append(System.Collections.Generic.IList{MimeKit.MimeMessage},System.Collections.Generic.IList{MailKit.MessageFlags},System.Collections.Generic.IList{System.DateTimeOffset},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Check(System.Threading.CancellationToken)">Check Method</h3>
@@ -4197,7 +4885,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Check(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Close(System.Boolean,System.Threading.CancellationToken)">Close Method</h3>
@@ -4287,7 +4975,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Close(System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.CopyTo(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.IMailFolder,System.Threading.CancellationToken)">CopyTo Method</h3>
@@ -4416,7 +5104,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.CopyTo(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.IMailFolder,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.CopyTo(System.Collections.Generic.IList{System.Int32},MailKit.IMailFolder,System.Threading.CancellationToken)">CopyTo Method</h3>
@@ -4535,7 +5223,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.CopyTo(System.Collections.Generic.IList{System.Int32},MailKit.IMailFolder,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Create(System.String,System.Boolean,System.Threading.CancellationToken)">Create Method</h3>
@@ -4646,7 +5334,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Create(System.String,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Delete(System.Threading.CancellationToken)">Delete Method</h3>
@@ -4730,7 +5418,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Delete(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Expunge(System.Threading.CancellationToken)">Expunge Method</h3>
@@ -4819,7 +5507,7 @@
             <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageExpunged">MailKit.MailFolder.MessageExpunged</a> event.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Expunge(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Expunge(System.Collections.Generic.IList{MailKit.UniqueId},System.Threading.CancellationToken)">Expunge Method</h3>
@@ -4931,7 +5619,7 @@
             <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageExpunged">MailKit.MailFolder.MessageExpunged</a> event.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Expunge(System.Collections.Generic.IList{MailKit.UniqueId},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.MessageSummaryItems,System.Threading.CancellationToken)">Fetch Method</h3>
@@ -5054,7 +5742,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.MessageSummaryItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Collections.Generic.IList{System.Int32},MailKit.MessageSummaryItems,System.Threading.CancellationToken)">Fetch Method</h3>
@@ -5177,7 +5865,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Collections.Generic.IList{System.Int32},MailKit.MessageSummaryItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Fetch(MailKit.UniqueId,System.Nullable{MailKit.UniqueId},MailKit.MessageSummaryItems,System.Threading.CancellationToken)">Fetch Method</h3>
@@ -5293,7 +5981,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Fetch(MailKit.UniqueId,System.Nullable{MailKit.UniqueId},MailKit.MessageSummaryItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Collections.Generic.IList{MailKit.UniqueId},System.UInt64,MailKit.MessageSummaryItems,System.Threading.CancellationToken)">Fetch Method</h3>
@@ -5429,7 +6117,7 @@
             that have vanished since the specified mod-sequence value.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Collections.Generic.IList{MailKit.UniqueId},System.UInt64,MailKit.MessageSummaryItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageSummaryItems,System.Threading.CancellationToken)">Fetch Method</h3>
@@ -5564,7 +6252,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageSummaryItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Int32,System.Int32,MailKit.MessageSummaryItems,System.Threading.CancellationToken)">Fetch Method</h3>
@@ -5679,7 +6367,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Int32,System.Int32,MailKit.MessageSummaryItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Fetch(MailKit.UniqueId,System.Nullable{MailKit.UniqueId},System.UInt64,MailKit.MessageSummaryItems,System.Threading.CancellationToken)">Fetch Method</h3>
@@ -5808,7 +6496,7 @@
             that have vanished since the specified mod-sequence value.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Fetch(MailKit.UniqueId,System.Nullable{MailKit.UniqueId},System.UInt64,MailKit.MessageSummaryItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Int32,System.Int32,System.UInt64,MailKit.MessageSummaryItems,System.Threading.CancellationToken)">Fetch Method</h3>
@@ -5935,7 +6623,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Fetch(System.Int32,System.Int32,System.UInt64,MailKit.MessageSummaryItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetBodyPart(MailKit.UniqueId,MailKit.BodyPart,System.Threading.CancellationToken)">GetBodyPart Method</h3>
@@ -6047,7 +6735,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetBodyPart(MailKit.UniqueId,MailKit.BodyPart,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetBodyPart(System.Int32,MailKit.BodyPart,System.Threading.CancellationToken)">GetBodyPart Method</h3>
@@ -6159,7 +6847,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetBodyPart(System.Int32,MailKit.BodyPart,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetBodyPart(MailKit.UniqueId,MailKit.BodyPart,System.Boolean,System.Threading.CancellationToken)">GetBodyPart Method</h3>
@@ -6276,7 +6964,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetBodyPart(MailKit.UniqueId,MailKit.BodyPart,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetBodyPart(System.Int32,MailKit.BodyPart,System.Boolean,System.Threading.CancellationToken)">GetBodyPart Method</h3>
@@ -6393,7 +7081,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetBodyPart(System.Int32,MailKit.BodyPart,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetEnumerator()">GetEnumerator Method</h3>
@@ -6440,7 +7128,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetEnumerator():Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetMessage(MailKit.UniqueId,System.Threading.CancellationToken)">GetMessage Method</h3>
@@ -6548,7 +7236,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetMessage(MailKit.UniqueId,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetMessage(System.Int32,System.Threading.CancellationToken)">GetMessage Method</h3>
@@ -6648,7 +7336,103 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetMessage(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Imap.ImapFolder.GetQuota(System.Threading.CancellationToken)">GetQuota Method</h3>
+            <blockquote id="M:MailKit.Net.Imap.ImapFolder.GetQuota(System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Get the quota information for the folder.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="../MailKit/FolderQuota.html">MailKit.FolderQuota</a> <b>GetQuota</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetQuota(System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetQuota(System.Threading.CancellationToken):Returns">The folder quota.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetQuota(System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not authenticated.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The IMAP server does not support the QUOTA extension.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>
+                    </td>
+                    <td>
+            The server's response contained unexpected tokens.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a>
+                    </td>
+                    <td>
+            The server replied with a NO or BAD response.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetQuota(System.Threading.CancellationToken):Remarks">
+                <p>Gets the quota information for the folder.</p>
+                <p>To determine if a quotas are supported, check the
+            <a href="../MailKit.Net.Imap/ImapClient.html#P:MailKit.Net.Imap.ImapClient.SupportsQuotas">ImapClient.SupportsQuotas</a> property.</p>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetQuota(System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetStream(MailKit.UniqueId,System.Int32,System.Int32,System.Threading.CancellationToken)">GetStream Method</h3>
@@ -6771,7 +7555,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetStream(MailKit.UniqueId,System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetStream(System.Int32,System.Int32,System.Int32,System.Threading.CancellationToken)">GetStream Method</h3>
@@ -6889,7 +7673,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetStream(System.Int32,System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetStream(MailKit.UniqueId,MailKit.BodyPart,System.Int32,System.Int32,System.Threading.CancellationToken)">GetStream Method</h3>
@@ -7024,7 +7808,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetStream(MailKit.UniqueId,MailKit.BodyPart,System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetStream(System.Int32,MailKit.BodyPart,System.Int32,System.Int32,System.Threading.CancellationToken)">GetStream Method</h3>
@@ -7154,7 +7938,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetStream(System.Int32,MailKit.BodyPart,System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetSubfolder(System.String,System.Threading.CancellationToken)">GetSubfolder Method</h3>
@@ -7266,7 +8050,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetSubfolder(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.GetSubfolders(System.Boolean,System.Threading.CancellationToken)">GetSubfolders Method</h3>
@@ -7354,7 +8138,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.GetSubfolders(System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapFolder.IsOpen">IsOpen Property</h3>
@@ -7373,7 +8157,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapFolder.IsOpen:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.MoveTo(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.IMailFolder,System.Threading.CancellationToken)">MoveTo Method</h3>
@@ -7504,7 +8288,7 @@
             case in order to better handle spontanious server disconnects and other error conditions.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.MoveTo(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.IMailFolder,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.MoveTo(System.Collections.Generic.IList{System.Int32},MailKit.IMailFolder,System.Threading.CancellationToken)">MoveTo Method</h3>
@@ -7625,7 +8409,7 @@
             handle spontanious server disconnects and other error conditions.</div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.MoveTo(System.Collections.Generic.IList{System.Int32},MailKit.IMailFolder,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Open(MailKit.FolderAccess,System.Threading.CancellationToken)">Open Method</h3>
@@ -7721,7 +8505,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Open(MailKit.FolderAccess,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Open(MailKit.FolderAccess,MailKit.UniqueId,System.UInt64,System.Collections.Generic.IList{MailKit.UniqueId},System.Threading.CancellationToken)">Open Method</h3>
@@ -7844,7 +8628,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Open(MailKit.FolderAccess,MailKit.UniqueId,System.UInt64,System.Collections.Generic.IList{MailKit.UniqueId},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.RemoveFlags(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">RemoveFlags Method</h3>
@@ -7963,7 +8747,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveFlags(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.RemoveFlags(System.Collections.Generic.IList{System.Int32},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">RemoveFlags Method</h3>
@@ -8082,7 +8866,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveFlags(System.Collections.Generic.IList{System.Int32},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.RemoveFlags(System.Collections.Generic.IList{MailKit.UniqueId},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">RemoveFlags Method</h3>
@@ -8215,7 +8999,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveFlags(System.Collections.Generic.IList{MailKit.UniqueId},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.RemoveFlags(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">RemoveFlags Method</h3>
@@ -8348,7 +9132,253 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveFlags(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabels Method</h3>
+            <blockquote id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Remove a set of GMail labels from the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RemoveLabels</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> labels, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> silent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UIDs of the messages.</dd>
+                  <dt>
+                    <i>labels</i>
+                  </dt>
+                  <dd>The GMail labels to remove.</dd>
+                  <dt>
+                    <i>silent</i>
+                  </dt>
+                  <dd>If set to <tt>true</tt>, no <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageLabelsChanged">MailKit.MailFolder.MessageLabelsChanged</a> events will be emitted.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>uids</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>labels</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>uids</i> is empty.</p>
+                      <p>-or-</p>
+                      <p>One or more of the <i>uids</i> is invalid.</p>
+                      <p>-or-</p>
+                      <p>No flags were specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not authenticated.</p>
+                      <p>-or-</p>
+                      <p>The folder is not currently open in read-write mode.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>
+                    </td>
+                    <td>
+            The server's response contained unexpected tokens.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a>
+                    </td>
+                    <td>
+            The server replied with a NO or BAD response.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Remarks">
+            Removes a set of GMail labels from the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">RemoveLabels Method</h3>
+            <blockquote id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Remove a set of GMail labels from the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RemoveLabels</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> labels, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> silent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>labels</i>
+                  </dt>
+                  <dd>The GMail labels to remove.</dd>
+                  <dt>
+                    <i>silent</i>
+                  </dt>
+                  <dd>If set to <tt>true</tt>, no <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageLabelsChanged">MailKit.MailFolder.MessageLabelsChanged</a> events will be emitted.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>indexes</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>labels</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>indexes</i> is empty.</p>
+                      <p>-or-</p>
+                      <p>One or more of the <i>indexes</i> is invalid.</p>
+                      <p>-or-</p>
+                      <p>No flags were specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not authenticated.</p>
+                      <p>-or-</p>
+                      <p>The folder is not currently open in read-write mode.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>
+                    </td>
+                    <td>
+            The server's response contained unexpected tokens.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a>
+                    </td>
+                    <td>
+            The server replied with a NO or BAD response.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Remarks">
+            Removes a set of GMail labels from the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.RemoveLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Rename(MailKit.IMailFolder,System.String,System.Threading.CancellationToken)">Rename Method</h3>
@@ -8464,7 +9494,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Rename(MailKit.IMailFolder,System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Search(MailKit.Search.SearchQuery,System.Threading.CancellationToken)">Search Method</h3>
@@ -8572,7 +9602,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Search(MailKit.Search.SearchQuery,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Search(MailKit.Search.SearchQuery,System.Collections.Generic.IList{MailKit.Search.OrderBy},System.Threading.CancellationToken)">Search Method</h3>
@@ -8700,7 +9730,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Search(MailKit.Search.SearchQuery,System.Collections.Generic.IList{MailKit.Search.OrderBy},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Search(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.Search.SearchQuery,System.Threading.CancellationToken)">Search Method</h3>
@@ -8827,7 +9857,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Search(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.Search.SearchQuery,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Search(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.Search.SearchQuery,System.Collections.Generic.IList{MailKit.Search.OrderBy},System.Threading.CancellationToken)">Search Method</h3>
@@ -8968,7 +9998,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Search(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.Search.SearchQuery,System.Collections.Generic.IList{MailKit.Search.OrderBy},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.SetFlags(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">SetFlags Method</h3>
@@ -9085,7 +10115,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetFlags(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.SetFlags(System.Collections.Generic.IList{System.Int32},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">SetFlags Method</h3>
@@ -9202,7 +10232,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetFlags(System.Collections.Generic.IList{System.Int32},MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.SetFlags(System.Collections.Generic.IList{MailKit.UniqueId},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">SetFlags Method</h3>
@@ -9333,7 +10363,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetFlags(System.Collections.Generic.IList{MailKit.UniqueId},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.SetFlags(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken)">SetFlags Method</h3>
@@ -9464,7 +10494,353 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetFlags(System.Collections.Generic.IList{System.Int32},System.UInt64,MailKit.MessageFlags,System.Boolean,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabels Method</h3>
+            <blockquote id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Set the GMail labels of the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetLabels</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MailKit.UniqueId&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> labels, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> silent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UIDs of the messages.</dd>
+                  <dt>
+                    <i>labels</i>
+                  </dt>
+                  <dd>The GMail labels to set.</dd>
+                  <dt>
+                    <i>silent</i>
+                  </dt>
+                  <dd>If set to <tt>true</tt>, no <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageLabelsChanged">MailKit.MailFolder.MessageLabelsChanged</a> events will be emitted.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>uids</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>labels</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>uids</i> is empty.</p>
+                      <p>-or-</p>
+                      <p>One or more of the <i>uids</i> is invalid.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not authenticated.</p>
+                      <p>-or-</p>
+                      <p>The folder is not currently open in read-write mode.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>
+                    </td>
+                    <td>
+            The server's response contained unexpected tokens.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a>
+                    </td>
+                    <td>
+            The server replied with a NO or BAD response.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Remarks">
+            Sets the GMail labels of the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{MailKit.UniqueId},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken)">SetLabels Method</h3>
+            <blockquote id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Sets the GMail labels of the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetLabels</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> labels, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> silent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>labels</i>
+                  </dt>
+                  <dd>The GMail labels to set.</dd>
+                  <dt>
+                    <i>silent</i>
+                  </dt>
+                  <dd>If set to <tt>true</tt>, no <a href="../MailKit/MailFolder.html#E:MailKit.MailFolder.MessageLabelsChanged">MailKit.MailFolder.MessageLabelsChanged</a> events will be emitted.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>indexes</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>labels</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>indexes</i> is empty.</p>
+                      <p>-or-</p>
+                      <p>One or more of the <i>indexes</i> is invalid.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not authenticated.</p>
+                      <p>-or-</p>
+                      <p>The folder is not currently open in read-write mode.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>
+                    </td>
+                    <td>
+            The server's response contained unexpected tokens.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a>
+                    </td>
+                    <td>
+            The server replied with a NO or BAD response.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Remarks">
+            Sets the GMail labels of the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetLabels(System.Collections.Generic.IList{System.Int32},System.Collections.Generic.IList{System.String},System.Boolean,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Net.Imap.ImapFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken)">SetQuota Method</h3>
+            <blockquote id="M:MailKit.Net.Imap.ImapFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Set the quota limits for the folder.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public override <a href="../MailKit/FolderQuota.html">MailKit.FolderQuota</a> <b>SetQuota</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a> messageLimit, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;uint&gt;</a> storageLimit, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>messageLimit</i>
+                  </dt>
+                  <dd>If not <tt>null</tt>, sets the maximum number of messages to allow.</dd>
+                  <dt>
+                    <i>storageLimit</i>
+                  </dt>
+                  <dd>If not <tt>null</tt>, sets the maximum storage size (in kilobytes).</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken):Returns">The folder quota.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>The <a href="../MailKit.Net.Imap/ImapClient.html">MailKit.Net.Imap.ImapClient</a> is not authenticated.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The IMAP server does not support the QUOTA extension.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapProtocolException.html">MailKit.Net.Imap.ImapProtocolException</a>
+                    </td>
+                    <td>
+            The server's response contained unexpected tokens.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit.Net.Imap/ImapCommandException.html">MailKit.Net.Imap.ImapCommandException</a>
+                    </td>
+                    <td>
+            The server replied with a NO or BAD response.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken):Remarks">
+                <p>Sets the quota limits for the folder.</p>
+                <p>To determine if a quotas are supported, check the
+            <a href="../MailKit.Net.Imap/ImapClient.html#P:MailKit.Net.Imap.ImapClient.SupportsQuotas">ImapClient.SupportsQuotas</a> property.</p>
+              </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.SetQuota(System.Nullable{System.UInt32},System.Nullable{System.UInt32},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Status(MailKit.StatusItems,System.Threading.CancellationToken)">Status Method</h3>
@@ -9569,7 +10945,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Status(MailKit.StatusItems,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Subscribe(System.Threading.CancellationToken)">Subscribe Method</h3>
@@ -9651,7 +11027,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Subscribe(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Net.Imap.ImapFolder.SyncRoot">SyncRoot Property</h3>
@@ -9669,7 +11045,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Net.Imap.ImapFolder.SyncRoot:Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Thread(MailKit.ThreadingAlgorithm,MailKit.Search.SearchQuery,System.Threading.CancellationToken)">Thread Method</h3>
@@ -9791,7 +11167,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Thread(MailKit.ThreadingAlgorithm,MailKit.Search.SearchQuery,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Thread(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.ThreadingAlgorithm,MailKit.Search.SearchQuery,System.Threading.CancellationToken)">Thread Method</h3>
@@ -9932,7 +11308,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Thread(System.Collections.Generic.IList{MailKit.UniqueId},MailKit.ThreadingAlgorithm,MailKit.Search.SearchQuery,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Net.Imap.ImapFolder.Unsubscribe(System.Threading.CancellationToken)">Unsubscribe Method</h3>
@@ -10014,7 +11390,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapFolder.Unsubscribe(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.22.0.0</div>
+                <b>Namespace: </b>MailKit.Net.Imap<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
