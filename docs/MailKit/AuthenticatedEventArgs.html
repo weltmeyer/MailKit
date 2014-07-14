@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>MailKit.FolderAttributes</title>
+    <title>MailKit.AuthenticatedEventArgs</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="MailKit: A cross-platform .NET mail-client library optimized for mobile." />
     <link rel="stylesheet" type="text/css" media="screen" href="/MailKit/stylesheets/stylesheet.css" />
@@ -205,171 +205,121 @@
       <section id="main_content" class="inner">
         <div class="CollectionTitle">
           <a href="../index.html">MailKit</a> : <a href="index.html">MailKit Namespace</a></div>
-        <h1 class="PageTitle" id="T:MailKit.FolderAttributes">FolderAttributes  Enum</h1>
-        <p class="Summary" id="T:MailKit.FolderAttributes:Summary">
-            Folder attributes as used by <a href="../MailKit/IMailFolder.html#P:MailKit.IMailFolder.Attributes">IMailFolder.Attributes</a>.
+        <h1 class="PageTitle" id="T:MailKit.AuthenticatedEventArgs">AuthenticatedEventArgs  Class</h1>
+        <p class="Summary" id="T:MailKit.AuthenticatedEventArgs:Summary">
+            Authenticated event arguments.
             </p>
         <div>
           <h2>Syntax</h2>
-          <div class="Signature" id="T:MailKit.FolderAttributes:Signature">[System.Flags]<br />public enum <b>FolderAttributes</b></div>
+          <div class="Signature" id="T:MailKit.AuthenticatedEventArgs:Signature">public class  <b>AuthenticatedEventArgs</b> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.EventArgs">EventArgs</a></div>
         </div>
-        <div class="Remarks" id="T:MailKit.FolderAttributes:Docs">
+        <div class="Remarks" id="T:MailKit.AuthenticatedEventArgs:Docs">
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="T:MailKit.FolderAttributes:Docs:Remarks">
-            Folder attributes as used by <a href="../MailKit/IMailFolder.html#P:MailKit.IMailFolder.Attributes">IMailFolder.Attributes</a>.
+          <div class="SectionBox" id="T:MailKit.AuthenticatedEventArgs:Docs:Remarks">
+            Some servers, such as GMail IMAP, will send some free-form text in
+            the response to a successful login.
             </div>
-          <h2 class="Section">Members</h2>
-          <div class="SectionBox" id="T:MailKit.FolderAttributes:Docs:Members">
-            <table class="Enumeration">
-              <tr>
-                <th>Member Name</th>
-                <th>Description</th>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.All">
-                  <b>All</b>
-                </td>
-                <td>
-            The folder is a special "All" folder containing an aggregate of all messages.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Archive">
-                  <b>Archive</b>
-                </td>
-                <td>
-            The folder is a special "Archive" folder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Drafts">
-                  <b>Drafts</b>
-                </td>
-                <td>
-            The folder is the special "Drafts" folder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Flagged">
-                  <b>Flagged</b>
-                </td>
-                <td>
-            The folder is the special "Flagged" folder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.HasChildren">
-                  <b>HasChildren</b>
-                </td>
-                <td>
-            The folder has subfolders.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.HasNoChildren">
-                  <b>HasNoChildren</b>
-                </td>
-                <td>
-            The folder does not have any subfolders.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Junk">
-                  <b>Junk</b>
-                </td>
-                <td>
-            The folder is the special "Junk" folder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Marked">
-                  <b>Marked</b>
-                </td>
-                <td>
-            The folder has been marked as possibly containing new messages
-            since the folder was last selected.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.NoInferiors">
-                  <b>NoInferiors</b>
-                </td>
-                <td>
-            It is not possible for any subfolders to exist under the folder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.None">
-                  <b>None</b>
-                </td>
-                <td>
-            The folder does not have any attributes.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.NonExistent">
-                  <b>NonExistent</b>
-                </td>
-                <td>
-            The folder does not exist, but is simply a place-holder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.NoSelect">
-                  <b>NoSelect</b>
-                </td>
-                <td>
-            It is not possible to select the folder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Remote">
-                  <b>Remote</b>
-                </td>
-                <td>
-            The folder is remote.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Sent">
-                  <b>Sent</b>
-                </td>
-                <td>
-            The folder is the special "Sent" folder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Subscribed">
-                  <b>Subscribed</b>
-                </td>
-                <td>
-            The folder is subscribed.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Trash">
-                  <b>Trash</b>
-                </td>
-                <td>
-            The folder is the special "Trash" folder.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.FolderAttributes.Unmarked">
-                  <b>Unmarked</b>
-                </td>
-                <td>
-            The folder does not contain any new messages since the folder
-            was last selected.
-            </td>
-              </tr>
-            </table>
-          </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="T:MailKit.FolderAttributes:Docs:Version Information">
+          <div class="SectionBox" id="T:MailKit.AuthenticatedEventArgs:Docs:Version Information">
             <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+          <h2 class="Section" id="Members">Members</h2>
+          <div class="SectionBox" id="_Members">
+            <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.EventArgs">EventArgs</a>.
+							</p>
+            <h2 class="Section">Public Constructors</h2>
+            <div class="SectionBox" id="Public Constructors">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <b>
+                          <a href="#C:MailKit.AuthenticatedEventArgs(System.String)">AuthenticatedEventArgs</a>
+                        </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                    </td>
+                    <td>
+            Initializes a new instance of the <a href="../MailKit/AuthenticatedEventArgs.html">MailKit.AuthenticatedEventArgs</a> class.
+            </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <h2 class="Section">Public Properties</h2>
+            <div class="SectionBox" id="Public Properties">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.AuthenticatedEventArgs.Message">Message</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                      </i>. 
+            Get the free-form text sent by the server.
+            </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="Members" id="T:MailKit.FolderAttributes:Members">
+        <div class="Members" id="T:MailKit.AuthenticatedEventArgs:Members">
+          <h2 class="Section" id="MemberDetails">Member Details</h2>
+          <div class="SectionBox" id="_MemberDetails">
+            <h3 id="C:MailKit.AuthenticatedEventArgs(System.String)">AuthenticatedEventArgs Constructor</h3>
+            <blockquote id="C:MailKit.AuthenticatedEventArgs(System.String):member">
+              <p class="Summary">
+            Initializes a new instance of the <a href="../MailKit/AuthenticatedEventArgs.html">MailKit.AuthenticatedEventArgs</a> class.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public  <b>AuthenticatedEventArgs</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> message)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="C:MailKit.AuthenticatedEventArgs(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The free-form text.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="C:MailKit.AuthenticatedEventArgs(System.String):Remarks">
+            Creates a new <a href="../MailKit/AuthenticatedEventArgs.html">MailKit.AuthenticatedEventArgs</a>.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="C:MailKit.AuthenticatedEventArgs(System.String):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.AuthenticatedEventArgs.Message">Message Property</h3>
+            <blockquote id="P:MailKit.AuthenticatedEventArgs.Message:member">
+              <p class="Summary">
+            Get the free-form text sent by the server.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Message</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.AuthenticatedEventArgs.Message:Value">The free-form text sent by the server.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.AuthenticatedEventArgs.Message:Remarks">
+            Gets the free-form text sent by the server.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.AuthenticatedEventArgs.Message:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+          </div>
         </div>
       </section>
     </div>

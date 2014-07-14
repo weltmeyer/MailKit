@@ -220,7 +220,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.IMailSpool:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <h2 class="Section">Public Properties</h2>
@@ -248,6 +248,30 @@
             <div class="SectionBox" id="Public Methods">
               <div class="SubsectionBox">
                 <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.DeleteAllMessages(System.Threading.CancellationToken)">DeleteAllMessages</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Mark all messages for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.DeleteAllMessagesAsync(System.Threading.CancellationToken)">DeleteAllMessagesAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously mark all messages for deletion.
+            </blockquote></td>
+                  </tr>
                   <tr valign="top">
                     <td>
                       <div>
@@ -294,6 +318,78 @@
                         <a href="#M:MailKit.IMailSpool.DeleteMessageAsync(System.String,System.Threading.CancellationToken)">DeleteMessageAsync</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
             Asynchronously mark the specified message for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">DeleteMessages</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Mark the specified messages for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">DeleteMessages</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Mark the specified messages for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.DeleteMessages(System.Int32,System.Int32,System.Threading.CancellationToken)">DeleteMessages</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Mark the specified range of messages for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">DeleteMessagesAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously mark the specified messages for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">DeleteMessagesAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously mark the specified messages for deletion.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.DeleteMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">DeleteMessagesAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously mark the specified range of messages for deletion.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -375,6 +471,30 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">GetMessageHeaders</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.HeaderList&gt;</a></nobr><blockquote>
+            Get the headers for the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">GetMessageHeaders</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.HeaderList&gt;</a></nobr><blockquote>
+            Get the headers for the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Threading.CancellationToken)">GetMessageHeaders</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.HeaderList</a></nobr><blockquote>
             Get the headers for the specified message.
@@ -399,6 +519,42 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Int32,System.Threading.CancellationToken)">GetMessageHeaders</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.HeaderList&gt;</a></nobr><blockquote>
+            Get the headers of the messages within the specified range.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">GetMessageHeadersAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.HeaderList&gt;&gt;</a></nobr><blockquote>
+            Asynchronously get the headers for the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">GetMessageHeadersAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.HeaderList&gt;&gt;</a></nobr><blockquote>
+            Asynchronously get the headers for the specified messages.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Threading.CancellationToken)">GetMessageHeadersAsync</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;MimeKit.HeaderList&gt;</a></nobr><blockquote>
             Asynchronously get the headers for the specified message.
@@ -414,6 +570,90 @@
                         <a href="#M:MailKit.IMailSpool.GetMessageHeadersAsync(System.String,System.Threading.CancellationToken)">GetMessageHeadersAsync</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;MimeKit.HeaderList&gt;</a></nobr><blockquote>
             Asynchronously get the headers for the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">GetMessageHeadersAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.HeaderList&gt;&gt;</a></nobr><blockquote>
+            Get the headers of the messages within the specified range.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">GetMessages</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.MimeMessage&gt;</a></nobr><blockquote>
+            Get the messages at the specified indexes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">GetMessages</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.MimeMessage&gt;</a></nobr><blockquote>
+            Get the messages with the specified UIDs.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessages(System.Int32,System.Int32,System.Threading.CancellationToken)">GetMessages</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.MimeMessage&gt;</a></nobr><blockquote>
+            Get the messages within the specified range.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">GetMessagesAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.MimeMessage&gt;&gt;</a></nobr><blockquote>
+            Asynchronously get the messages at the specified indexes.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">GetMessagesAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.MimeMessage&gt;&gt;</a></nobr><blockquote>
+            Asynchronously get the messages with the specified UIDs.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.IMailSpool.GetMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">GetMessagesAsync</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.MimeMessage&gt;&gt;</a></nobr><blockquote>
+            Asynchronously get the messages within the specified range.
             </blockquote></td>
                   </tr>
                   <tr valign="top">
@@ -472,7 +712,7 @@
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.IMailSpool.GetMessageSizes(System.Threading.CancellationToken)">GetMessageSizes</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[]</nobr><blockquote>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a></nobr><blockquote>
             Get the sizes for all available messages, in bytes.
             </blockquote></td>
                   </tr>
@@ -484,7 +724,7 @@
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.IMailSpool.GetMessageSizesAsync(System.Threading.CancellationToken)">GetMessageSizesAsync</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;Int32[]&gt;</a></nobr><blockquote>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;int&gt;&gt;</a></nobr><blockquote>
             Asynchronously get the sizes for all available messages, in bytes.
             </blockquote></td>
                   </tr>
@@ -520,7 +760,7 @@
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.IMailSpool.GetMessageUids(System.Threading.CancellationToken)">GetMessageUids</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[]</nobr><blockquote>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a></nobr><blockquote>
             Get the full list of available message UIDs.
             </blockquote></td>
                   </tr>
@@ -532,7 +772,7 @@
                     <td colspan="2">
                       <b>
                         <a href="#M:MailKit.IMailSpool.GetMessageUidsAsync(System.Threading.CancellationToken)">GetMessageUidsAsync</a>
-                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;String[]&gt;</a></nobr><blockquote>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;string&gt;&gt;</a></nobr><blockquote>
             Asynchronously get the full list of available message UIDs.
             </blockquote></td>
                   </tr>
@@ -568,6 +808,62 @@
         <div class="Members" id="T:MailKit.IMailSpool:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
+            <h3 id="M:MailKit.IMailSpool.DeleteAllMessages(System.Threading.CancellationToken)">DeleteAllMessages Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.DeleteAllMessages(System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Mark all messages for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteAllMessages</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteAllMessages(System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteAllMessages(System.Threading.CancellationToken):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMailService.html#M:MailKit.IMailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">IMailService.Disconnect(bool, System.Threading.CancellationToken)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteAllMessages(System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.DeleteAllMessagesAsync(System.Threading.CancellationToken)">DeleteAllMessagesAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.DeleteAllMessagesAsync(System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously mark all messages for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a> <b>DeleteAllMessagesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteAllMessagesAsync(System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteAllMessagesAsync(System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteAllMessagesAsync(System.Threading.CancellationToken):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMailService.html#M:MailKit.IMailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">IMailService.Disconnect(bool, System.Threading.CancellationToken)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteAllMessagesAsync(System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
             <h3 id="M:MailKit.IMailSpool.DeleteMessage(System.Int32,System.Threading.CancellationToken)">DeleteMessage Method</h3>
             <blockquote id="M:MailKit.IMailSpool.DeleteMessage(System.Int32,System.Threading.CancellationToken):member">
               <p class="Summary">
@@ -596,7 +892,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessage(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.DeleteMessage(System.String,System.Threading.CancellationToken)">DeleteMessage Method</h3>
@@ -627,7 +923,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessage(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.DeleteMessageAsync(System.Int32,System.Threading.CancellationToken)">DeleteMessageAsync Method</h3>
@@ -651,9 +947,7 @@
                 </dl>
               </blockquote>
               <h4 class="Subsection">Returns</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessageAsync(System.Int32,System.Threading.CancellationToken):Returns">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessageAsync(System.Int32,System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessageAsync(System.Int32,System.Threading.CancellationToken):Remarks">
             Messages marked for deletion are not actually deleted until the session
@@ -662,7 +956,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessageAsync(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.DeleteMessageAsync(System.String,System.Threading.CancellationToken)">DeleteMessageAsync Method</h3>
@@ -686,9 +980,7 @@
                 </dl>
               </blockquote>
               <h4 class="Subsection">Returns</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessageAsync(System.String,System.Threading.CancellationToken):Returns">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessageAsync(System.String,System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessageAsync(System.String,System.Threading.CancellationToken):Remarks">
             Messages marked for deletion are not actually deleted until the session
@@ -697,7 +989,207 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessageAsync(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">DeleteMessages Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Mark the specified messages for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteMessages</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMailService.html#M:MailKit.IMailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">IMailService.Disconnect(bool, System.Threading.CancellationToken)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">DeleteMessages Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Mark the specified messages for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteMessages</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UIDs of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMailService.html#M:MailKit.IMailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">IMailService.Disconnect(bool, System.Threading.CancellationToken)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.DeleteMessages(System.Int32,System.Int32,System.Threading.CancellationToken)">DeleteMessages Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.DeleteMessages(System.Int32,System.Int32,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Mark the specified range of messages for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteMessages</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> startIndex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> count, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Int32,System.Int32,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>startIndex</i>
+                  </dt>
+                  <dd>The index of the first message to mark for deletion.</dd>
+                  <dt>
+                    <i>count</i>
+                  </dt>
+                  <dd>The number of messages to mark for deletion.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Int32,System.Int32,System.Threading.CancellationToken):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMailService.html#M:MailKit.IMailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">IMailService.Disconnect(bool, System.Threading.CancellationToken)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessages(System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">DeleteMessagesAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously mark the specified messages for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a> <b>DeleteMessagesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMailService.html#M:MailKit.IMailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">IMailService.Disconnect(bool, System.Threading.CancellationToken)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">DeleteMessagesAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously mark the specified messages for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a> <b>DeleteMessagesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UIDs of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMailService.html#M:MailKit.IMailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">IMailService.Disconnect(bool, System.Threading.CancellationToken)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">DeleteMessagesAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously mark the specified range of messages for deletion.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a> <b>DeleteMessagesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> startIndex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> count, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>startIndex</i>
+                  </dt>
+                  <dd>The index of the first message to mark for deletion.</dd>
+                  <dt>
+                    <i>count</i>
+                  </dt>
+                  <dd>The number of messages to mark for deletion.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Remarks">
+            Messages marked for deletion are not actually deleted until the session
+            is cleanly disconnected
+            (see <a href="../MailKit/IMailService.html#M:MailKit.IMailService.Disconnect(System.Boolean,System.Threading.CancellationToken)">IMailService.Disconnect(bool, System.Threading.CancellationToken)</a>).
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.DeleteMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessage(System.Int32,System.Threading.CancellationToken)">GetMessage Method</h3>
@@ -724,11 +1216,11 @@
               <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessage(System.Int32,System.Threading.CancellationToken):Returns">The message.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessage(System.Int32,System.Threading.CancellationToken):Remarks">
-            Get the message at the specified index.
+            Gets the message at the specified index.
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessage(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessage(System.String,System.Threading.CancellationToken)">GetMessage Method</h3>
@@ -759,7 +1251,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessage(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageAsync(System.Int32,System.Threading.CancellationToken)">GetMessageAsync Method</h3>
@@ -786,11 +1278,11 @@
               <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageAsync(System.Int32,System.Threading.CancellationToken):Returns">The message.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageAsync(System.Int32,System.Threading.CancellationToken):Remarks">
-            Asynchronously get the message at the specified index.
+            Asynchronously gets the message at the specified index.
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageAsync(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageAsync(System.String,System.Threading.CancellationToken)">GetMessageAsync Method</h3>
@@ -821,7 +1313,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageAsync(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageCount(System.Threading.CancellationToken)">GetMessageCount Method</h3>
@@ -848,7 +1340,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageCount(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageCountAsync(System.Threading.CancellationToken)">GetMessageCountAsync Method</h3>
@@ -875,7 +1367,69 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageCountAsync(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Get the headers for the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.HeaderList&gt;</a> <b>GetMessageHeaders</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Returns">The headers for the specified messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Remarks">
+            Gets the headers for the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Get the headers for the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.HeaderList&gt;</a> <b>GetMessageHeaders</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UIDs of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Returns">The headers for the specified messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Remarks">
+            Gets the headers for the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
@@ -906,7 +1460,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageHeaders(System.String,System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
@@ -937,7 +1491,104 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Int32,System.Threading.CancellationToken)">GetMessageHeaders Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Int32,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Get the headers of the messages within the specified range.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.HeaderList&gt;</a> <b>GetMessageHeaders</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> startIndex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> count, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Int32,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>startIndex</i>
+                  </dt>
+                  <dd>The index of the first message to get.</dd>
+                  <dt>
+                    <i>count</i>
+                  </dt>
+                  <dd>The number of messages to get.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Int32,System.Threading.CancellationToken):Returns">The headers of the messages within the specified range.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Int32,System.Threading.CancellationToken):Remarks">
+            Gets the headers of the messages within the specified range.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeaders(System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">GetMessageHeadersAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously get the headers for the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.HeaderList&gt;&gt;</a> <b>GetMessageHeadersAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Returns">The headers for the specified messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Remarks">
+            Asynchronously gets the headers for the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">GetMessageHeadersAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously get the headers for the specified messages.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.HeaderList&gt;&gt;</a> <b>GetMessageHeadersAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UIDs of the message.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Returns">The headers for the specified messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Remarks">
+            Asynchronously gets the headers for the specified messages.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Threading.CancellationToken)">GetMessageHeadersAsync Method</h3>
@@ -968,7 +1619,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.String,System.Threading.CancellationToken)">GetMessageHeadersAsync Method</h3>
@@ -999,7 +1650,236 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">GetMessageHeadersAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Int32,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Get the headers of the messages within the specified range.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.HeaderList&gt;&gt;</a> <b>GetMessageHeadersAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> startIndex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> count, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>startIndex</i>
+                  </dt>
+                  <dd>The index of the first message to get.</dd>
+                  <dt>
+                    <i>count</i>
+                  </dt>
+                  <dd>The number of messages to get.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Returns">The headers of the messages within the specified range.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Remarks">
+            Gets the headers of the messages within the specified range.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageHeadersAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">GetMessages Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Get the messages at the specified indexes.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.MimeMessage&gt;</a> <b>GetMessages</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Returns">The messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Remarks">
+            Gets the messages at the specified indexes.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">GetMessages Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Get the messages with the specified UIDs.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.MimeMessage&gt;</a> <b>GetMessages</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UID of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Returns">The messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Remarks">
+            Gets the messages with the specified UIDs.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessages(System.Int32,System.Int32,System.Threading.CancellationToken)">GetMessages Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessages(System.Int32,System.Int32,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Get the messages within the specified range.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;MimeKit.MimeMessage&gt;</a> <b>GetMessages</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> startIndex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> count, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Int32,System.Int32,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>startIndex</i>
+                  </dt>
+                  <dd>The index of the first message to get.</dd>
+                  <dt>
+                    <i>count</i>
+                  </dt>
+                  <dd>The number of messages to get.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Int32,System.Int32,System.Threading.CancellationToken):Returns">The messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Int32,System.Int32,System.Threading.CancellationToken):Remarks">
+            Gets the messages within the specified range.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessages(System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken)">GetMessagesAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously get the messages at the specified indexes.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.MimeMessage&gt;&gt;</a> <b>GetMessagesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> indexes, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>indexes</i>
+                  </dt>
+                  <dd>The indexes of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Returns">The messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Remarks">
+            Asynchronously gets the messages at the specified indexes.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.Int32},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">GetMessagesAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously get the messages with the specified UIDs.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.MimeMessage&gt;&gt;</a> <b>GetMessagesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> uids, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>uids</i>
+                  </dt>
+                  <dd>The UIDs of the messages.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Returns">The messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Remarks">
+            Asynchronously gets the messages with the specified UIDs.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.IMailSpool.GetMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken)">GetMessagesAsync Method</h3>
+            <blockquote id="M:MailKit.IMailSpool.GetMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously get the messages within the specified range.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;MimeKit.MimeMessage&gt;&gt;</a> <b>GetMessagesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> startIndex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> count, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>startIndex</i>
+                  </dt>
+                  <dd>The index of the first message to get.</dd>
+                  <dt>
+                    <i>count</i>
+                  </dt>
+                  <dd>The number of messages to get.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Returns">The messages.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Remarks">
+            Asynchronously gets the messages within the specified range.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessagesAsync(System.Int32,System.Int32,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageSize(System.Int32,System.Threading.CancellationToken)">GetMessageSize Method</h3>
@@ -1030,7 +1910,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageSize(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageSize(System.String,System.Threading.CancellationToken)">GetMessageSize Method</h3>
@@ -1061,7 +1941,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageSize(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageSizeAsync(System.Int32,System.Threading.CancellationToken)">GetMessageSizeAsync Method</h3>
@@ -1092,7 +1972,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageSizeAsync(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageSizeAsync(System.String,System.Threading.CancellationToken)">GetMessageSizeAsync Method</h3>
@@ -1123,7 +2003,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageSizeAsync(System.String,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageSizes(System.Threading.CancellationToken)">GetMessageSizes Method</h3>
@@ -1132,7 +2012,7 @@
             Get the sizes for all available messages, in bytes.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[] <b>GetMessageSizes</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;int&gt;</a> <b>GetMessageSizes</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageSizes(System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -1150,7 +2030,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageSizes(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageSizesAsync(System.Threading.CancellationToken)">GetMessageSizesAsync Method</h3>
@@ -1159,7 +2039,7 @@
             Asynchronously get the sizes for all available messages, in bytes.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;Int32[]&gt;</a> <b>GetMessageSizesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;int&gt;&gt;</a> <b>GetMessageSizesAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageSizesAsync(System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -1177,7 +2057,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageSizesAsync(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageUid(System.Int32,System.Threading.CancellationToken)">GetMessageUid Method</h3>
@@ -1209,7 +2089,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageUid(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageUidAsync(System.Int32,System.Threading.CancellationToken)">GetMessageUidAsync Method</h3>
@@ -1241,7 +2121,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageUidAsync(System.Int32,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageUids(System.Threading.CancellationToken)">GetMessageUids Method</h3>
@@ -1250,7 +2130,7 @@
             Get the full list of available message UIDs.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] <b>GetMessageUids</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;string&gt;</a> <b>GetMessageUids</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageUids(System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -1269,7 +2149,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageUids(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.GetMessageUidsAsync(System.Threading.CancellationToken)">GetMessageUidsAsync Method</h3>
@@ -1278,7 +2158,7 @@
             Asynchronously get the full list of available message UIDs.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;String[]&gt;</a> <b>GetMessageUidsAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task`1">System.Threading.Tasks.Task&lt;IList&lt;string&gt;&gt;</a> <b>GetMessageUidsAsync</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.GetMessageUidsAsync(System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -1297,7 +2177,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.GetMessageUidsAsync(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.Reset(System.Threading.CancellationToken)">Reset Method</h3>
@@ -1324,7 +2204,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.Reset(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.IMailSpool.ResetAsync(System.Threading.CancellationToken)">ResetAsync Method</h3>
@@ -1344,9 +2224,7 @@
                 </dl>
               </blockquote>
               <h4 class="Subsection">Returns</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.ResetAsync(System.Threading.CancellationToken):Returns">
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="M:MailKit.IMailSpool.ResetAsync(System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.ResetAsync(System.Threading.CancellationToken):Remarks">
             Messages marked for deletion are not actually deleted until the session
@@ -1355,7 +2233,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.IMailSpool.ResetAsync(System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.IMailSpool.SupportsUids">SupportsUids Property</h3>
@@ -1379,7 +2257,7 @@
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.IMailSpool.SupportsUids:Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.23.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.24.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
