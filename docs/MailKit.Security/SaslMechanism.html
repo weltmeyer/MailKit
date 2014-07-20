@@ -223,7 +223,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.Security.SaslMechanism:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+            <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -324,6 +324,20 @@
             </td>
                   </tr>
                   <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.Security.SaslMechanism.SupportsInitialResponse">SupportsInitialResponse</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                      </i>. 
+            Gets whether or not the mechanism supports an initial response (SASL-IR).
+            </td>
+                  </tr>
+                  <tr valign="top">
                     <td>
                       <div>
                       </div>
@@ -393,6 +407,17 @@
             Resets the state of the SASL mechanism.
             </blockquote></td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>static </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Security.SaslMechanism.SaslPrep(System.String)">SaslPrep</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Prepares the user name or password string.
+            </blockquote></td>
+                  </tr>
                 </table>
               </div>
             </div>
@@ -445,7 +470,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.Security.SaslMechanism(System.Uri,System.Net.ICredentials):Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="F:MailKit.Security.SaslMechanism.AuthMechanismRank">AuthMechanismRank Field</h3>
@@ -462,7 +487,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="F:MailKit.Security.SaslMechanism.AuthMechanismRank:Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Security.SaslMechanism.Challenge(System.String)">Challenge Method</h3>
@@ -498,6 +523,22 @@
             An error has occurred while parsing the server's challenge token.
             </td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The SASL mechanism is already authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            THe SASL mechanism does not support SASL-IR.
+            </td>
+                  </tr>
                 </table>
               </blockquote>
               <h2 class="Section">Remarks</h2>
@@ -506,7 +547,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Security.SaslMechanism.Challenge(System.String):Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Security.SaslMechanism.Challenge(System.Byte[],System.Int32,System.Int32)">Challenge Method</h3>
@@ -550,6 +591,22 @@
             An error has occurred while parsing the server's challenge token.
             </td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+            The SASL mechanism is already authenticated.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            THe SASL mechanism does not support SASL-IR.
+            </td>
+                  </tr>
                 </table>
               </blockquote>
               <h2 class="Section">Remarks</h2>
@@ -558,7 +615,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Security.SaslMechanism.Challenge(System.Byte[],System.Int32,System.Int32):Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Security.SaslMechanism.Create(System.String,System.Uri,System.Net.ICredentials)">Create Method</h3>
@@ -618,7 +675,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Security.SaslMechanism.Create(System.String,System.Uri,System.Net.ICredentials):Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Security.SaslMechanism.Credentials">Credentials Property</h3>
@@ -636,7 +693,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Security.SaslMechanism.Credentials:Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Security.SaslMechanism.IsAuthenticated">IsAuthenticated Property</h3>
@@ -655,7 +712,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Security.SaslMechanism.IsAuthenticated:Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Security.SaslMechanism.IsSupported(System.String)">IsSupported Method</h3>
@@ -701,7 +758,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Security.SaslMechanism.IsSupported(System.String):Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Security.SaslMechanism.MechanismName">MechanismName Property</h3>
@@ -719,7 +776,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Security.SaslMechanism.MechanismName:Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.Security.SaslMechanism.Reset()">Reset Method</h3>
@@ -735,7 +792,79 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Security.SaslMechanism.Reset():Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.Security.SaslMechanism.SaslPrep(System.String)">SaslPrep Method</h3>
+            <blockquote id="M:MailKit.Security.SaslMechanism.SaslPrep(System.String):member">
+              <p class="Summary">
+            Prepares the user name or password string.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>SaslPrep</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> s)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanism.SaslPrep(System.String):Parameters">
+                <dl>
+                  <dt>
+                    <i>s</i>
+                  </dt>
+                  <dd>The string to prepare.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanism.SaslPrep(System.String):Returns">The prepared string.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanism.SaslPrep(System.String):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <i>s</i> is <tt>null</tt>.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                    </td>
+                    <td>
+                      <i>s</i> contains prohibited characters.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Security.SaslMechanism.SaslPrep(System.String):Remarks">
+            Prepares a user name or password string according to the rules of rfc4013.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Security.SaslMechanism.SaslPrep(System.String):Version Information">
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.Security.SaslMechanism.SupportsInitialResponse">SupportsInitialResponse Property</h3>
+            <blockquote id="P:MailKit.Security.SaslMechanism.SupportsInitialResponse:member">
+              <p class="Summary">
+            Gets whether or not the mechanism supports an initial response (SASL-IR).
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>SupportsInitialResponse</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.Security.SaslMechanism.SupportsInitialResponse:Value">
+                <tt>true</tt> if the mechanism supports an initial response; otherwise, <tt>false</tt>.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.Security.SaslMechanism.SupportsInitialResponse:Remarks">
+            SASL mechanisms that support sending an initial client response to the server
+            should return true.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.Security.SaslMechanism.SupportsInitialResponse:Version Information">
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="P:MailKit.Security.SaslMechanism.Uri">Uri Property</h3>
@@ -753,7 +882,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.Security.SaslMechanism.Uri:Version Information">
-                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.25.0.0</div>
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>

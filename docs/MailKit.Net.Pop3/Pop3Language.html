@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>MailKit.Security.SaslErrorCode</title>
+    <title>MailKit.Net.Pop3.Pop3Language</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="MailKit: A cross-platform .NET mail-client library optimized for mobile." />
     <link rel="stylesheet" type="text/css" media="screen" href="/MailKit/stylesheets/stylesheet.css" />
@@ -204,74 +204,107 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <div class="CollectionTitle">
-          <a href="../index.html">MailKit</a> : <a href="index.html">MailKit.Security Namespace</a></div>
-        <h1 class="PageTitle" id="T:MailKit.Security.SaslErrorCode">SaslErrorCode  Enum</h1>
-        <p class="Summary" id="T:MailKit.Security.SaslErrorCode:Summary">
-            An enumeration of the possible error codes that may be reported by a <a href="../MailKit.Security/SaslException.html">MailKit.Security.SaslException</a>.
+          <a href="../index.html">MailKit</a> : <a href="index.html">MailKit.Net.Pop3 Namespace</a></div>
+        <h1 class="PageTitle" id="T:MailKit.Net.Pop3.Pop3Language">Pop3Language  Class</h1>
+        <p class="Summary" id="T:MailKit.Net.Pop3.Pop3Language:Summary">
+            A POP3 language.
             </p>
         <div>
           <h2>Syntax</h2>
-          <div class="Signature" id="T:MailKit.Security.SaslErrorCode:Signature">public enum <b>SaslErrorCode</b></div>
+          <div class="Signature" id="T:MailKit.Net.Pop3.Pop3Language:Signature">public class  <b>Pop3Language</b></div>
         </div>
-        <div class="Remarks" id="T:MailKit.Security.SaslErrorCode:Docs">
+        <div class="Remarks" id="T:MailKit.Net.Pop3.Pop3Language:Docs">
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="T:MailKit.Security.SaslErrorCode:Docs:Remarks">
-            An enumeration of the possible error codes that may be reported by a <a href="../MailKit.Security/SaslException.html">MailKit.Security.SaslException</a>.
+          <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3Language:Docs:Remarks">
+            A POP3 language.
             </div>
-          <h2 class="Section">Members</h2>
-          <div class="SectionBox" id="T:MailKit.Security.SaslErrorCode:Docs:Members">
-            <table class="Enumeration">
-              <tr>
-                <th>Member Name</th>
-                <th>Description</th>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.Security.SaslErrorCode.ChallengeTooLong">
-                  <b>ChallengeTooLong</b>
-                </td>
-                <td>
-            The server's challenge was too long.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.Security.SaslErrorCode.IncompleteChallenge">
-                  <b>IncompleteChallenge</b>
-                </td>
-                <td>
-            The server's response contained an incomplete challenge.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.Security.SaslErrorCode.IncorrectHash">
-                  <b>IncorrectHash</b>
-                </td>
-                <td>
-            The server's challenge contained an incorrect hash.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.Security.SaslErrorCode.InvalidChallenge">
-                  <b>InvalidChallenge</b>
-                </td>
-                <td>
-            The server's challenge was invalid.
-            </td>
-              </tr>
-              <tr valign="top">
-                <td id="F:MailKit.Security.SaslErrorCode.MissingChallenge">
-                  <b>MissingChallenge</b>
-                </td>
-                <td>
-            The server's response did not contain a challenge.
-            </td>
-              </tr>
-            </table>
-          </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="T:MailKit.Security.SaslErrorCode:Docs:Version Information">
-            <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+          <div class="SectionBox" id="T:MailKit.Net.Pop3.Pop3Language:Docs:Version Information">
+            <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+          <h2 class="Section" id="Members">Members</h2>
+          <div class="SectionBox" id="_Members">
+            <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+            <h2 class="Section">Public Properties</h2>
+            <div class="SectionBox" id="Public Properties">
+              <div class="SubsectionBox">
+                <table class="TypeMembers">
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.Net.Pop3.Pop3Language.Description">Description</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                      </i>. 
+            Get the description.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div></div></td>
+                    <td>
+                      <b>
+                        <a href="#P:MailKit.Net.Pop3.Pop3Language.Language">Language</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                      </i>. 
+            Get the language code.
+            </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="Members" id="T:MailKit.Security.SaslErrorCode:Members">
+        <div class="Members" id="T:MailKit.Net.Pop3.Pop3Language:Members">
+          <h2 class="Section" id="MemberDetails">Member Details</h2>
+          <div class="SectionBox" id="_MemberDetails">
+            <h3 id="P:MailKit.Net.Pop3.Pop3Language.Description">Description Property</h3>
+            <blockquote id="P:MailKit.Net.Pop3.Pop3Language.Description:member">
+              <p class="Summary">
+            Get the description.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Description</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.Net.Pop3.Pop3Language.Description:Value">The description.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Language.Description:Remarks">
+            Gets the description.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Language.Description:Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.Net.Pop3.Pop3Language.Language">Language Property</h3>
+            <blockquote id="P:MailKit.Net.Pop3.Pop3Language.Language:member">
+              <p class="Summary">
+            Get the language code.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Language</b>  { get; }</div>
+              <h4 class="Subsection">Value</h4>
+              <blockquote class="SubsectionBox" id="P:MailKit.Net.Pop3.Pop3Language.Language:Value">The language.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Language.Language:Remarks">
+            Gets the language code. This is the value that should be given to
+            <a href="../MailKit.Net.Pop3/Pop3Client.html#M:MailKit.Net.Pop3.Pop3Client.SetLanguage(System.String,System.Threading.CancellationToken)">Pop3Client.SetLanguage(string, System.Threading.CancellationToken)</a>.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="P:MailKit.Net.Pop3.Pop3Language.Language:Version Information">
+                <b>Namespace: </b>MailKit.Net.Pop3<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+              <hr size="1" />
+            </blockquote>
+          </div>
         </div>
       </section>
     </div>

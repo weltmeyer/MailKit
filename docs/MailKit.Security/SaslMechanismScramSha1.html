@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>MailKit.Security.SaslMechanismCramMd5</title>
+    <title>MailKit.Security.SaslMechanismScramSha1</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="MailKit: A cross-platform .NET mail-client library optimized for mobile." />
     <link rel="stylesheet" type="text/css" media="screen" href="/MailKit/stylesheets/stylesheet.css" />
@@ -205,27 +205,27 @@
       <section id="main_content" class="inner">
         <div class="CollectionTitle">
           <a href="../index.html">MailKit</a> : <a href="index.html">MailKit.Security Namespace</a></div>
-        <h1 class="PageTitle" id="T:MailKit.Security.SaslMechanismCramMd5">SaslMechanismCramMd5  Class</h1>
-        <p class="Summary" id="T:MailKit.Security.SaslMechanismCramMd5:Summary">
-            The CRAM-MD5 SASL mechanism.
+        <h1 class="PageTitle" id="T:MailKit.Security.SaslMechanismScramSha1">SaslMechanismScramSha1  Class</h1>
+        <p class="Summary" id="T:MailKit.Security.SaslMechanismScramSha1:Summary">
+            The SCRAM-SHA-1 SASL mechanism.
             </p>
         <div>
           <h2>Syntax</h2>
-          <div class="Signature" id="T:MailKit.Security.SaslMechanismCramMd5:Signature">public class  <b>SaslMechanismCramMd5</b> : <a href="../MailKit.Security/SaslMechanism.html">SaslMechanism</a></div>
+          <div class="Signature" id="T:MailKit.Security.SaslMechanismScramSha1:Signature">public class  <b>SaslMechanismScramSha1</b> : <a href="../MailKit.Security/SaslMechanismScramBase.html">SaslMechanismScramBase</a></div>
         </div>
-        <div class="Remarks" id="T:MailKit.Security.SaslMechanismCramMd5:Docs">
+        <div class="Remarks" id="T:MailKit.Security.SaslMechanismScramSha1:Docs">
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="T:MailKit.Security.SaslMechanismCramMd5:Docs:Remarks">
-            A SASL mechanism based on HMAC-MD5.
+          <div class="SectionBox" id="T:MailKit.Security.SaslMechanismScramSha1:Docs:Remarks">
+            A salted challenge/response SASL mechanism that uses the HMAC SHA-1 algorithm.
             </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="T:MailKit.Security.SaslMechanismCramMd5:Docs:Version Information">
+          <div class="SectionBox" id="T:MailKit.Security.SaslMechanismScramSha1:Docs:Version Information">
             <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
 								See Also: Inherited members from
-								<a href="../MailKit.Security/SaslMechanism.html">SaslMechanism</a>.
+								<a href="../MailKit.Security/SaslMechanismScramBase.html">SaslMechanismScramBase</a>.
 							</p>
             <h2 class="Section">Public Constructors</h2>
             <div class="SectionBox" id="Public Constructors">
@@ -239,11 +239,11 @@
                     <td>
                       <div>
                         <b>
-                          <a href="#C:MailKit.Security.SaslMechanismCramMd5(System.Uri,System.Net.ICredentials)">SaslMechanismCramMd5</a>
+                          <a href="#C:MailKit.Security.SaslMechanismScramSha1(System.Uri,System.Net.ICredentials)">SaslMechanismScramSha1</a>
                         </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a>)</div>
                     </td>
                     <td>
-            Initializes a new instance of the <a href="../MailKit.Security/SaslMechanismCramMd5.html">MailKit.Security.SaslMechanismCramMd5</a> class.
+            Initializes a new instance of the <a href="../MailKit.Security/SaslMechanismScramSha1.html">MailKit.Security.SaslMechanismScramSha1</a> class.
             </td>
                   </tr>
                 </table>
@@ -288,7 +288,7 @@
                     <td>[read-only]<div>override </div></td>
                     <td>
                       <b>
-                        <a href="#P:MailKit.Security.SaslMechanismCramMd5.MechanismName">MechanismName</a>
+                        <a href="#P:MailKit.Security.SaslMechanismScramSha1.MechanismName">MechanismName</a>
                       </b>
                     </td>
                     <td>
@@ -311,6 +311,20 @@
                       </i>. 
             Gets the name of the mechanism.
              (<i>Inherited from <a href="../MailKit.Security/SaslMechanism.html">SaslMechanism</a>.</i>)</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>[read-only]<div>override </div></td>
+                    <td>
+                      <b>
+                        <a href="../MailKit.Security/SaslMechanismScramBase.html#P:MailKit.Security.SaslMechanismScramBase.SupportsInitialResponse">SupportsInitialResponse</a>
+                      </b>
+                    </td>
+                    <td>
+                      <i>
+                        <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                      </i>. 
+            Gets whether or not the mechanism supports an initial response (SASL-IR).
+             (<i>Inherited from <a href="../MailKit.Security/SaslMechanismScramBase.html">SaslMechanismScramBase</a>.</i>)</td>
                   </tr>
                   <tr valign="top">
                     <td>[read-only]<div></div></td>
@@ -364,6 +378,17 @@
                   </tr>
                   <tr valign="top">
                     <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit.Security/SaslMechanismScramBase.html#M:MailKit.Security.SaslMechanismScramBase.Reset()">Reset</a>
+                      </b>()<blockquote>
+            Resets the state of the SASL mechanism.
+             (<i>Inherited from <a href="../MailKit.Security/SaslMechanismScramBase.html">SaslMechanismScramBase</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
                       <div>
                       </div>
                     </td>
@@ -387,10 +412,10 @@
                     </td>
                     <td colspan="2">
                       <b>
-                        <a href="#M:MailKit.Security.SaslMechanismCramMd5.Challenge(System.Byte[],System.Int32,System.Int32)">Challenge</a>
+                        <a href="../MailKit.Security/SaslMechanismScramBase.html#M:MailKit.Security.SaslMechanismScramBase.Challenge(System.Byte[],System.Int32,System.Int32)">Challenge</a>
                       </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[], <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[]</nobr><blockquote>
             Parses the server's challenge token and returns the next challenge response.
-            </blockquote></td>
+             (<i>Inherited from <a href="../MailKit.Security/SaslMechanismScramBase.html">SaslMechanismScramBase</a>.</i>)</blockquote></td>
                   </tr>
                   <tr valign="top">
                     <td>
@@ -403,23 +428,67 @@
             Parses the server's challenge token and returns the next challenge response.
              (<i>Inherited from <a href="../MailKit.Security/SaslMechanism.html">SaslMechanism</a>.</i>)</blockquote></td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Security.SaslMechanismScramSha1.CreateHMAC(System.Byte[])">CreateHMAC</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Security.Cryptography.KeyedHashAlgorithm">System.Security.Cryptography.KeyedHashAlgorithm</a></nobr><blockquote>
+            Create the HMAC context.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit.Security/SaslMechanismScramBase.html#M:MailKit.Security.SaslMechanismScramBase.CreateHMAC(System.Byte[])">CreateHMAC</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Security.Cryptography.KeyedHashAlgorithm">System.Security.Cryptography.KeyedHashAlgorithm</a></nobr><blockquote>
+            Create the HMAC context.
+             (<i>Inherited from <a href="../MailKit.Security/SaslMechanismScramBase.html">SaslMechanismScramBase</a>.</i>)</blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>override </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.Security.SaslMechanismScramSha1.Hash(System.Byte[])">Hash</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[]</nobr><blockquote>
+            Apply the cryptographic hash function.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="../MailKit.Security/SaslMechanismScramBase.html#M:MailKit.Security.SaslMechanismScramBase.Hash(System.Byte[])">Hash</a>
+                      </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[]</nobr><blockquote>
+            Apply the cryptographic hash function.
+             (<i>Inherited from <a href="../MailKit.Security/SaslMechanismScramBase.html">SaslMechanismScramBase</a>.</i>)</blockquote></td>
+                  </tr>
                 </table>
               </div>
             </div>
           </div>
         </div>
-        <div class="Members" id="T:MailKit.Security.SaslMechanismCramMd5:Members">
+        <div class="Members" id="T:MailKit.Security.SaslMechanismScramSha1:Members">
           <h2 class="Section" id="MemberDetails">Member Details</h2>
           <div class="SectionBox" id="_MemberDetails">
-            <h3 id="C:MailKit.Security.SaslMechanismCramMd5(System.Uri,System.Net.ICredentials)">SaslMechanismCramMd5 Constructor</h3>
-            <blockquote id="C:MailKit.Security.SaslMechanismCramMd5(System.Uri,System.Net.ICredentials):member">
+            <h3 id="C:MailKit.Security.SaslMechanismScramSha1(System.Uri,System.Net.ICredentials)">SaslMechanismScramSha1 Constructor</h3>
+            <blockquote id="C:MailKit.Security.SaslMechanismScramSha1(System.Uri,System.Net.ICredentials):member">
               <p class="Summary">
-            Initializes a new instance of the <a href="../MailKit.Security/SaslMechanismCramMd5.html">MailKit.Security.SaslMechanismCramMd5</a> class.
+            Initializes a new instance of the <a href="../MailKit.Security/SaslMechanismScramSha1.html">MailKit.Security.SaslMechanismScramSha1</a> class.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public  <b>SaslMechanismCramMd5</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a> credentials)</div>
+              <div class="Signature">public  <b>SaslMechanismScramSha1</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.ICredentials">System.Net.ICredentials</a> credentials)</div>
               <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="C:MailKit.Security.SaslMechanismCramMd5(System.Uri,System.Net.ICredentials):Parameters">
+              <blockquote class="SubsectionBox" id="C:MailKit.Security.SaslMechanismScramSha1(System.Uri,System.Net.ICredentials):Parameters">
                 <dl>
                   <dt>
                     <i>uri</i>
@@ -432,97 +501,86 @@
                 </dl>
               </blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="C:MailKit.Security.SaslMechanismCramMd5(System.Uri,System.Net.ICredentials):Remarks">
-            Creates a new CRAM-MD5 SASL context.
+              <div class="SectionBox" id="C:MailKit.Security.SaslMechanismScramSha1(System.Uri,System.Net.ICredentials):Remarks">
+            Creates a new SCRAM-SHA-1 SASL context.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="C:MailKit.Security.SaslMechanismCramMd5(System.Uri,System.Net.ICredentials):Version Information">
+              <div class="SectionBox" id="C:MailKit.Security.SaslMechanismScramSha1(System.Uri,System.Net.ICredentials):Version Information">
                 <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
-            <h3 id="M:MailKit.Security.SaslMechanismCramMd5.Challenge(System.Byte[],System.Int32,System.Int32)">Challenge Method</h3>
-            <blockquote id="M:MailKit.Security.SaslMechanismCramMd5.Challenge(System.Byte[],System.Int32,System.Int32):member">
+            <h3 id="M:MailKit.Security.SaslMechanismScramSha1.CreateHMAC(System.Byte[])">CreateHMAC Method</h3>
+            <blockquote id="M:MailKit.Security.SaslMechanismScramSha1.CreateHMAC(System.Byte[]):member">
               <p class="Summary">
-            Parses the server's challenge token and returns the next challenge response.
+            Create the HMAC context.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">protected override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[] <b>Challenge</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[] token, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> startIndex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> length)</div>
+              <div class="Signature">protected override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Security.Cryptography.KeyedHashAlgorithm">System.Security.Cryptography.KeyedHashAlgorithm</a> <b>CreateHMAC</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[] key)</div>
               <h4 class="Subsection">Parameters</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanismCramMd5.Challenge(System.Byte[],System.Int32,System.Int32):Parameters">
+              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanismScramSha1.CreateHMAC(System.Byte[]):Parameters">
                 <dl>
                   <dt>
-                    <i>token</i>
+                    <i>key</i>
                   </dt>
-                  <dd>The server's challenge token.</dd>
-                  <dt>
-                    <i>startIndex</i>
-                  </dt>
-                  <dd>The index into the token specifying where the server's challenge begins.</dd>
-                  <dt>
-                    <i>length</i>
-                  </dt>
-                  <dd>The length of the server's challenge.</dd>
+                  <dd>The secret key.</dd>
                 </dl>
               </blockquote>
               <h4 class="Subsection">Returns</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanismCramMd5.Challenge(System.Byte[],System.Int32,System.Int32):Returns">The next challenge response.</blockquote>
-              <h4 class="Subsection">Exceptions</h4>
-              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanismCramMd5.Challenge(System.Byte[],System.Int32,System.Int32):Exceptions">
-                <table class="TypeDocumentation">
-                  <tr>
-                    <th>Type</th>
-                    <th>Reason</th>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <a href="../MailKit.Security/SaslException.html">MailKit.Security.SaslException</a>
-                    </td>
-                    <td>
-            An error has occurred while parsing the server's challenge token.
-            </td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
-                    </td>
-                    <td>
-            The SASL mechanism is already authenticated.
-            </td>
-                  </tr>
-                  <tr valign="top">
-                    <td>
-                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
-                    </td>
-                    <td>
-            THe SASL mechanism does not support SASL-IR.
-            </td>
-                  </tr>
-                </table>
-              </blockquote>
+              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanismScramSha1.CreateHMAC(System.Byte[]):Returns">The HMAC context.</blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="M:MailKit.Security.SaslMechanismCramMd5.Challenge(System.Byte[],System.Int32,System.Int32):Remarks">
-            Parses the server's challenge token and returns the next challenge response.
+              <div class="SectionBox" id="M:MailKit.Security.SaslMechanismScramSha1.CreateHMAC(System.Byte[]):Remarks">
+            Creates the HMAC context using the secret key.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="M:MailKit.Security.SaslMechanismCramMd5.Challenge(System.Byte[],System.Int32,System.Int32):Version Information">
+              <div class="SectionBox" id="M:MailKit.Security.SaslMechanismScramSha1.CreateHMAC(System.Byte[]):Version Information">
                 <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
-            <h3 id="P:MailKit.Security.SaslMechanismCramMd5.MechanismName">MechanismName Property</h3>
-            <blockquote id="P:MailKit.Security.SaslMechanismCramMd5.MechanismName:member">
+            <h3 id="M:MailKit.Security.SaslMechanismScramSha1.Hash(System.Byte[])">Hash Method</h3>
+            <blockquote id="M:MailKit.Security.SaslMechanismScramSha1.Hash(System.Byte[]):member">
+              <p class="Summary">
+            Apply the cryptographic hash function.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">protected override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[] <b>Hash</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[] str)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanismScramSha1.Hash(System.Byte[]):Parameters">
+                <dl>
+                  <dt>
+                    <i>str</i>
+                  </dt>
+                  <dd>The string.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.Security.SaslMechanismScramSha1.Hash(System.Byte[]):Returns">The results of the hash.</blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.Security.SaslMechanismScramSha1.Hash(System.Byte[]):Remarks">
+            H(str): Apply the cryptographic hash function to the octet string
+            "str", producing an octet string as a result. The size of the
+            result depends on the hash result size for the hash function in
+            use.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.Security.SaslMechanismScramSha1.Hash(System.Byte[]):Version Information">
+                <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="P:MailKit.Security.SaslMechanismScramSha1.MechanismName">MechanismName Property</h3>
+            <blockquote id="P:MailKit.Security.SaslMechanismScramSha1.MechanismName:member">
               <p class="Summary">
             Gets the name of the mechanism.
             </p>
               <h2>Syntax</h2>
               <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MechanismName</b>  { get; }</div>
               <h4 class="Subsection">Value</h4>
-              <blockquote class="SubsectionBox" id="P:MailKit.Security.SaslMechanismCramMd5.MechanismName:Value">The name of the mechanism.</blockquote>
+              <blockquote class="SubsectionBox" id="P:MailKit.Security.SaslMechanismScramSha1.MechanismName:Value">The name of the mechanism.</blockquote>
               <h2 class="Section">Remarks</h2>
-              <div class="SectionBox" id="P:MailKit.Security.SaslMechanismCramMd5.MechanismName:Remarks">
+              <div class="SectionBox" id="P:MailKit.Security.SaslMechanismScramSha1.MechanismName:Remarks">
             Gets the name of the mechanism.
             </div>
               <h2 class="Section">Requirements</h2>
-              <div class="SectionBox" id="P:MailKit.Security.SaslMechanismCramMd5.MechanismName:Version Information">
+              <div class="SectionBox" id="P:MailKit.Security.SaslMechanismScramSha1.MechanismName:Version Information">
                 <b>Namespace: </b>MailKit.Security<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
               <hr size="1" />
             </blockquote>
