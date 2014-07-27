@@ -220,7 +220,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="T:MailKit.MailTransport:Docs:Version Information">
-            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+            <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
           <h2 class="Section" id="Members">Members</h2>
           <div class="SectionBox" id="_Members">
             <p>
@@ -523,7 +523,8 @@
                   </tr>
                   <tr valign="top">
                     <td>
-                      <div>abstract </div>
+                      <div>
+                      </div>
                     </td>
                     <td colspan="2">
                       <b>
@@ -538,8 +539,31 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken)">Send</a>
+                      </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.FormatOptions</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Sends the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.MailTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">Send</a>
                       </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
+            Sends the specified message using the supplied sender and recipients.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>abstract </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">Send</a>
+                      </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.FormatOptions</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<blockquote>
             Sends the specified message using the supplied sender and recipients.
             </blockquote></td>
                   </tr>
@@ -562,8 +586,32 @@
                     </td>
                     <td colspan="2">
                       <b>
+                        <a href="#M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken)">SendAsync</a>
+                      </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.FormatOptions</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously sends the specified message.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
                         <a href="#M:MailKit.MailTransport.SendAsync(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">SendAsync</a>
                       </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
+            Asynchronously sends the specified message using the supplied sender and recipients.
+            </blockquote></td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">SendAsync</a>
+                      </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.FormatOptions</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a></nobr><blockquote>
             Asynchronously sends the specified message using the supplied sender and recipients.
             </blockquote></td>
                   </tr>
@@ -693,7 +741,7 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.MailTransport():Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailTransport.Send(MimeKit.MimeMessage,System.Threading.CancellationToken)">Send Method</h3>
@@ -702,7 +750,7 @@
             Sends the specified message.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public abstract <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.Send(MimeKit.MimeMessage,System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -799,7 +847,127 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailTransport.Send(MimeKit.MimeMessage,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken)">Send Method</h3>
+            <blockquote id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Sends the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public abstract <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.FormatOptions</a> options, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>options</i>
+                  </dt>
+                  <dd>The formatting options.</dd>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The message.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>options</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>message</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit/MailTransport.html">MailKit.MailTransport</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit/MailTransport.html">MailKit.MailTransport</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>A sender has not been specified.</p>
+                      <p>-or-</p>
+                      <p>No recipients have been specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation has been canceled.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            Authentication is required before sending a message.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>Internationalized formatting was requested but is not supported by the transport.</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/CommandException.html">MailKit.CommandException</a>
+                    </td>
+                    <td>
+            The send command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>
+                    </td>
+                    <td>
+            A protocol exception occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Remarks">
+            Sends the specified message.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">Send Method</h3>
@@ -808,7 +976,7 @@
             Sends the specified message using the supplied sender and recipients.
             </p>
               <h2>Syntax</h2>
-              <div class="Signature">public abstract <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a> sender, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a> recipients, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a> sender, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a> recipients, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
               <h4 class="Subsection">Parameters</h4>
               <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Parameters">
                 <dl>
@@ -920,7 +1088,141 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailTransport.Send(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">Send Method</h3>
+            <blockquote id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Sends the specified message using the supplied sender and recipients.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public abstract <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Send</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.FormatOptions</a> options, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a> sender, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a> recipients, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>options</i>
+                  </dt>
+                  <dd>The formatting options.</dd>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The message.</dd>
+                  <dt>
+                    <i>sender</i>
+                  </dt>
+                  <dd>The mailbox address to use for sending the message.</dd>
+                  <dt>
+                    <i>recipients</i>
+                  </dt>
+                  <dd>The mailbox addresses that should receive the message.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>options</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>message</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>sender</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>recipients</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit/MailTransport.html">MailKit.MailTransport</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit/MailTransport.html">MailKit.MailTransport</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>A sender has not been specified.</p>
+                      <p>-or-</p>
+                      <p>No recipients have been specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation has been canceled.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            Authentication is required before sending a message.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>Internationalized formatting was requested but is not supported by the transport.</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/CommandException.html">MailKit.CommandException</a>
+                    </td>
+                    <td>
+            The send command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>
+                    </td>
+                    <td>
+            A protocol exception occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Remarks">
+            Sends the specified message using the supplied sender and recipients.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.Send(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailTransport.SendAsync(MimeKit.MimeMessage,System.Threading.CancellationToken)">SendAsync Method</h3>
@@ -1028,7 +1330,129 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.MimeMessage,System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken)">SendAsync Method</h3>
+            <blockquote id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously sends the specified message.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a> <b>SendAsync</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.FormatOptions</a> options, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>options</i>
+                  </dt>
+                  <dd>The formatting options.</dd>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The message.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>options</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>message</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit/MailTransport.html">MailKit.MailTransport</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit/MailTransport.html">MailKit.MailTransport</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>A sender has not been specified.</p>
+                      <p>-or-</p>
+                      <p>No recipients have been specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation has been canceled.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            Authentication is required before sending a message.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>Internationalized formatting was requested but is not supported by the transport.</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/CommandException.html">MailKit.CommandException</a>
+                    </td>
+                    <td>
+            The send command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>
+                    </td>
+                    <td>
+            A protocol exception occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Remarks">
+            Asynchronously sends the specified message.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
               <hr size="1" />
             </blockquote>
             <h3 id="M:MailKit.MailTransport.SendAsync(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">SendAsync Method</h3>
@@ -1151,7 +1575,143 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Version Information">
-                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.26.0.0</div>
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken)">SendAsync Method</h3>
+            <blockquote id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):member">
+              <p class="Summary">
+            Asynchronously sends the specified message using the supplied sender and recipients.
+            </p>
+              <h2>Syntax</h2>
+              <div class="Signature">public virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.Tasks.Task">System.Threading.Tasks.Task</a> <b>SendAsync</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.FormatOptions</a> options, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MimeMessage</a> message, <a href="javascript:alert(&quot;Documentation not found.&quot;)">MimeKit.MailboxAddress</a> sender, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;MimeKit.MailboxAddress&gt;</a> recipients, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Threading.CancellationToken">System.Threading.CancellationToken</a> cancellationToken)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Parameters">
+                <dl>
+                  <dt>
+                    <i>options</i>
+                  </dt>
+                  <dd>The formatting options.</dd>
+                  <dt>
+                    <i>message</i>
+                  </dt>
+                  <dd>The message.</dd>
+                  <dt>
+                    <i>sender</i>
+                  </dt>
+                  <dd>The mailbox address to use for sending the message.</dd>
+                  <dt>
+                    <i>recipients</i>
+                  </dt>
+                  <dd>The mailbox addresses that should receive the message.</dd>
+                  <dt>
+                    <i>cancellationToken</i>
+                  </dt>
+                  <dd>The cancellation token.</dd>
+                </dl>
+              </blockquote>
+              <h4 class="Subsection">Returns</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Returns">An asynchronous task context.</blockquote>
+              <h4 class="Subsection">Exceptions</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Exceptions">
+                <table class="TypeDocumentation">
+                  <tr>
+                    <th>Type</th>
+                    <th>Reason</th>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                    </td>
+                    <td>
+                      <p>
+                        <i>options</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>message</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>sender</i> is <tt>null</tt>.</p>
+                      <p>-or-</p>
+                      <p>
+                        <i>recipients</i> is <tt>null</tt>.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ObjectDisposedException">ObjectDisposedException</a>
+                    </td>
+                    <td>
+            The <a href="../MailKit/MailTransport.html">MailKit.MailTransport</a> has been disposed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                    </td>
+                    <td>
+                      <p>The <a href="../MailKit/MailTransport.html">MailKit.MailTransport</a> is not connected.</p>
+                      <p>-or-</p>
+                      <p>A sender has not been specified.</p>
+                      <p>-or-</p>
+                      <p>No recipients have been specified.</p>
+                    </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.OperationCanceledException">OperationCanceledException</a>
+                    </td>
+                    <td>
+            The operation has been canceled.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UnauthorizedAccessException">UnauthorizedAccessException</a>
+                    </td>
+                    <td>
+            Authentication is required before sending a message.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>Internationalized formatting was requested but is not supported by the transport.</td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.IOException">System.IO.IOException</a>
+                    </td>
+                    <td>
+            An I/O error occurred.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/CommandException.html">MailKit.CommandException</a>
+                    </td>
+                    <td>
+            The send command failed.
+            </td>
+                  </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="../MailKit/ProtocolException.html">MailKit.ProtocolException</a>
+                    </td>
+                    <td>
+            A protocol exception occurred.
+            </td>
+                  </tr>
+                </table>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Remarks">
+            Asynchronously sends the specified message using the supplied sender and recipients.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.SendAsync(MimeKit.FormatOptions,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken):Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>0.90.0.0</div>
               <hr size="1" />
             </blockquote>
           </div>
